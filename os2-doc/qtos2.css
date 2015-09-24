@@ -1,0 +1,106 @@
+/*
+ * Stylesheet for the Qt for OS2 project documentation
+ *
+ */
+
+html {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin-left: 20pt;
+    margin-right: 20pt;
+}
+
+kbd, code, pre {
+    font-family: Andale Mono, Courier New, monospace;
+}
+
+head, title {
+    display: block;
+}
+
+title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    color: black;
+    margin-top: .67ex;
+    margin-bottom: .67ex;
+    padding: 1ex;
+    background-color: #FFE880; /*#F0E880;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #800000;
+}
+h1 {
+    font-size: 1.8em;
+}
+h2 {
+    font-size: 1.33em;
+}
+h4 {
+    color: black;
+}
+
+table {
+    border: 1px outset gray;
+    border-spacing: 0px;
+}
+
+td, th {
+    border: 1px inset gray;
+    padding: 2px;
+    vertical-align: baseline;
+}
+
+kbd {
+/*    color: #006800;*/
+/*    color: #666600;*/
+/*    color: #CF7000;*/
+    color: #008000;
+/*    background: #C0F0C0;*/
+}
+code {
+    color: #0066cc;
+/*    background: #C0F0FF;*/
+}
+
+dt {
+    font-weight: bold;
+}
+
+pre {
+    background-color: #E0E0E0;
+    border: thin solid gray;
+}
+
+a[href] {
+    text-decoration: none;
+/*    color: #780000;*/
+/*    color: #207820;*/
+/*    color: #FF3000;*/
+}
+
+hr {
+    border-width: 0;
+    height: 2px;
+    background-color: gray;
+}
+
+.marker-1 {
+    background-color: #BAFFAD;
+}
+.marker-2 {
+    background-color: #FFFFAA;
+}
+.marker-3 {
+    background-color: #FFBAAD;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}

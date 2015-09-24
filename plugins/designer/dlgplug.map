@@ -1,0 +1,415 @@
+** EXPERIMENTAL (HLL) ** Open Watcom Linker Version 1.6beta1 Limited Availability
+Portions Copyright (c) 1985-2002 Sybase, Inc. All Rights Reserved.
+Created on:       14/11/02 20:38:51
+Executable Image: ..\..\..\..\plugins\designer\dlgplug.dll
+creating an OS/2 EMX dynamic link library
+
+
+                        +------------+
+                        |   Groups   |
+                        +------------+
+
+Group                           Address              Size
+=====                           =======              ====
+
+CGROUP                          0001:00000000        00013350
+DGROUP                          0002:00000000        00000120
+
+
+
+                        +--------------+
+                        |   Segments   |
+                        +--------------+
+
+Segment                Class          Group          Address         Size
+=======                =====          =====          =======         ====
+
+TEXT32                 CODE           CGROUP         0001:00000000   00013350
+________TEXT           CODE           CGROUP         0001:00013350   00000000
+DATA32                 DATA           DGROUP         0002:00000000   000000c0
+SET1__os2dll           DATA           DGROUP         0002:000000c0   00000004
+SET2__os2dll           DATA           DGROUP         0002:000000c4   00000000
+SET3__os2dll           DATA           DGROUP         0002:000000c4   00000004
+SET1___CTOR_LIST__     DATA           DGROUP         0002:000000c8   00000004
+SET2___CTOR_LIST__     DATA           DGROUP         0002:000000cc   00000000
+SET3___CTOR_LIST__     DATA           DGROUP         0002:000000cc   00000004
+SET1___DTOR_LIST__     DATA           DGROUP         0002:000000d0   00000004
+SET2___DTOR_LIST__     DATA           DGROUP         0002:000000d4   00000000
+SET3___DTOR_LIST__     DATA           DGROUP         0002:000000d4   00000004
+SET1___crtinit1__      DATA           DGROUP         0002:000000d8   00000004
+SET2___crtinit1__      DATA           DGROUP         0002:000000dc   00000000
+SET3___crtinit1__      DATA           DGROUP         0002:000000dc   00000004
+SET1___crtexit1__      DATA           DGROUP         0002:000000e0   00000004
+SET2___crtexit1__      DATA           DGROUP         0002:000000e4   00000000
+SET3___crtexit1__      DATA           DGROUP         0002:000000e4   00000004
+SET1___eh_frame__      DATA           DGROUP         0002:000000e8   00000004
+SET2___eh_frame__      DATA           DGROUP         0002:000000ec   00000000
+SET3___eh_frame__      DATA           DGROUP         0002:000000ec   00000004
+SET1___eh_init__       DATA           DGROUP         0002:000000f0   00000004
+SET2___eh_init__       DATA           DGROUP         0002:000000f4   00000000
+SET3___eh_init__       DATA           DGROUP         0002:000000f4   00000004
+SET1___eh_term__       DATA           DGROUP         0002:000000f8   00000004
+SET2___eh_term__       DATA           DGROUP         0002:000000fc   00000000
+SET3___eh_term__       DATA           DGROUP         0002:000000fc   00000004
+________DATA           DATA           DGROUP         0002:00000100   00000000
+SET1___fork_child1__   DATA           DGROUP         0002:00000100   00000000
+SET2___fork_child1__   DATA           DGROUP         0002:00000100   00000004
+SET3___fork_child1__   DATA           DGROUP         0002:00000104   00000000
+BSS32                  BSS            DGROUP         0002:00000110   00000010
+c_common               BSS            DGROUP         0002:00000120   00000000
+________BSS            BSS            DGROUP         0002:00000120   00000000
+
+
+                        +----------------+
+                        |   Memory Map   |
+                        +----------------+
+
+* = unreferenced symbol
++ = symbol only referenced locally
+
+Address        Symbol
+=======        ======
+
+Module: C:\usr\lib\dll0nofork.obj({standard input})
+0001:00000000* __text
+0002:00000000* __data
+0002:00000000* ___data_start
+0002:00000110* ___bss_start
+0002:000000c0+ __os2dll
+0002:000000c8  ___CTOR_LIST__
+0002:000000d0  ___DTOR_LIST__
+0002:000000d8* ___crtinit1__
+0002:000000e0* ___crtexit1__
+0002:000000e8* ___eh_frame__
+0002:000000f0  ___eh_init__
+0002:000000f8  ___eh_term__
+Module: C:\200\trunk\tools\designer\plugins\dlg\tmp\obj\release_mt_shared\main.obj(main.obj)
+0001:00000070  __ZN9DlgFilterC2Ev
+0001:0000008c  __ZN9DlgFilterC1Ev
+0001:000000a8  __ZN9DlgFilter14queryInterfaceERK5QUuidPP17QUnknownInterface
+0001:000002bc  __ZNK9DlgFilter11featureListEv
+0001:00000360  __ZN9DlgFilter6importERK7QStringS2_
+0001:00000600  __ZN9DlgFilter4initEv
+0001:00000614  __ZN9DlgFilter7cleanupEv
+0001:00000624  __ZNK9DlgFilter9canUnloadEv
+0001:00000688  qt_ucm_query_verification_data
+0001:00000694  ucm_instantiate
+0001:00000d30  __ZTV9DlgFilter$w$P0jFRXYF8U67Cqo51
+0001:0000028c  __ZThn4_N9DlgFilter14queryInterfaceERK5QUuidPP17QUnknownInterface$w$P0jFRXYF8U67Cqo51
+0001:00000700  __ZN17QValueListPrivateI7QStringEC1Ev$w$P0jFRXYF8U67Cqo51
+0001:000007dc  __ZN17QValueListPrivateI7QStringE6insertE18QValueListIteratorIS0_ERKS0_$w$P0jFRXYF8U67Cqo51
+0001:00000838  __ZN10QValueListI7QStringE14detachInternalEv$w$P0jFRXYF8U67Cqo51
+0001:00000df0  __ZN6Dlg2UiC1Ev$w$P0jFRXYF8U67Cqo51
+0001:00000dbc  __ZN7QStringD1Ev$w$P0jFRXYF8U67Cqo51
+0001:00000f58  __ZN4QMapI7QStringS0_ED1Ev$w$P0jFRXYF8U67Cqo51
+0001:0000091c  __ZN11QMapPrivateI7QStringS0_E5clearEv$w$P0jFRXYF8U67Cqo51
+0001:000008e0  __ZN11QMapPrivateI7QString11QDomElementE5clearEv$w$P0jFRXYF8U67Cqo51
+0001:000008a4  __ZN11QMapPrivateI7QString4QMapIS0_iEE5clearEv$w$P0jFRXYF8U67Cqo51
+0001:00000868  __ZN11QMapPrivateI7QStringiE5clearEv$w$P0jFRXYF8U67Cqo51
+0001:00001034  __ZN4QMapI7QStringiED1Ev$w$P0jFRXYF8U67Cqo51
+0001:00000958  __ZN17QValueListPrivateI13DlgConnectionED1Ev$w$P0jFRXYF8U67Cqo51
+0001:0000074c  __ZN17QValueListPrivateI7QStringED1Ev$w$P0jFRXYF8U67Cqo51
+0001:0000060c  __ZThn4_N9DlgFilter4initEv$w$P0jFRXYF8U67Cqo51
+0001:0000061c  __ZThn4_N9DlgFilter7cleanupEv$w$P0jFRXYF8U67Cqo51
+0001:00000630  __ZThn4_NK9DlgFilter9canUnloadEv$w$P0jFRXYF8U67Cqo51
+0001:00000a74  __ZN17QValueListPrivateI7QStringEC1ERKS1_$w$P0jFRXYF8U67Cqo51
+0001:00000b08  __ZN11QMapPrivateI7QStringiE5clearEP8QMapNodeIS0_iE$w$P0jFRXYF8U67Cqo51
+0001:00000b6c  __ZN11QMapPrivateI7QString4QMapIS0_iEE5clearEP8QMapNodeIS0_S2_E$w$P0jFRXYF8U67Cqo51
+0001:00000c3c  __ZN11QMapPrivateI7QString11QDomElementE5clearEP8QMapNodeIS0_S1_E$w$P0jFRXYF8U67Cqo51
+0001:00000cac  __ZN11QMapPrivateI7QStringS0_E5clearEP8QMapNodeIS0_S0_E$w$P0jFRXYF8U67Cqo51
+0001:00000fe8  __ZN9DlgFilter6addRefEv$w$P0jFRXYF8U67Cqo51
+0001:00001004  __ZN9DlgFilter7releaseEv$w$P0jFRXYF8U67Cqo51
+0001:00000ffc  __ZThn4_N9DlgFilter6addRefEv$w$P0jFRXYF8U67Cqo51
+0001:0000102c  __ZThn4_N9DlgFilter7releaseEv$w$P0jFRXYF8U67Cqo51
+0001:00000d90  __ZTV6QGList$w$P0jFRXYF8U67Cqo51
+0001:00000de4  __ZNK6QGList5countEv$w$P0jFRXYF8U67Cqo51
+0001:00001114  __ZN11QMapPrivateI7QStringiEC1Ev$w$P0jFRXYF8U67Cqo51
+0001:0000116c  __ZN11QMapPrivateI7QString4QMapIS0_iEEC1Ev$w$P0jFRXYF8U67Cqo51
+0001:000011e0  __ZN11QMapPrivateI7QString11QDomElementEC1Ev$w$P0jFRXYF8U67Cqo51
+0001:000010a4  __ZN11QMapPrivateI7QStringS0_EC1Ev$w$P0jFRXYF8U67Cqo51
+0001:00001244  __ZN17QValueListPrivateI13DlgConnectionEC1Ev$w$P0jFRXYF8U67Cqo51
+Module: C:\200\trunk\tools\designer\plugins\dlg\tmp\obj\release_mt_shared\dlg2ui.obj(dlg2ui.obj)
+0001:00001668  __ZNK6Dlg2Ui5aliasERK7QString
+0001:000016d0  __ZN6Dlg2Ui7openingERK7QStringRK4QMapIS0_S0_E
+0001:0000196c  __ZN6Dlg2Ui7closingERK7QString
+0001:00001a90  __ZN6Dlg2Ui5errorERK7QString
+0001:00001b74  __ZN6Dlg2Ui11syntaxErrorEv
+0001:00001bc8  __ZN6Dlg2Ui12getTextValueERK8QDomNode
+0001:00001e04  __ZN6Dlg2Ui8getValueERK12QDomNodeListRK7QStringS5_
+0001:00008f7c  __ZN6Dlg2Ui8getValueERK11QDomElementRK7QStringS5_
+0001:00001f48  __ZN6Dlg2Ui10emitHeaderEv
+0001:00001f98  __ZN6Dlg2Ui10emitFooterEv
+0001:00001fe4  __ZN6Dlg2Ui15emitSimpleValueERK7QStringS2_RK4QMapIS0_S0_E
+0001:000021a8  __ZN6Dlg2Ui11emitOpeningERK7QStringRK4QMapIS0_S0_E
+0001:000022b8  __ZN6Dlg2Ui11emitClosingERK7QString
+0001:000023b4  __ZN6Dlg2Ui17emitOpeningWidgetERK7QString
+0001:000025e8  __ZN6Dlg2Ui15widgetClassNameERK11QDomElement
+0001:00002840  __ZN6Dlg2Ui9emitColorERK6QColor
+0001:00002c98  __ZN6Dlg2Ui14emitColorGroupERK7QStringRK11QColorGroup
+0001:00002e28  __ZN6Dlg2Ui11emitVariantERK8QVariantRK7QString
+0001:000047b0  __ZN6Dlg2Ui12emitPropertyERK7QStringRK8QVariantS2_
+0001:0000491c  __ZN6Dlg2Ui13emitAttributeERK7QStringRK8QVariantS2_
+0001:00004aac  __ZN6Dlg2Ui17emitOpeningLayoutEbRK7QStringS2_ii
+0001:00004f08  __ZN6Dlg2Ui12flushWidgetsEv
+0001:0000606c  __ZN6Dlg2Ui14emitWidgetBodyERK11QDomElementb
+0001:0000514c  __ZN6Dlg2Ui17emitClosingLayoutEbRK7QString
+0001:000051d0  __ZN6Dlg2Ui12isWidgetTypeERK11QDomElement
+0001:00005298  __ZN6Dlg2Ui10emitSpacerEii
+0001:000058b0  __ZN6Dlg2Ui13filteredFlagsERK7QStringRK7QRegExp
+0001:00005abc  __ZN6Dlg2Ui22emitFrameStylePropertyEi
+0001:00008bc0  __ZN6Dlg2Ui12checkTagNameERK11QDomElementRK7QString
+0001:00008c2c  __ZN6Dlg2Ui13normalizeTypeERK7QString
+0001:0000a904  __ZN6Dlg2Ui17matchDialogCommonERK11QDomElement
+0001:0000b450  __ZN6Dlg2Ui18needsQLayoutWidgetERK11QDomElement
+0001:0000b5a4  __ZN6Dlg2Ui14matchBoxLayoutERK11QDomElement
+0001:0000d5f0  __ZN6Dlg2Ui11matchLayoutERK11QDomElement
+0001:0000bd14  __ZN6Dlg2Ui15matchBoxSpacingERK11QDomElement
+0001:0000be88  __ZN6Dlg2Ui15matchBoxStretchERK11QDomElement
+0001:0000c000  __ZN6Dlg2Ui15matchGridLayoutERK11QDomElement
+0001:0000c540  __ZN6Dlg2Ui12matchGridRowERK11QDomElement
+0001:0000c670  __ZN6Dlg2Ui15matchGridSpacerERK11QDomElement
+0001:0000c6e8  __ZN6Dlg2Ui17matchLayoutWidgetERK11QDomElement
+0001:0000d4d0  __ZN6Dlg2Ui8matchBoxERK11QDomElement
+0001:0000d6b0  __ZN6Dlg2Ui23matchWidgetLayoutCommonERK11QDomElement
+0001:0000dbbc  __ZN6Dlg2Ui11matchWidgetERK11QDomElement
+0001:0000dea4  __ZN6Dlg2Ui12matchWidgetsERK11QDomElement
+0001:0000df2c  __ZN6Dlg2Ui13matchTabOrderERK11QDomElement
+0001:0000e158  __ZN6Dlg2Ui17matchWidgetLayoutERK11QDomElement
+0001:0000e4b4  __ZN6Dlg2Ui11matchDialogERK11QDomElement
+0001:0000fbf4  __ZN6Dlg2Ui25convertQtArchitectDlgFileERK7QString
+0001:00010608* __ZN11QMapPrivateI7QStringS0_EC1Ev$w$hLtsEdZF8U6LpYby0
+0001:0001059c  __ZN4QMapI7QStringS0_E6insertERKS0_S3_b$w$hLtsEdZF8U6LpYby0
+0001:000106b4  __ZNK11QMapPrivateI7QStringS0_E4findERKS0_$w$hLtsEdZF8U6LpYby0
+0001:00010738  __ZN17QMapConstIteratorI7QStringS0_E3incEv$w$hLtsEdZF8U6LpYby0
+0001:00010678* __ZN11QMapPrivateI7QStringS0_E5clearEv$w$hLtsEdZF8U6LpYby0
+0001:00010784  __ZN4QMapI7QString11QDomElementE14detachInternalEv$w$hLtsEdZF8U6LpYby0
+0001:000107b4  __ZNK11QMapPrivateI7QStringiE4findERKS0_$w$hLtsEdZF8U6LpYby0
+0001:00010838* __ZN17QValueListPrivateI7QStringED1Ev$w$hLtsEdZF8U6LpYby0
+0001:00010a3c* __ZN11QMapPrivateI7QStringiEC1Ev$w$hLtsEdZF8U6LpYby0
+0001:000108c8  __ZN4QMapI7QStringS_IS0_iEEixERKS0_$w$hLtsEdZF8U6LpYby0
+0001:000109b8  __ZN4QMapI7QStringiEaSERKS1_$w$hLtsEdZF8U6LpYby0
+0001:00010b00  __ZN17QValueListPrivateI13DlgConnectionE6insertE18QValueListIteratorIS0_ERKS0_$w$hLtsEdZF8U6LpYby0
+0001:00010b7c  __ZN10QValueListI13DlgConnectionE14detachInternalEv$w$hLtsEdZF8U6LpYby0
+0001:00010ad0  __ZN4QMapI7QStringiE14detachInternalEv$w$hLtsEdZF8U6LpYby0
+0001:00010a94* __ZN11QMapPrivateI7QStringiE5clearEv$w$hLtsEdZF8U6LpYby0
+0001:00010bac  __ZNK11QMapPrivateI7QString11QDomElementE4findERKS0_$w$hLtsEdZF8U6LpYby0
+0001:00010c30  __ZN4QMapI7QString11QDomElementE6insertERKS0_RKS1_b$w$hLtsEdZF8U6LpYby0
+0001:00010c9c* __ZN17QValueListPrivateI7QStringE6insertE18QValueListIteratorIS0_ERKS0_$w$hLtsEdZF8U6LpYby0
+0001:00010cf8* __ZN10QValueListI7QStringE14detachInternalEv$w$hLtsEdZF8U6LpYby0
+0001:00010d58  __ZN12QMapIteratorI7QStringS0_E3incEv$w$hLtsEdZF8U6LpYby0
+0001:00010d28  __ZN4QMapI7QStringS0_E14detachInternalEv$w$hLtsEdZF8U6LpYby0
+0001:00010da4  __ZN4QMapI7QStringiE6insertERKS0_RKib$w$hLtsEdZF8U6LpYby0
+0001:00010e08* __ZN17QValueListPrivateI7QStringEC1Ev$w$hLtsEdZF8U6LpYby0
+0001:00010e54  __ZN11QMapPrivateI7QStringS0_E12insertSingleERKS0_$w$hLtsEdZF8U6LpYby0
+0001:00010f08* __ZN11QMapPrivateI7QStringS0_E5clearEP8QMapNodeIS0_S0_E$w$hLtsEdZF8U6LpYby0
+0001:00010f8c  __ZN11QMapPrivateI7QString11QDomElementEC1EPKS2_$w$hLtsEdZF8U6LpYby0
+0001:00011044  __ZNK11QMapPrivateI7QString4QMapIS0_iEE4findERKS0_$w$hLtsEdZF8U6LpYby0
+0001:000110c8  __ZN4QMapI7QStringS_IS0_iEE6insertERKS0_RKS1_b$w$hLtsEdZF8U6LpYby0
+0001:00011134  __ZN4QMapI7QStringS_IS0_iEE14detachInternalEv$w$hLtsEdZF8U6LpYby0
+0001:00011164* __ZN11QMapPrivateI7QStringiE5clearEP8QMapNodeIS0_iE$w$hLtsEdZF8U6LpYby0
+0001:000111c8  __ZN11QMapPrivateI7QStringiEC1EPKS1_$w$hLtsEdZF8U6LpYby0
+0001:00011278  __ZN17QValueListPrivateI13DlgConnectionEC1ERKS1_$w$hLtsEdZF8U6LpYby0
+0001:0001133c  __ZN11QMapPrivateI7QString11QDomElementE12insertSingleERKS0_$w$hLtsEdZF8U6LpYby0
+0001:000113f0* __ZN17QValueListPrivateI7QStringEC1ERKS1_$w$hLtsEdZF8U6LpYby0
+0001:00011484  __ZN11QMapPrivateI7QStringS0_EC1EPKS1_$w$hLtsEdZF8U6LpYby0
+0001:00011550  __ZN11QMapPrivateI7QStringiE12insertSingleERKS0_$w$hLtsEdZF8U6LpYby0
+0001:00011604  __ZN11QMapPrivateI7QStringS0_E6insertEP12QMapNodeBaseS3_RKS0_$w$hLtsEdZF8U6LpYby0
+0001:00011708  __ZN12QMapIteratorI7QStringS0_E3decEv$w$hLtsEdZF8U6LpYby0
+0001:00011760  __ZN11QMapPrivateI7QString11QDomElementE4copyEP8QMapNodeIS0_S1_E$w$hLtsEdZF8U6LpYby0
+0001:0001182c  __ZN11QMapPrivateI7QString4QMapIS0_iEE12insertSingleERKS0_$w$hLtsEdZF8U6LpYby0
+0001:000118e0  __ZN11QMapPrivateI7QString4QMapIS0_iEEC1EPKS3_$w$hLtsEdZF8U6LpYby0
+0001:000119b0  __ZN11QMapPrivateI7QStringiE4copyEP8QMapNodeIS0_iE$w$hLtsEdZF8U6LpYby0
+0001:00011a60  __ZN11QMapPrivateI7QString11QDomElementE6insertEP12QMapNodeBaseS4_RKS0_$w$hLtsEdZF8U6LpYby0
+0001:00011b50  __ZN12QMapIteratorI7QString11QDomElementE3decEv$w$hLtsEdZF8U6LpYby0
+0001:00011ba8  __ZN11QMapPrivateI7QStringS0_E4copyEP8QMapNodeIS0_S0_E$w$hLtsEdZF8U6LpYby0
+0001:00011c88  __ZN11QMapPrivateI7QStringiE6insertEP12QMapNodeBaseS3_RKS0_$w$hLtsEdZF8U6LpYby0
+0001:00011d6c  __ZN12QMapIteratorI7QStringiE3decEv$w$hLtsEdZF8U6LpYby0
+0001:00011dc4  __ZN11QMapPrivateI7QString4QMapIS0_iEE6insertEP12QMapNodeBaseS5_RKS0_$w$hLtsEdZF8U6LpYby0
+0001:00011ec0  __ZN12QMapIteratorI7QString4QMapIS0_iEE3decEv$w$hLtsEdZF8U6LpYby0
+0001:00011f18  __ZN11QMapPrivateI7QString4QMapIS0_iEE4copyEP8QMapNodeIS0_S2_E$w$hLtsEdZF8U6LpYby0
+0001:00012010* __ZTV6QGList$w$hLtsEdZF8U6LpYby0
+0001:0001203c* __ZNK6QGList5countEv$w$hLtsEdZF8U6LpYby0
+Module: C:\usr\lib\libc_dll.lib(dllinit.obj)
+0001:00013250  _DLL_InitTerm
+Module: C:\usr\lib\libend.lib(src/libend/386/end.asm)
+0001:00013350* _etext
+0001:00013350* __etext
+0000:00000000* WEAK$ZERO
+0002:00000120  __end
+0002:00000100  __edata
+Module: C:\usr\lib\gcc-lib\i386-pc-os2-emx\3.3.5\libgcc_so_d.lib(emx-ctordtor.obj)
+0001:00013290  ___ctordtorInit
+0001:0001329a* ___POST$__ctordtorInit
+0001:000132be  ___ctordtorTerm
+0001:000132c8* ___POST$__ctordtorTerm
+
+
+                        +----------------------+
+                        |   Imported Symbols   |
+                        +----------------------+
+
+Symbol                              Module
+======                              ======
+
+___init_dll                         libc064
+___libc_Back_termDll                libc064
+__Znwj                              libc064
+__ZN7QStringC1EPKc                  myqt
+__ZN7QString11shared_nullE          myqt
+__ZN11QStringData10deleteSelfEv     myqt
+__ZdlPv                             libc064
+__ZN11QDomElementD1Ev               myqt
+__ZN7QString14makeSharedNullEv      myqt
+__ZN7QStringC1ERKS_                 myqt
+__ZN6QGList5clearEv                 myqt
+__ZN6QGListD1Ev                     myqt
+__ZN6QGListD0Ev                     myqt
+__ZN14QPtrCollection7newItemEPv     myqt
+___cxa_pure_virtual                 libc064
+__ZN6QGList12compareItemsEPvS0_     myqt
+__ZN6QGList4readER11QDataStreamRPv  myqt
+__ZNK6QGList5writeER11QDataStreamPv myqt
+__ZN11QDomElementC1Ev               myqt
+__ZNK7QString5lowerEv               myqt
+__ZeqRK7QStringS1_                  myqt
+__ZN7QString7replaceE5QCharRKS_b    myqt
+__ZN7QStringpLE5QChar               myqt
+__ZN7QStringpLERKS_                 myqt
+__ZN7QString4nullE                  myqt
+__ZN11QMessageBox7warningEP7QWidgetRK7QStringS4_S4_S4_S4_ii myqt
+__ZN12QDomNodeListD1Ev              myqt
+__ZN8QDomNode6toTextEv              myqt
+__ZN8QDomNodeD1Ev                   myqt
+__ZNK8QDomNode6isNullEv             myqt
+__ZN8QDomTextD1Ev                   myqt
+__ZNK17QDomCharacterData4dataEv     myqt
+__ZNK7QString15stripWhiteSpaceEv    myqt
+__ZN7QString7replaceERKS_S1_        myqt
+__ZN8QDomNode9toElementEv           myqt
+__ZNK11QDomElement7tagNameEv        myqt
+__ZN8QVariantC1Ev                   myqt
+__ZN7QString8truncateEj             myqt
+__ZN7QString6numberEii              myqt
+__ZNK8QVariant8toStringEv           myqt
+__ZN8QVariantD1Ev                   myqt
+__ZNK11QColorGroup5colorENS_9ColorRoleE myqt
+__ZNK8QVariant6toFontEv             myqt
+__ZNK5QFont6familyEv                myqt
+__ZN5QFontD1Ev                      myqt
+__ZNK5QFont9pointSizeEv             myqt
+__ZNK5QFont6weightEv                myqt
+__ZNK5QFont6italicEv                myqt
+__ZNK5QFont9underlineEv             myqt
+__ZNK5QFont9strikeOutEv             myqt
+__ZN7QStringC1E5QChar               myqt
+__ZNK8QVariant6toRectEv             myqt
+__ZNK8QVariant6toSizeEv             myqt
+__ZNK8QVariant7toColorEv            myqt
+__ZNK8QVariant9toPaletteEv          myqt
+__ZN8QPaletteD1Ev                   myqt
+__ZNK8QVariant7toPointEv            myqt
+__ZNK8QVariant6toBoolEv             myqt
+__ZN8QVariantC1Ei                   myqt
+__ZNK7QString6latin1Ev              myqt
+__ZN8QVariantC1EPKc                 myqt
+__ZNK7QString3argExii               myqt
+__ZN7QStringaSERKS_                 myqt
+__ZN7QRegExpC1ERK7QStringbb         myqt
+__ZNK7QRegExp10exactMatchERK7QString myqt
+__ZN15QMapPrivateBase18removeAndRebalanceEP12QMapNodeBaseRS1_S2_S2_ myqt
+__ZN7QRegExpD1Ev                    myqt
+__ZN8QVariantC1ERK7QString          myqt
+__ZN8QVariantC1ERK5QSize            myqt
+__ZN7QString7replaceERK7QRegExpRKS_ myqt
+__ZN11QStringList5splitERK5QCharRK7QStringb myqt
+__ZNK11QStringList4grepERK7QRegExp  myqt
+__ZNK11QStringList4joinERK7QString  myqt
+__ZN8QDomNodeC1ERKS_                myqt
+__ZNK8QDomNode10firstChildEv        myqt
+__ZN8QDomNodeaSERKS_                myqt
+__ZNK8QDomNode11nextSiblingEv       myqt
+__ZN8QVariantC1Ebi                  myqt
+__ZN8QVariantC1ERK5QRect            myqt
+__ZNK8QDomNode10parentNodeEv        myqt
+__ZNK8QDomNode10childNodesEv        myqt
+__ZN7QRegExp3capEi                  myqt
+__ZneRK7QStringS1_                  myqt
+__ZNK8QVariant5toIntEPb             myqt
+__ZNK7QString8toDoubleEPb           myqt
+__ZN8QVariantC1Ed                   myqt
+__ZN8QVariantC1ERKS_                myqt
+__ZNK16QDomNamedNodeMap9namedItemERK7QString myqt
+__ZN8QDomNode6toAttrEv              myqt
+__ZNK8QDomAttr5valueEv              myqt
+__ZN8QDomAttrD1Ev                   myqt
+__ZN16QDomNamedNodeMapD1Ev          myqt
+__ZNK7QString5toIntEPbi             myqt
+__ZN8QVariantC1ERK6QPoint           myqt
+__ZNK8QVariant12toColorGroupEv      myqt
+__ZN8QPaletteC1ERK11QColorGroupS2_S2_ myqt
+__ZN8QVariantC1ERK8QPalette         myqt
+__ZN11QColorGroupD1Ev               myqt
+__ZN5QFontC1Ev                      myqt
+__ZN5QFont9setItalicEb              myqt
+__ZN5QFont12setUnderlineEb          myqt
+__ZN5QFont12setStrikeOutEb          myqt
+__ZN8QVariantC1ERK5QFont            myqt
+__ZN5QFont12setStyleHintENS_9StyleHintENS_13StyleStrategyE myqt
+__ZN5QFont9setWeightEi              myqt
+__ZN5QFont12setPointSizeEi          myqt
+__ZN5QFont9setFamilyERK7QString     myqt
+__ZN6QColor6setRgbEiii              myqt
+__ZN8QVariantC1ERK6QColor           myqt
+__ZN11QColorGroupC1Ev               myqt
+__ZN11QColorGroup8setColorENS_9ColorRoleERK6QColor myqt
+__ZN8QVariantC1ERK11QColorGroup     myqt
+__ZN7QStringaSEPKc                  myqt
+__ZN11QDomElementaSERKS_            myqt
+__ZNK7QString3midEjj                myqt
+__ZN5QRectC1ERK6QPointRK5QSize      myqt
+__ZNK12QDomNodeList4itemEi          myqt
+__ZN12QDomDocumentC1ERK7QString     myqt
+__ZN5QFileC1ERK7QString             myqt
+__ZN5QFile4openEi                   myqt
+__ZN5QFileD1Ev                      myqt
+__ZN12QDomDocumentD1Ev              myqt
+__ZN12QDomDocument10setContentEP9QIODeviceP7QStringPiS4_ myqt
+__ZN5QFile2atEm                     myqt
+__ZN5QFile8readLineER7QStringm      myqt
+__ZNK7QString10startsWithERKS_      myqt
+__ZN5QFile5closeEv                  myqt
+__ZNK12QDomDocument15documentElementEv myqt
+__ZN5QFileC1Ev                      myqt
+__ZN5QFile7setNameERK7QString       myqt
+__Z8qWarningPKcz                    myqt
+__ZN11QTextStreamC1Ev               myqt
+__ZN11QTextStream11setEncodingENS_8EncodingE myqt
+__ZN11QTextStream9setDeviceEP9QIODevice myqt
+__ZN11QTextStreamlsERK7QString      myqt
+__ZN11QTextStreamD1Ev               myqt
+__ZN11QDomElement13attributeNodeERK7QString myqt
+__ZltRK7QStringS1_                  myqt
+__ZN15QMapPrivateBase9rebalanceEP12QMapNodeBaseRS1_ myqt
+__CRT_term                          libc064
+__CRT_init                          libc064
+___ctordtorInit1                    libc064
+___ctordtorTerm1                    libc064
+
+
+                        +--------------------+
+                        |   Libraries Used   |
+                        +--------------------+
+
+C:\200\trunk\lib\myqt.lib
+C:\usr\lib\libc_dll.lib
+C:\usr\lib\gcc-lib\i386-pc-os2-emx\3.3.5\libgcc_so_d.lib
+C:\usr\lib\libend.lib
+
+
+                        +-----------------------+
+                        |   Linker Statistics   |
+                        +-----------------------+
+
+Stack size:  0000 (0.)
+Memory size:  00013470 (78960.)
+Link time: 00:00.13

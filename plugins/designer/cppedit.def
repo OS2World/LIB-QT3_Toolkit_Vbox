@@ -1,0 +1,432 @@
+LIBRARY cppedit INITINSTANCE TERMINSTANCE 
+DATA MULTIPLE NONSHARED 
+EXPORTS
+  ; segment BSS32
+  "__ZN9CppEditor7metaObjE"                                             ; magicseg='BSS32' len=23
+  "__ZN19CppEditorCompletion7metaObjE"                                  ; magicseg='BSS32' len=34
+  "__ZN19EditorInterfaceImpl7metaObjE"                                  ; magicseg='BSS32' len=34
+  "__ZN16CppEditorBrowser7metaObjE"                                     ; magicseg='BSS32' len=31
+  "__ZN18CppProjectSettings7metaObjE"                                   ; magicseg='BSS32' len=33
+  "__ZN11CppMainFile7metaObjE"                                          ; magicseg='BSS32' len=26
+
+  ; segment TEXT32
+  "__ZN9CppEditorC2ERK7QStringP7QWidgetPKcP17DesignerInterface"         ; magicseg='TEXT32' len=59
+  "__ZN9CppEditor13configChangedEv"                                     ; magicseg='TEXT32' len=31
+  "__ZN9CppEditorC1ERK7QStringP7QWidgetPKcP17DesignerInterface"         ; magicseg='TEXT32' len=59
+  "__ZN9CppEditorD2Ev"                                                  ; magicseg='TEXT32' len=18
+  "__ZN9CppEditorD1Ev"                                                  ; magicseg='TEXT32' len=18
+  "__ZN9CppEditorD0Ev"                                                  ; magicseg='TEXT32' len=18
+  "__ZN9CppEditor15createPopupMenuERK6QPoint"                           ; magicseg='TEXT32' len=41
+  "__ZN9CppEditor11addInclDeclEv"                                       ; magicseg='TEXT32' len=29
+  "__ZN9CppEditor11addInclImplEv"                                       ; magicseg='TEXT32' len=29
+  "__ZN9CppEditor10addForwardEv"                                        ; magicseg='TEXT32' len=28
+  "__ZN9CppEditor5pasteEv"                                              ; magicseg='TEXT32' len=22
+  "__ZThn40_N9CppEditorD1Ev"                                            ; magicseg='TEXT32' len=24  weak
+  "__ZThn40_N9CppEditorD0Ev"                                            ; magicseg='TEXT32' len=24  weak
+  "__ZN4QMapI7QString11ConfigStyleEaSERKS2_"                            ; magicseg='TEXT32' len=40  weak
+  "__ZN11QMapPrivateI7QString11ConfigStyleE5clearEv"                    ; magicseg='TEXT32' len=48  weak
+  "__ZN17QValueListPrivateI7QStringE6insertE18QValueListIteratorIS0_ERKS0_"                 ; magicseg='TEXT32' len=71  weak
+  "__ZN17QValueListPrivateI7QStringED1Ev"                               ; magicseg='TEXT32' len=37  weak
+  "__ZN10QValueListI7QStringE14detachInternalEv"                        ; magicseg='TEXT32' len=44  weak
+  "__ZN11QMapPrivateI7QString11ConfigStyleE5clearEP8QMapNodeIS0_S1_E"                       ; magicseg='TEXT32' len=65  weak
+  "__ZN17QValueListPrivateI7QStringEC1ERKS1_"                           ; magicseg='TEXT32' len=41  weak
+  "__ZTV19QTextCommandHistory"                                          ; magicseg='TEXT32' len=26  weak
+  "__ZN19QTextCommandHistoryD1Ev"                                       ; magicseg='TEXT32' len=29  weak
+  "__ZN19QTextCommandHistoryD0Ev"                                       ; magicseg='TEXT32' len=29  weak
+  "__ZTV6QGList"                                                        ; magicseg='TEXT32' len=12  weak
+  "__ZNK6QGList5countEv"                                                ; magicseg='TEXT32' len=20  weak
+  "__ZTV8QPtrListI12QTextCommandE"                                      ; magicseg='TEXT32' len=30  weak
+  "__ZNK8QPtrListI12QTextCommandE5countEv"                              ; magicseg='TEXT32' len=38  weak
+  "__ZN8QPtrListI12QTextCommandE5clearEv"                               ; magicseg='TEXT32' len=37  weak
+  "__ZN8QPtrListI12QTextCommandED1Ev"                                   ; magicseg='TEXT32' len=33  weak
+  "__ZN8QPtrListI12QTextCommandED0Ev"                                   ; magicseg='TEXT32' len=33  weak
+  "__ZN8QPtrListI12QTextCommandE10deleteItemEPv"                        ; magicseg='TEXT32' len=44  weak
+  "__ZN21SyntaxHighlighter_CPP8keywordsE"                               ; magicseg='TEXT32' len=37
+  "__ZN21SyntaxHighlighter_CPPC2Ev"                                     ; magicseg='TEXT32' len=31
+  "__ZN21SyntaxHighlighter_CPP9addFormatEiP11QTextFormat"               ; magicseg='TEXT32' len=53
+  "__ZN21SyntaxHighlighter_CPPC1Ev"                                     ; magicseg='TEXT32' len=31
+  "__ZN21SyntaxHighlighter_CPPD2Ev"                                     ; magicseg='TEXT32' len=31
+  "__ZN21SyntaxHighlighter_CPPD1Ev"                                     ; magicseg='TEXT32' len=31
+  "__ZN21SyntaxHighlighter_CPPD0Ev"                                     ; magicseg='TEXT32' len=31
+  "__ZN21SyntaxHighlighter_CPP12updateStylesERK4QMapI7QString11ConfigStyleE"                ; magicseg='TEXT32' len=72
+  "__ZN21SyntaxHighlighter_CPP7processEP13QTextDocumentP14QTextParagraphib"                 ; magicseg='TEXT32' len=71
+  "__ZN21SyntaxHighlighter_CPP6formatEi"                                ; magicseg='TEXT32' len=36
+  "__ZN21SyntaxHighlighter_CPP12removeFormatEi"                         ; magicseg='TEXT32' len=43
+  "__ZTV21SyntaxHighlighter_CPP"                                        ; magicseg='TEXT32' len=28  weak
+  "__ZTV8QIntDictI11QTextFormatE"                                       ; magicseg='TEXT32' len=29  weak
+  "__ZN11QMapPrivateIi4QMapI7QStringiEEC1Ev"                            ; magicseg='TEXT32' len=40  weak
+  "__ZNK11QMapPrivateIi4QMapI7QStringiEE4findERKi"                      ; magicseg='TEXT32' len=46  weak
+  "__ZN4QMapIiS_I7QStringiEEixERKi"                                     ; magicseg='TEXT32' len=31  weak
+  "__ZN4QMapI7QStringiEixERKS0_"                                        ; magicseg='TEXT32' len=28  weak
+  "__ZN11QMapPrivateI7QStringiEC1Ev"                                    ; magicseg='TEXT32' len=32  weak
+  "__ZN4QMapIiS_I7QStringiEE6insertERKiRKS1_b"                          ; magicseg='TEXT32' len=42  weak
+  "__ZN11QMapPrivateI7QStringiE5clearEv"                                ; magicseg='TEXT32' len=36  weak
+  "__ZTV17QTextPreProcessor"                                            ; magicseg='TEXT32' len=24  weak
+  "__ZN17QMapConstIteratorI7QString11ConfigStyleE3incEv"                ; magicseg='TEXT32' len=52  weak
+  "__ZN10QValueListI5ParenE5clearEv"                                    ; magicseg='TEXT32' len=32  weak
+  "__ZNK11QMapPrivateI7QStringiE4findERKS0_"                            ; magicseg='TEXT32' len=40  weak
+  "__ZN4QMapI7QStringiE14detachInternalEv"                              ; magicseg='TEXT32' len=38  weak
+  "__ZN4QMapIiS_I7QStringiEE14detachInternalEv"                         ; magicseg='TEXT32' len=43  weak
+  "__ZN17QValueListPrivateI5ParenE6insertE18QValueListIteratorIS0_ERKS0_"                   ; magicseg='TEXT32' len=69  weak
+  "__ZN10QValueListI5ParenE14detachInternalEv"                          ; magicseg='TEXT32' len=42  weak
+  "__ZTV9ParagData"                                                     ; magicseg='TEXT32' len=15  weak
+  "__ZN17QValueListPrivateI5ParenEC1Ev"                                 ; magicseg='TEXT32' len=35  weak
+  "__ZN11QMapPrivateIi4QMapI7QStringiEE12insertSingleERKi"              ; magicseg='TEXT32' len=54  weak
+  "__ZN4QMapI7QStringiEaSERKS1_"                                        ; magicseg='TEXT32' len=28  weak
+  "__ZN4QMapI7QStringiE6insertERKS0_RKib"                               ; magicseg='TEXT32' len=37  weak
+  "__ZN11QMapPrivateI7QStringiE5clearEP8QMapNodeIS0_iE"                 ; magicseg='TEXT32' len=51  weak
+  "__ZN17QValueListPrivateI5ParenE5clearEv"                             ; magicseg='TEXT32' len=39  weak
+  "__ZN17QValueListPrivateI5ParenEC1ERKS1_"                             ; magicseg='TEXT32' len=39  weak
+  "__ZN11QMapPrivateIi4QMapI7QStringiEEC1EPKS3_"                        ; magicseg='TEXT32' len=44  weak
+  "__ZN11QMapPrivateI7QStringiEC1EPKS1_"                                ; magicseg='TEXT32' len=36  weak
+  "__ZN11QMapPrivateIi4QMapI7QStringiEE6insertEP12QMapNodeBaseS5_RKi"                       ; magicseg='TEXT32' len=65  weak
+  "__ZN12QMapIteratorIi4QMapI7QStringiEE3decEv"                         ; magicseg='TEXT32' len=43  weak
+  "__ZN11QMapPrivateI7QStringiE12insertSingleERKS0_"                    ; magicseg='TEXT32' len=48  weak
+  "__ZN11QMapPrivateIi4QMapI7QStringiEE4copyEP8QMapNodeIiS2_E"          ; magicseg='TEXT32' len=58  weak
+  "__ZN11QMapPrivateI7QStringiE4copyEP8QMapNodeIS0_iE"                  ; magicseg='TEXT32' len=50  weak
+  "__ZN11QMapPrivateI7QStringiE6insertEP12QMapNodeBaseS3_RKS0_"         ; magicseg='TEXT32' len=59  weak
+  "__ZN12QMapIteratorI7QStringiE3decEv"                                 ; magicseg='TEXT32' len=35  weak
+  "__ZN9ParagDataD1Ev"                                                  ; magicseg='TEXT32' len=18  weak
+  "__ZN9ParagDataD0Ev"                                                  ; magicseg='TEXT32' len=18  weak
+  "__ZN9ParagData4joinEP18QTextParagraphData"                           ; magicseg='TEXT32' len=41  weak
+  "__ZNK8QIntDictI11QTextFormatE5countEv"                               ; magicseg='TEXT32' len=37  weak
+  "__ZN8QIntDictI11QTextFormatE5clearEv"                                ; magicseg='TEXT32' len=36  weak
+  "__ZN8QIntDictI11QTextFormatED1Ev"                                    ; magicseg='TEXT32' len=32  weak
+  "__ZN8QIntDictI11QTextFormatED0Ev"                                    ; magicseg='TEXT32' len=32  weak
+  "__ZN8QIntDictI11QTextFormatE10deleteItemEPv"                         ; magicseg='TEXT32' len=43  weak
+  "__ZN17QTextPreProcessorD1Ev"                                         ; magicseg='TEXT32' len=27  weak
+  "__ZN17QTextPreProcessorD0Ev"                                         ; magicseg='TEXT32' len=27  weak
+  "__ZN17QValueListPrivateI5ParenED1Ev"                                 ; magicseg='TEXT32' len=35  weak
+  "__ZN19CppEditorCompletionC2EP6Editor"                                ; magicseg='TEXT32' len=36
+  "__ZN19CppEditorCompletionC1EP6Editor"                                ; magicseg='TEXT32' len=36
+  "__ZN19CppEditorCompletion18doObjectCompletionERK7QString"            ; magicseg='TEXT32' len=56
+  "__ZN19CppEditorCompletion18functionParametersERK7QStringR5QCharRS0_S5_"                  ; magicseg='TEXT32' len=70
+  "__ZN19CppEditorCompletion10setContextEP7QObject"                     ; magicseg='TEXT32' len=47
+  "__ZN17QValueListPrivateI15CompletionEntryEC1Ev"                      ; magicseg='TEXT32' len=46  weak
+  "__ZN17QValueListPrivateI15CompletionEntryE6insertE18QValueListIteratorIS0_ERKS0_"        ; magicseg='TEXT32' len=80  weak
+  "__ZN10QValueListI15CompletionEntryE14detachInternalEv"               ; magicseg='TEXT32' len=53  weak
+  "__ZNK17QValueListPrivateI15CompletionEntryE4findEP14QValueListNodeIS0_ERKS0_"            ; magicseg='TEXT32' len=76  weak
+  "__ZTV8QStrList"                                                      ; magicseg='TEXT32' len=14  weak
+  "__ZTV8QPtrListIcE"                                                   ; magicseg='TEXT32' len=17  weak
+  "__ZN17QValueListPrivateI15CompletionEntryED1Ev"                      ; magicseg='TEXT32' len=46  weak
+  "__ZN17QValueListPrivateI11QStringListEC1Ev"                          ; magicseg='TEXT32' len=42  weak
+  "__ZN17QValueListPrivateI11QStringListE6insertE18QValueListIteratorIS0_ERKS0_"            ; magicseg='TEXT32' len=76  weak
+  "__ZN17QValueListPrivateI11QStringListED1Ev"                          ; magicseg='TEXT32' len=42  weak
+  "__ZN10QValueListI11QStringListE14detachInternalEv"                   ; magicseg='TEXT32' len=49  weak
+  "__ZN17QValueListPrivateI7QStringEC1Ev"                               ; magicseg='TEXT32' len=37  weak
+  "__ZN17QValueListPrivateI15CompletionEntryEC1ERKS1_"                  ; magicseg='TEXT32' len=50  weak
+  "__ZN17QValueListPrivateI11QStringListEC1ERKS1_"                      ; magicseg='TEXT32' len=46  weak
+  "__ZNK8QPtrListIcE5countEv"                                           ; magicseg='TEXT32' len=25  weak
+  "__ZN8QPtrListIcE5clearEv"                                            ; magicseg='TEXT32' len=24  weak
+  "__ZN8QStrListD1Ev"                                                   ; magicseg='TEXT32' len=17  weak
+  "__ZN8QStrListD0Ev"                                                   ; magicseg='TEXT32' len=17  weak
+  "__ZN8QStrList7newItemEPv"                                            ; magicseg='TEXT32' len=24  weak
+  "__ZN8QStrList10deleteItemEPv"                                        ; magicseg='TEXT32' len=28  weak
+  "__ZN8QStrList12compareItemsEPvS0_"                                   ; magicseg='TEXT32' len=33  weak
+  "__ZN8QStrList4readER11QDataStreamRPv"                                ; magicseg='TEXT32' len=36  weak
+  "__ZNK8QStrList5writeER11QDataStreamPv"                               ; magicseg='TEXT32' len=37  weak
+  "__ZN8QPtrListIcED1Ev"                                                ; magicseg='TEXT32' len=20  weak
+  "__ZN8QPtrListIcED0Ev"                                                ; magicseg='TEXT32' len=20  weak
+  "__ZN8QPtrListIcE10deleteItemEPv"                                     ; magicseg='TEXT32' len=31  weak
+  "__ZN19EditorInterfaceImplC2Ev"                                       ; magicseg='TEXT32' len=29
+  "__ZN19EditorInterfaceImplC1Ev"                                       ; magicseg='TEXT32' len=29
+  "__ZN19EditorInterfaceImplD2Ev"                                       ; magicseg='TEXT32' len=29
+  "__ZN19EditorInterfaceImplD1Ev"                                       ; magicseg='TEXT32' len=29
+  "__ZN19EditorInterfaceImplD0Ev"                                       ; magicseg='TEXT32' len=29
+  "__ZN19EditorInterfaceImpl14queryInterfaceERK5QUuidPP17QUnknownInterface"                 ; magicseg='TEXT32' len=71
+  "__ZN19EditorInterfaceImpl6editorEbP7QWidgetP17QUnknownInterface"     ; magicseg='TEXT32' len=63
+  "__ZN19EditorInterfaceImpl7setTextERK7QString"                        ; magicseg='TEXT32' len=44
+  "__ZNK19EditorInterfaceImpl4textEv"                                   ; magicseg='TEXT32' len=33
+  "__ZNK19EditorInterfaceImpl15isUndoAvailableEv"                       ; magicseg='TEXT32' len=45
+  "__ZNK19EditorInterfaceImpl15isRedoAvailableEv"                       ; magicseg='TEXT32' len=45
+  "__ZN19EditorInterfaceImpl4undoEv"                                    ; magicseg='TEXT32' len=32
+  "__ZN19EditorInterfaceImpl4redoEv"                                    ; magicseg='TEXT32' len=32
+  "__ZN19EditorInterfaceImpl3cutEv"                                     ; magicseg='TEXT32' len=31
+  "__ZN19EditorInterfaceImpl4copyEv"                                    ; magicseg='TEXT32' len=32
+  "__ZN19EditorInterfaceImpl5pasteEv"                                   ; magicseg='TEXT32' len=33
+  "__ZN19EditorInterfaceImpl9selectAllEv"                               ; magicseg='TEXT32' len=37
+  "__ZN19EditorInterfaceImpl4findERK7QStringbbbb"                       ; magicseg='TEXT32' len=45
+  "__ZN19EditorInterfaceImpl7replaceERK7QStringS2_bbbbb"                ; magicseg='TEXT32' len=52
+  "__ZN19EditorInterfaceImpl8gotoLineEi"                                ; magicseg='TEXT32' len=36
+  "__ZN19EditorInterfaceImpl6indentEv"                                  ; magicseg='TEXT32' len=34
+  "__ZN19EditorInterfaceImpl9splitViewEv"                               ; magicseg='TEXT32' len=37
+  "__ZN19EditorInterfaceImpl8scrollToERK7QStringS2_"                    ; magicseg='TEXT32' len=48
+  "__ZN19EditorInterfaceImpl10setContextEP7QObject"                     ; magicseg='TEXT32' len=47
+  "__ZN19EditorInterfaceImpl8setErrorEi"                                ; magicseg='TEXT32' len=36
+  "__ZN19EditorInterfaceImpl12readSettingsEv"                           ; magicseg='TEXT32' len=41
+  "__ZN19EditorInterfaceImpl19modificationChangedEb"                    ; magicseg='TEXT32' len=48
+  "__ZN19EditorInterfaceImpl11setModifiedEb"                            ; magicseg='TEXT32' len=40
+  "__ZNK19EditorInterfaceImpl10isModifiedEv"                            ; magicseg='TEXT32' len=40
+  "__ZN19EditorInterfaceImpl11eventFilterEP7QObjectP6QEvent"            ; magicseg='TEXT32' len=56
+  "__ZN19EditorInterfaceImpl6updateEv"                                  ; magicseg='TEXT32' len=34
+  "__ZNK19EditorInterfaceImpl8numLinesEv"                               ; magicseg='TEXT32' len=37
+  "__ZN19EditorInterfaceImpl15intervalChangedEv"                        ; magicseg='TEXT32' len=44
+  "__ZN19EditorInterfaceImpl18onBreakPointChangeEP7QObjectPKc"          ; magicseg='TEXT32' len=58
+  "__ZThn40_N19EditorInterfaceImpl14queryInterfaceERK5QUuidPP17QUnknownInterface"           ; magicseg='TEXT32' len=77  weak
+  "__ZThn40_N19EditorInterfaceImpl6editorEbP7QWidgetP17QUnknownInterface"                   ; magicseg='TEXT32' len=69  weak
+  "__ZThn40_N19EditorInterfaceImpl7setTextERK7QString"                  ; magicseg='TEXT32' len=50  weak
+  "__ZThn40_NK19EditorInterfaceImpl4textEv"                             ; magicseg='TEXT32' len=39  weak
+  "__ZThn40_NK19EditorInterfaceImpl15isUndoAvailableEv"                 ; magicseg='TEXT32' len=51  weak
+  "__ZThn40_NK19EditorInterfaceImpl15isRedoAvailableEv"                 ; magicseg='TEXT32' len=51  weak
+  "__ZThn40_N19EditorInterfaceImpl4undoEv"                              ; magicseg='TEXT32' len=38  weak
+  "__ZThn40_N19EditorInterfaceImpl4redoEv"                              ; magicseg='TEXT32' len=38  weak
+  "__ZThn40_N19EditorInterfaceImpl3cutEv"                               ; magicseg='TEXT32' len=37  weak
+  "__ZThn40_N19EditorInterfaceImpl4copyEv"                              ; magicseg='TEXT32' len=38  weak
+  "__ZThn40_N19EditorInterfaceImpl5pasteEv"                             ; magicseg='TEXT32' len=39  weak
+  "__ZThn40_N19EditorInterfaceImpl9selectAllEv"                         ; magicseg='TEXT32' len=43  weak
+  "__ZThn40_N19EditorInterfaceImpl4findERK7QStringbbbb"                 ; magicseg='TEXT32' len=51  weak
+  "__ZThn40_N19EditorInterfaceImpl7replaceERK7QStringS2_bbbbb"          ; magicseg='TEXT32' len=58  weak
+  "__ZThn40_N19EditorInterfaceImpl8gotoLineEi"                          ; magicseg='TEXT32' len=42  weak
+  "__ZThn40_N19EditorInterfaceImpl6indentEv"                            ; magicseg='TEXT32' len=40  weak
+  "__ZThn40_N19EditorInterfaceImpl9splitViewEv"                         ; magicseg='TEXT32' len=43  weak
+  "__ZThn40_N19EditorInterfaceImpl8scrollToERK7QStringS2_"              ; magicseg='TEXT32' len=54  weak
+  "__ZThn40_N19EditorInterfaceImpl10setContextEP7QObject"               ; magicseg='TEXT32' len=53  weak
+  "__ZThn40_N19EditorInterfaceImpl8setErrorEi"                          ; magicseg='TEXT32' len=42  weak
+  "__ZThn40_N19EditorInterfaceImpl12readSettingsEv"                     ; magicseg='TEXT32' len=47  weak
+  "__ZThn40_N19EditorInterfaceImpl11setModifiedEb"                      ; magicseg='TEXT32' len=46  weak
+  "__ZThn40_NK19EditorInterfaceImpl10isModifiedEv"                      ; magicseg='TEXT32' len=46  weak
+  "__ZThn40_NK19EditorInterfaceImpl8numLinesEv"                         ; magicseg='TEXT32' len=43  weak
+  "__ZThn40_N19EditorInterfaceImpl18onBreakPointChangeEP7QObjectPKc"    ; magicseg='TEXT32' len=64  weak
+  "__ZN21LanguageInterfaceImplC2EP17QUnknownInterface"                  ; magicseg='TEXT32' len=50
+  "__ZN21LanguageInterfaceImplC1EP17QUnknownInterface"                  ; magicseg='TEXT32' len=50
+  "__ZN21LanguageInterfaceImpl6addRefEv"                                ; magicseg='TEXT32' len=36
+  "__ZN21LanguageInterfaceImpl7releaseEv"                               ; magicseg='TEXT32' len=37
+  "__ZN21LanguageInterfaceImpl14queryInterfaceERK5QUuidPP17QUnknownInterface"               ; magicseg='TEXT32' len=73
+  "__ZNK21LanguageInterfaceImpl9functionsERK7QStringP10QValueListIN17LanguageInterface8FunctionEE"                        ; magicseg='TEXT32' len=94
+  "__ZN21LanguageInterfaceImpl19createFunctionStartERK7QStringS2_S2_S2_"                    ; magicseg='TEXT32' len=68
+  "__ZNK21LanguageInterfaceImpl11definitionsEv"                         ; magicseg='TEXT32' len=43
+  "__ZNK21LanguageInterfaceImpl17definitionEntriesERK7QStringP17QUnknownInterface"          ; magicseg='TEXT32' len=78
+  "__ZN21LanguageInterfaceImpl20setDefinitionEntriesERK7QStringRK11QStringListP17QUnknownInterface"                       ; magicseg='TEXT32' len=95
+  "__ZN21LanguageInterfaceImpl19createEmptyFunctionEv"                  ; magicseg='TEXT32' len=50
+  "__ZNK21LanguageInterfaceImpl8supportsEN17LanguageInterface7SupportE"                     ; magicseg='TEXT32' len=67
+  "__ZNK21LanguageInterfaceImpl14fileFilterListEv"                      ; magicseg='TEXT32' len=46
+  "__ZNK21LanguageInterfaceImpl17fileExtensionListEv"                   ; magicseg='TEXT32' len=49
+  "__ZNK21LanguageInterfaceImpl22projectKeyForExtensionERK7QString"     ; magicseg='TEXT32' len=63
+  "__ZNK21LanguageInterfaceImpl17sourceProjectKeysER11QStringList"      ; magicseg='TEXT32' len=62
+  "__ZN21LanguageInterfaceImpl10canConnectERK7QStringS2_"               ; magicseg='TEXT32' len=53
+  "__ZN21LanguageInterfaceImpl12loadFormCodeERK7QStringS2_R10QValueListIN17LanguageInterface8FunctionEER11QStringListRS3_INS4_10ConnectionEE"                  ; magicseg='TEXT32' len=137
+  "__ZNK21LanguageInterfaceImpl18preferedExtensionsER4QMapI7QStringS1_E"                    ; magicseg='TEXT32' len=68
+  "__ZNK21LanguageInterfaceImpl11signalNamesEP7QObject"                 ; magicseg='TEXT32' len=51
+  "__ZTV21LanguageInterfaceImpl"                                        ; magicseg='TEXT32' len=28  weak
+  "__ZN17QValueListPrivateI11CppFunctionEC1Ev"                          ; magicseg='TEXT32' len=42  weak
+  "__ZN17QValueListPrivateIN17LanguageInterface8FunctionEE6insertE18QValueListIteratorIS1_ERKS1_"                         ; magicseg='TEXT32' len=93  weak
+  "__ZN10QValueListIN17LanguageInterface8FunctionEE14detachInternalEv"                      ; magicseg='TEXT32' len=66  weak
+  "__ZN17QValueListPrivateI11CppFunctionED1Ev"                          ; magicseg='TEXT32' len=42  weak
+  "__ZN10QValueListI11CppFunctionE14detachInternalEv"                   ; magicseg='TEXT32' len=49  weak
+  "__ZTV11CheckObject"                                                  ; magicseg='TEXT32' len=18  weak
+  "__ZN4QMapI7QStringS0_E6insertERKS0_S3_b"                             ; magicseg='TEXT32' len=39  weak
+  "__ZN17QValueListPrivateI11CppFunctionEC1ERKS1_"                      ; magicseg='TEXT32' len=46  weak
+  "__ZN17QValueListPrivateIN17LanguageInterface8FunctionEEC1ERKS2_"     ; magicseg='TEXT32' len=63  weak
+  "__ZN11QMapPrivateI7QStringS0_E12insertSingleERKS0_"                  ; magicseg='TEXT32' len=50  weak
+  "__ZN4QMapI7QStringS0_E14detachInternalEv"                            ; magicseg='TEXT32' len=40  weak
+  "__ZN17QValueListPrivateI11CppFunctionE6insertE18QValueListIteratorIS0_ERKS0_"            ; magicseg='TEXT32' len=76  weak
+  "__ZN11QMapPrivateI7QStringS0_E6insertEP12QMapNodeBaseS3_RKS0_"       ; magicseg='TEXT32' len=61  weak
+  "__ZN12QMapIteratorI7QStringS0_E3decEv"                               ; magicseg='TEXT32' len=37  weak
+  "__ZN11QMapPrivateI7QStringS0_EC1EPKS1_"                              ; magicseg='TEXT32' len=38  weak
+  "__ZN11QMapPrivateI7QStringS0_E4copyEP8QMapNodeIS0_S0_E"              ; magicseg='TEXT32' len=54  weak
+  "__ZNK7QObject10metaObjectEv"                                         ; magicseg='TEXT32' len=27  weak
+  "__ZN11CheckObjectD1Ev"                                               ; magicseg='TEXT32' len=21  weak
+  "__ZN11CheckObjectD0Ev"                                               ; magicseg='TEXT32' len=21  weak
+  "__ZNK21LanguageInterfaceImpl11connectionsERK7QStringP10QValueListIN17LanguageInterface10ConnectionEE"                  ; magicseg='TEXT32' len=100  weak
+  "__ZN21LanguageInterfaceImpl15createArgumentsERK7QString"             ; magicseg='TEXT32' len=55  weak
+  "__ZN21LanguageInterfaceImpl14cleanSignatureERK7QString"              ; magicseg='TEXT32' len=54  weak
+  "__ZNK21LanguageInterfaceImpl17formCodeExtensionEv"                   ; magicseg='TEXT32' len=49  weak
+  "__ZN21LanguageInterfaceImpl15compressProjectERK7QStringS2_b"         ; magicseg='TEXT32' len=59  weak
+  "__ZN21LanguageInterfaceImpl17uncompressProjectERK7QStringS2_"        ; magicseg='TEXT32' len=60  weak
+  "__ZNK21LanguageInterfaceImpl9aboutTextEv"                            ; magicseg='TEXT32' len=40  weak
+  "__ZN21LanguageInterfaceImpl13addConnectionERK7QStringS2_S2_S2_PS0_"                      ; magicseg='TEXT32' len=66  weak
+  "__ZN21LanguageInterfaceImpl16removeConnectionERK7QStringS2_S2_S2_PS0_"                   ; magicseg='TEXT32' len=69  weak
+  "__ZN15CommonInterfaceC2Ev"                                           ; magicseg='TEXT32' len=25
+  "__ZN15CommonInterfaceC1Ev"                                           ; magicseg='TEXT32' len=25
+  "__ZN15CommonInterfaceD2Ev"                                           ; magicseg='TEXT32' len=25
+  "__ZN15CommonInterfaceD1Ev"                                           ; magicseg='TEXT32' len=25
+  "__ZN15CommonInterfaceD0Ev"                                           ; magicseg='TEXT32' len=25
+  "__ZN15CommonInterface14queryInterfaceERK5QUuidPP17QUnknownInterface"                     ; magicseg='TEXT32' len=67
+  "qt_ucm_query_verification_data"                                      ; magicseg='TEXT32' len=30
+  "ucm_instantiate"                                                     ; magicseg='TEXT32' len=15
+  "__ZTV15CommonInterface"                                              ; magicseg='TEXT32' len=22  weak
+  "__ZN15CommonInterface6addRefEv"                                      ; magicseg='TEXT32' len=30  weak
+  "__ZN15CommonInterface7releaseEv"                                     ; magicseg='TEXT32' len=31  weak
+  "__ZNK15CommonInterface4nameEv"                                       ; magicseg='TEXT32' len=29  weak
+  "__ZNK15CommonInterface11descriptionEv"                               ; magicseg='TEXT32' len=37  weak
+  "__ZNK15CommonInterface6authorEv"                                     ; magicseg='TEXT32' len=31  weak
+  "__ZNK15CommonInterface7versionEv"                                    ; magicseg='TEXT32' len=32  weak
+  "__ZN23PreferenceInterfaceImplC2EP17QUnknownInterface"                ; magicseg='TEXT32' len=52
+  "__ZN23PreferenceInterfaceImplC1EP17QUnknownInterface"                ; magicseg='TEXT32' len=52
+  "__ZN23PreferenceInterfaceImplD2Ev"                                   ; magicseg='TEXT32' len=33
+  "__ZN23PreferenceInterfaceImplD1Ev"                                   ; magicseg='TEXT32' len=33
+  "__ZN23PreferenceInterfaceImplD0Ev"                                   ; magicseg='TEXT32' len=33
+  "__ZN23PreferenceInterfaceImpl6addRefEv"                              ; magicseg='TEXT32' len=38
+  "__ZN23PreferenceInterfaceImpl7releaseEv"                             ; magicseg='TEXT32' len=39
+  "__ZN23PreferenceInterfaceImpl14queryInterfaceERK5QUuidPP17QUnknownInterface"             ; magicseg='TEXT32' len=75
+  "__ZN23PreferenceInterfaceImpl10preferenceEv"                         ; magicseg='TEXT32' len=43
+  "__ZN23PreferenceInterfaceImpl22deletePreferenceObjectEPN19PreferenceInterface10PreferenceE"                            ; magicseg='TEXT32' len=90
+  "__ZTV23PreferenceInterfaceImpl"                                      ; magicseg='TEXT32' len=30  weak
+  "__ZN23PreferenceInterfaceImpl9connectToEP17QUnknownInterface"        ; magicseg='TEXT32' len=60  weak
+  "__ZNK11CppFunction9prototypeEv"                                      ; magicseg='TEXT32' len=30
+  "__Z19extractCppFunctionsRK7QStringP10QValueListI11CppFunctionE"      ; magicseg='TEXT32' len=62
+  "__Z17canonicalCppProtoRK7QString"                                    ; magicseg='TEXT32' len=32
+  "__ZN16CppEditorBrowserC2EP6Editor"                                   ; magicseg='TEXT32' len=33
+  "__ZN16CppEditorBrowserC1EP6Editor"                                   ; magicseg='TEXT32' len=33
+  "__ZN16CppEditorBrowser8showHelpERK7QString"                          ; magicseg='TEXT32' len=42
+  "__Z7qt_castIP11QMainWindowET_PK7QObject"                             ; magicseg='TEXT32' len=39  weak
+  "__ZN28ProjectSettingsInterfaceImplC2EP17QUnknownInterface"           ; magicseg='TEXT32' len=57
+  "__ZN28ProjectSettingsInterfaceImplC1EP17QUnknownInterface"           ; magicseg='TEXT32' len=57
+  "__ZN28ProjectSettingsInterfaceImpl6addRefEv"                         ; magicseg='TEXT32' len=43
+  "__ZN28ProjectSettingsInterfaceImpl7releaseEv"                        ; magicseg='TEXT32' len=44
+  "__ZN28ProjectSettingsInterfaceImpl14projectSettingEv"                ; magicseg='TEXT32' len=52
+  "__ZNK28ProjectSettingsInterfaceImpl15projectSettingsEv"              ; magicseg='TEXT32' len=54
+  "__ZN28ProjectSettingsInterfaceImpl9connectToEP17QUnknownInterface"                       ; magicseg='TEXT32' len=65
+  "__ZN28ProjectSettingsInterfaceImpl27deleteProjectSettingsObjectEPN24ProjectSettingsInterface15ProjectSettingsE"        ; magicseg='TEXT32' len=110
+  "__ZN28ProjectSettingsInterfaceImpl14queryInterfaceERK5QUuidPP17QUnknownInterface"        ; magicseg='TEXT32' len=80
+  "__ZTV28ProjectSettingsInterfaceImpl"                                 ; magicseg='TEXT32' len=35  weak
+  "__ZN27SourceTemplateInterfaceImplC2Ev"                               ; magicseg='TEXT32' len=37
+  "__ZN27SourceTemplateInterfaceImplC1Ev"                               ; magicseg='TEXT32' len=37
+  "__ZN27SourceTemplateInterfaceImpl14queryInterfaceERK5QUuidPP17QUnknownInterface"         ; magicseg='TEXT32' len=79
+  "__ZNK27SourceTemplateInterfaceImpl11featureListEv"                   ; magicseg='TEXT32' len=49
+  "__ZN27SourceTemplateInterfaceImpl6createERK7QStringP17QUnknownInterface"                 ; magicseg='TEXT32' len=71
+  "__ZNK27SourceTemplateInterfaceImpl8languageERK7QString"              ; magicseg='TEXT32' len=54
+  "__ZTV27SourceTemplateInterfaceImpl"                                  ; magicseg='TEXT32' len=34  weak
+  "__ZN27SourceTemplateInterfaceImpl6addRefEv"                          ; magicseg='TEXT32' len=42  weak
+  "__ZN27SourceTemplateInterfaceImpl7releaseEv"                         ; magicseg='TEXT32' len=43  weak
+  "__ZN18CppProjectSettings6reInitEP17QUnknownInterface"                ; magicseg='TEXT32' len=52
+  "__ZN18CppProjectSettings4saveEP17QUnknownInterface"                  ; magicseg='TEXT32' len=50
+  "__ZN18CppProjectSettings13configChangedERK7QString"                  ; magicseg='TEXT32' len=50
+  "__ZN18CppProjectSettings11libsChangedERK7QString"                    ; magicseg='TEXT32' len=48
+  "__ZN18CppProjectSettings14definesChangedERK7QString"                 ; magicseg='TEXT32' len=51
+  "__ZN18CppProjectSettings15includesChangedERK7QString"                ; magicseg='TEXT32' len=52
+  "__ZN18CppProjectSettings21configPlatformChangedERK7QString"          ; magicseg='TEXT32' len=58
+  "__ZN18CppProjectSettings19libsPlatformChangedERK7QString"            ; magicseg='TEXT32' len=56
+  "__ZN18CppProjectSettings22definesPlatformChangedERK7QString"         ; magicseg='TEXT32' len=59
+  "__ZN18CppProjectSettings23includesPlatformChangedERK7QString"        ; magicseg='TEXT32' len=60
+  "__ZN18CppProjectSettingsC2EP7QWidgetPKcj"                            ; magicseg='TEXT32' len=40
+  "__ZN18CppProjectSettings14languageChangeEv"                          ; magicseg='TEXT32' len=42
+  "__ZN18CppProjectSettingsC1EP7QWidgetPKcj"                            ; magicseg='TEXT32' len=40
+  "__ZN18CppProjectSettingsD2Ev"                                        ; magicseg='TEXT32' len=28
+  "__ZN18CppProjectSettingsD1Ev"                                        ; magicseg='TEXT32' len=28
+  "__ZN18CppProjectSettingsD0Ev"                                        ; magicseg='TEXT32' len=28
+  "__ZN4QMapI7QStringS0_E5clearEv"                                      ; magicseg='TEXT32' len=30  weak
+  "__ZN4QMapI7QStringS0_E6removeERKS0_"                                 ; magicseg='TEXT32' len=35  weak
+  "__ZN4QMapI7QStringS0_EixERKS0_"                                      ; magicseg='TEXT32' len=30  weak
+  "__ZN11QMapPrivateI7QStringS0_EC1Ev"                                  ; magicseg='TEXT32' len=34  weak
+  "__ZN11QMapPrivateI7QStringS0_E5clearEv"                              ; magicseg='TEXT32' len=38  weak
+  "__ZThn40_N18CppProjectSettingsD1Ev"                                  ; magicseg='TEXT32' len=34  weak
+  "__ZThn40_N18CppProjectSettingsD0Ev"                                  ; magicseg='TEXT32' len=34  weak
+  "__ZNK11QMapPrivateI7QStringS0_E4findERKS0_"                          ; magicseg='TEXT32' len=42  weak
+  "__ZN11QMapPrivateI7QStringS0_E5clearEP8QMapNodeIS0_S0_E"             ; magicseg='TEXT32' len=55  weak
+  "__ZN11CppMainFile4initEv"                                            ; magicseg='TEXT32' len=24
+  "__ZN11CppMainFile5setupEP17QUnknownInterface"                        ; magicseg='TEXT32' len=44
+  "__ZN11CppMainFile14updateOkButtonEv"                                 ; magicseg='TEXT32' len=35
+  "__ZN11CppMainFileC2EP7QWidgetPKcbj"                                  ; magicseg='TEXT32' len=34
+  "__ZN11CppMainFile14languageChangeEv"                                 ; magicseg='TEXT32' len=35
+  "__ZN11CppMainFileC1EP7QWidgetPKcbj"                                  ; magicseg='TEXT32' len=34
+  "__ZN11CppMainFileD2Ev"                                               ; magicseg='TEXT32' len=21
+  "__ZN11CppMainFileD1Ev"                                               ; magicseg='TEXT32' len=21
+  "__ZN11CppMainFileD0Ev"                                               ; magicseg='TEXT32' len=21
+  "__ZThn40_N11CppMainFileD1Ev"                                         ; magicseg='TEXT32' len=27  weak
+  "__ZThn40_N11CppMainFileD0Ev"                                         ; magicseg='TEXT32' len=27  weak
+  "__ZNK9CppEditor9classNameEv"                                         ; magicseg='TEXT32' len=27
+  "__ZN9CppEditor2trEPKcS1_"                                            ; magicseg='TEXT32' len=24
+  "__ZN9CppEditor6trUtf8EPKcS1_"                                        ; magicseg='TEXT32' len=28
+  "__ZN9CppEditor16staticMetaObjectEv"                                  ; magicseg='TEXT32' len=34
+  "__ZN9CppEditor7qt_castEPKc"                                          ; magicseg='TEXT32' len=26
+  "__ZN9CppEditor9qt_invokeEiP8QUObject"                                ; magicseg='TEXT32' len=36
+  "__ZN9CppEditor7qt_emitEiP8QUObject"                                  ; magicseg='TEXT32' len=34
+  "__ZN9CppEditor11qt_propertyEiiP8QVariant"                            ; magicseg='TEXT32' len=40
+  "__ZN9CppEditor18qt_static_propertyEP7QObjectiiP8QVariant"            ; magicseg='TEXT32' len=56
+  "__ZTV9CppEditor"                                                     ; magicseg='TEXT32' len=15  weak
+  "__ZNK9CppEditor10metaObjectEv"                                       ; magicseg='TEXT32' len=29  weak
+  "__ZN7QWidget11setGeometryERK5QRect"                                  ; magicseg='TEXT32' len=34  weak
+  "__ZN7QWidget9setWStateEj"                                            ; magicseg='TEXT32' len=24  weak
+  "__ZN7QWidget9setWFlagsEj"                                            ; magicseg='TEXT32' len=24  weak
+  "__ZN9QTextEdit6zoomInEv"                                             ; magicseg='TEXT32' len=23  weak
+  "__ZN9QTextEdit7zoomOutEv"                                            ; magicseg='TEXT32' len=24  weak
+  "__ZN6Editor11placeCursorERK6QPointP11QTextCursor"                    ; magicseg='TEXT32' len=48  weak
+  "__ZN9QTextEdit14setCurrentFontERK5QFont"                             ; magicseg='TEXT32' len=39  weak
+  "__ZN9QTextEdit16setOverwriteModeEb"                                  ; magicseg='TEXT32' len=34  weak
+  "__ZNK9QTextEdit12linksEnabledEv"                                     ; magicseg='TEXT32' len=31  weak
+  "__ZN9QTextEdit15emitHighlightedERK7QString"                          ; magicseg='TEXT32' len=42  weak
+  "__ZN9QTextEdit15emitLinkClickedERK7QString"                          ; magicseg='TEXT32' len=42  weak
+  "__ZN9CppEditor17completionManagerEv"                                 ; magicseg='TEXT32' len=35  weak
+  "__ZN9CppEditor14browserManagerEv"                                    ; magicseg='TEXT32' len=32  weak
+  "__ZNK6Editor14supportsErrorsEv"                                      ; magicseg='TEXT32' len=30  weak
+  "__ZNK9CppEditor19supportsBreakPointsEv"                              ; magicseg='TEXT32' len=38  weak
+  "__ZN6Editor19makeFunctionVisibleEP14QTextParagraph"                  ; magicseg='TEXT32' len=50  weak
+  "__ZNK19CppEditorCompletion9classNameEv"                              ; magicseg='TEXT32' len=38
+  "__ZN19CppEditorCompletion2trEPKcS1_"                                 ; magicseg='TEXT32' len=35
+  "__ZN19CppEditorCompletion6trUtf8EPKcS1_"                             ; magicseg='TEXT32' len=39
+  "__ZN19CppEditorCompletion16staticMetaObjectEv"                       ; magicseg='TEXT32' len=45
+  "__ZN19CppEditorCompletion7qt_castEPKc"                               ; magicseg='TEXT32' len=37
+  "__ZN19CppEditorCompletion9qt_invokeEiP8QUObject"                     ; magicseg='TEXT32' len=47
+  "__ZN19CppEditorCompletion7qt_emitEiP8QUObject"                       ; magicseg='TEXT32' len=45
+  "__ZN19CppEditorCompletion11qt_propertyEiiP8QVariant"                 ; magicseg='TEXT32' len=51
+  "__ZN19CppEditorCompletion18qt_static_propertyEP7QObjectiiP8QVariant"                     ; magicseg='TEXT32' len=67
+  "__ZTV19CppEditorCompletion"                                          ; magicseg='TEXT32' len=26  weak
+  "__ZNK19CppEditorCompletion10metaObjectEv"                            ; magicseg='TEXT32' len=40  weak
+  "__ZN19CppEditorCompletionD1Ev"                                       ; magicseg='TEXT32' len=29  weak
+  "__ZN19CppEditorCompletionD0Ev"                                       ; magicseg='TEXT32' len=29  weak
+  "__ZNK19EditorInterfaceImpl9classNameEv"                              ; magicseg='TEXT32' len=38
+  "__ZN19EditorInterfaceImpl2trEPKcS1_"                                 ; magicseg='TEXT32' len=35
+  "__ZN19EditorInterfaceImpl6trUtf8EPKcS1_"                             ; magicseg='TEXT32' len=39
+  "__ZN19EditorInterfaceImpl16staticMetaObjectEv"                       ; magicseg='TEXT32' len=45
+  "__ZN19EditorInterfaceImpl7qt_castEPKc"                               ; magicseg='TEXT32' len=37
+  "__ZN19EditorInterfaceImpl9qt_invokeEiP8QUObject"                     ; magicseg='TEXT32' len=47
+  "__ZN19EditorInterfaceImpl7qt_emitEiP8QUObject"                       ; magicseg='TEXT32' len=45
+  "__ZN19EditorInterfaceImpl11qt_propertyEiiP8QVariant"                 ; magicseg='TEXT32' len=51
+  "__ZN19EditorInterfaceImpl18qt_static_propertyEP7QObjectiiP8QVariant"                     ; magicseg='TEXT32' len=67
+  "__ZTV19EditorInterfaceImpl"                                          ; magicseg='TEXT32' len=26  weak
+  "__ZNK19EditorInterfaceImpl10metaObjectEv"                            ; magicseg='TEXT32' len=40  weak
+  "__ZN19EditorInterfaceImpl6addRefEv"                                  ; magicseg='TEXT32' len=34  weak
+  "__ZN19EditorInterfaceImpl7releaseEv"                                 ; magicseg='TEXT32' len=35  weak
+  "__ZN19EditorInterfaceImpl7setStepEi"                                 ; magicseg='TEXT32' len=35  weak
+  "__ZN19EditorInterfaceImpl9clearStepEv"                               ; magicseg='TEXT32' len=37  weak
+  "__ZN19EditorInterfaceImpl7setModeEN15EditorInterface4ModeE"          ; magicseg='TEXT32' len=58  weak
+  "__ZNK19EditorInterfaceImpl11breakPointsER10QValueListIjE"            ; magicseg='TEXT32' len=56  weak
+  "__ZN19EditorInterfaceImpl14setBreakPointsERK10QValueListIjE"         ; magicseg='TEXT32' len=59  weak
+  "__ZN19EditorInterfaceImpl15clearStackFrameEv"                        ; magicseg='TEXT32' len=44  weak
+  "__ZN19EditorInterfaceImpl13setStackFrameEi"                          ; magicseg='TEXT32' len=42  weak
+  "__ZThn40_N19EditorInterfaceImpl6addRefEv"                            ; magicseg='TEXT32' len=40  weak
+  "__ZThn40_N19EditorInterfaceImpl7releaseEv"                           ; magicseg='TEXT32' len=41  weak
+  "__ZThn40_N19EditorInterfaceImpl7setStepEi"                           ; magicseg='TEXT32' len=41  weak
+  "__ZThn40_N19EditorInterfaceImpl13setStackFrameEi"                    ; magicseg='TEXT32' len=48  weak
+  "__ZThn40_N19EditorInterfaceImpl9clearStepEv"                         ; magicseg='TEXT32' len=43  weak
+  "__ZThn40_N19EditorInterfaceImpl15clearStackFrameEv"                  ; magicseg='TEXT32' len=50  weak
+  "__ZThn40_NK19EditorInterfaceImpl11breakPointsER10QValueListIjE"      ; magicseg='TEXT32' len=62  weak
+  "__ZThn40_N19EditorInterfaceImpl14setBreakPointsERK10QValueListIjE"                       ; magicseg='TEXT32' len=65  weak
+  "__ZThn40_N19EditorInterfaceImpl7setModeEN15EditorInterface4ModeE"    ; magicseg='TEXT32' len=64  weak
+  "__ZNK16CppEditorBrowser9classNameEv"                                 ; magicseg='TEXT32' len=35
+  "__ZN16CppEditorBrowser2trEPKcS1_"                                    ; magicseg='TEXT32' len=32
+  "__ZN16CppEditorBrowser6trUtf8EPKcS1_"                                ; magicseg='TEXT32' len=36
+  "__ZN16CppEditorBrowser16staticMetaObjectEv"                          ; magicseg='TEXT32' len=42
+  "__ZN16CppEditorBrowser7qt_castEPKc"                                  ; magicseg='TEXT32' len=34
+  "__ZN16CppEditorBrowser9qt_invokeEiP8QUObject"                        ; magicseg='TEXT32' len=44
+  "__ZN16CppEditorBrowser7qt_emitEiP8QUObject"                          ; magicseg='TEXT32' len=42
+  "__ZN16CppEditorBrowser11qt_propertyEiiP8QVariant"                    ; magicseg='TEXT32' len=48
+  "__ZN16CppEditorBrowser18qt_static_propertyEP7QObjectiiP8QVariant"    ; magicseg='TEXT32' len=64
+  "__ZTV16CppEditorBrowser"                                             ; magicseg='TEXT32' len=23  weak
+  "__ZNK16CppEditorBrowser10metaObjectEv"                               ; magicseg='TEXT32' len=37  weak
+  "__ZN16CppEditorBrowserD1Ev"                                          ; magicseg='TEXT32' len=26  weak
+  "__ZN16CppEditorBrowserD0Ev"                                          ; magicseg='TEXT32' len=26  weak
+  "__ZNK18CppProjectSettings9classNameEv"                               ; magicseg='TEXT32' len=37
+  "__ZN18CppProjectSettings2trEPKcS1_"                                  ; magicseg='TEXT32' len=34
+  "__ZN18CppProjectSettings6trUtf8EPKcS1_"                              ; magicseg='TEXT32' len=38
+  "__ZN18CppProjectSettings16staticMetaObjectEv"                        ; magicseg='TEXT32' len=44
+  "__ZN18CppProjectSettings7qt_castEPKc"                                ; magicseg='TEXT32' len=36
+  "__ZN18CppProjectSettings9qt_invokeEiP8QUObject"                      ; magicseg='TEXT32' len=46
+  "__ZN18CppProjectSettings7qt_emitEiP8QUObject"                        ; magicseg='TEXT32' len=44
+  "__ZN18CppProjectSettings11qt_propertyEiiP8QVariant"                  ; magicseg='TEXT32' len=50
+  "__ZN18CppProjectSettings18qt_static_propertyEP7QObjectiiP8QVariant"                      ; magicseg='TEXT32' len=66
+  "__ZTV18CppProjectSettings"                                           ; magicseg='TEXT32' len=25  weak
+  "__ZNK18CppProjectSettings10metaObjectEv"                             ; magicseg='TEXT32' len=39  weak
+  "__ZNK11CppMainFile9classNameEv"                                      ; magicseg='TEXT32' len=30
+  "__ZN11CppMainFile2trEPKcS1_"                                         ; magicseg='TEXT32' len=27
+  "__ZN11CppMainFile6trUtf8EPKcS1_"                                     ; magicseg='TEXT32' len=31
+  "__ZN11CppMainFile16staticMetaObjectEv"                               ; magicseg='TEXT32' len=37
+  "__ZN11CppMainFile7qt_castEPKc"                                       ; magicseg='TEXT32' len=29
+  "__ZN11CppMainFile9qt_invokeEiP8QUObject"                             ; magicseg='TEXT32' len=39
+  "__ZN11CppMainFile7qt_emitEiP8QUObject"                               ; magicseg='TEXT32' len=37
+  "__ZN11CppMainFile11qt_propertyEiiP8QVariant"                         ; magicseg='TEXT32' len=43
+  "__ZN11CppMainFile18qt_static_propertyEP7QObjectiiP8QVariant"         ; magicseg='TEXT32' len=59
+  "__ZTV11CppMainFile"                                                  ; magicseg='TEXT32' len=18  weak
+  "__ZNK11CppMainFile10metaObjectEv"                                    ; magicseg='TEXT32' len=32  weak
+

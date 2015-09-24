@@ -1,0 +1,5 @@
+-I..\..\interfaces
+-IC:\200\trunk\include
+-IC:\200\trunk\tools\designer\plugins\glade
+-Itmp\moc\release_mt_shared
+-IC:\200\trunk\mkspecs\os2-g++

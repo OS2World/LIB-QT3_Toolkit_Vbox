@@ -1,0 +1,163 @@
+/****************************************************************************
+** QWarpTabPanelHeader meta object code from reading C++ file 'qwarp4style.cpp'
+**
+** Created: Sun Nov 2 20:29:33 2014
+**      by: The Qt MOC ($Id: moc_yacc.cpp 2 2005-11-16 15:49:26Z dmik $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.1. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *QWarpTabPanelHeader::className() const
+{
+    return "QWarpTabPanelHeader";
+}
+
+QMetaObject *QWarpTabPanelHeader::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_QWarpTabPanelHeader( "QWarpTabPanelHeader", &QWarpTabPanelHeader::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString QWarpTabPanelHeader::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "QWarpTabPanelHeader", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString QWarpTabPanelHeader::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "QWarpTabPanelHeader", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* QWarpTabPanelHeader::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QWidget::staticMetaObject();
+    metaObj = QMetaObject::new_metaobject(
+	"QWarpTabPanelHeader", parentObject,
+	0, 0,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_QWarpTabPanelHeader.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* QWarpTabPanelHeader::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "QWarpTabPanelHeader" ) )
+	return this;
+    return QWidget::qt_cast( clname );
+}
+
+bool QWarpTabPanelHeader::qt_invoke( int _id, QUObject* _o )
+{
+    return QWidget::qt_invoke(_id,_o);
+}
+
+bool QWarpTabPanelHeader::qt_emit( int _id, QUObject* _o )
+{
+    return QWidget::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool QWarpTabPanelHeader::qt_property( int id, int f, QVariant* v)
+{
+    return QWidget::qt_property( id, f, v);
+}
+
+bool QWarpTabPanelHeader::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES
+
+
+const char *QWarpMainWindowLayouter::className() const
+{
+    return "QWarpMainWindowLayouter";
+}
+
+QMetaObject *QWarpMainWindowLayouter::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_QWarpMainWindowLayouter( "QWarpMainWindowLayouter", &QWarpMainWindowLayouter::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString QWarpMainWindowLayouter::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "QWarpMainWindowLayouter", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString QWarpMainWindowLayouter::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "QWarpMainWindowLayouter", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* QWarpMainWindowLayouter::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QWidget::staticMetaObject();
+    metaObj = QMetaObject::new_metaobject(
+	"QWarpMainWindowLayouter", parentObject,
+	0, 0,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_QWarpMainWindowLayouter.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* QWarpMainWindowLayouter::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "QWarpMainWindowLayouter" ) )
+	return this;
+    return QWidget::qt_cast( clname );
+}
+
+bool QWarpMainWindowLayouter::qt_invoke( int _id, QUObject* _o )
+{
+    return QWidget::qt_invoke(_id,_o);
+}
+
+bool QWarpMainWindowLayouter::qt_emit( int _id, QUObject* _o )
+{
+    return QWidget::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool QWarpMainWindowLayouter::qt_property( int id, int f, QVariant* v)
+{
+    return QWidget::qt_property( id, f, v);
+}
+
+bool QWarpMainWindowLayouter::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css"
+href="file:qtos2-xxe.css"
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <link href="qtos2-www.css" rel="stylesheet" type="text/css" />
+
+    <title>Qt Toolkit Version 3 for OS/2</title>
+  </head>
+
+  <body id="install">
+    <h1><a name="top">Installation</a></h1>
+
+    <p>This section describes how to install, configure and build the Qt
+    Toolkit under OS/2.</p>
+
+    <h2><a name="Requirements">Requirements</a></h2>
+
+    <p>In order to build the Qt Toolkit Version 3 under OS/2 or eComStation
+    you need the following tools:</p>
+
+    <ul>
+      <li>Compiler: <a
+      href="http://www.innotek.de/products/gccos2/download/gccos2download_e.html">Innotek
+      GCC 3.3.2 for OS/2 beta 4</a> updated to <a
+      href="http://www.innotek.de/products/gccos2/download/gccos2download_e.html">CSD1</a>.<br />Download
+      and install according to the installation instructions
+      (<kbd>usr\doc\GCC-3.2.2\Install.os2</kbd>).</li>
+
+      <li>Linker: IBM ILINK 3.08, a part of the IBM Visual Age C/C++ 3
+      distribution updated to version 3.08.<br />You need only two files,
+      <kbd>BIN\ILINK.EXE</kbd> and <kbd>DLL\CPPOM30.DLL</kbd>. If you already
+      have IBM Visual Age C/C++ installed, you don't need to do anything else.
+      Otherwise, copy the above two files to some directory.<br /><b>Note:</b>
+      A separate distribution of IBM ILINK 5.0 available through the software
+      subscription will not work, because it has some serious bugs related to
+      exporting large amounts of symbols.</li>
+
+      <li>Make utility: <a
+      href="http://www.unixos2.org/sw/pub/binary/make/make-3_81beta1-bin-static.zip">GNU
+      Make 3.81beta1</a>. Just unzip the file <kbd>make.exe</kbd> to some
+      directory.</li>
+    </ul>
+
+    <p>Check that the above tooks work, and then proceed to the following
+    step.</p>
+
+    <h2><a name="BuildingQt">Building Qt</a></h2>
+
+    <ol>
+      <li>Unzip the contents of the Qt for OS/2 distribution archive to some
+      directory.</li>
+
+      <li>Go to that directory, run the <kbd>configure.cmd</kbd> script and
+      follow on-screen instructions.<br />You will be prompted to enter
+      directories where the script will search for the required tools and to
+      configure the library type you want to build. Note that it is not
+      necessary to remember a full path to a tool -- you can specify an
+      upper-level directory or simply a root directory of the drive you have
+      installed the tools onto.</li>
+
+      <li>Wait until the compilation process is finished.</li>
+    </ol>
+
+    <p>If the compilation process fails, you can inspect the file
+    <kbd>build.log</kbd> created in the installation directory.</p>
+
+    <p>After the Qt library is successfully compiled and built, it is
+    recommended that you place the <kbd>qt.cmd</kbd> script that was generated
+    in the installation directory to some of the directories listed in your
+    <kbd>PATH</kbd> environment variable and use it as a command line wrapper
+    to work with the Qt Toolkit: run tutorials and examples, compile your own
+    programs, etc. The script sets up the environment necessary for the Qt
+    Toolkit and for all other tools and simply passes all command line
+    arguments to the command line interpreter. For example, in order to run
+    the last Qt tutorial application, go to the subdirectory
+    <kbd>tutorial\t14</kbd> located inside the installation directory and
+    execute the following command (provided that you have already placed
+    <kbd>qt.cmd</kbd> somewhere in the <kbd>PATH</kbd>):</p>
+
+    <pre>qt.cmd t14.exe</pre>
+
+    <p>To recompile the tutorial you can type</p>
+
+    <pre>qt.cmd make</pre>
+  </body>
+</html>

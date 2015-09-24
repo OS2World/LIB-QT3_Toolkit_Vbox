@@ -1,0 +1,369 @@
+** EXPERIMENTAL (HLL) ** Open Watcom Linker Version 1.6beta1 Limited Availability
+Portions Copyright (c) 1985-2002 Sybase, Inc. All Rights Reserved.
+Created on:       14/11/02 20:40:45
+Executable Image: ..\..\..\bin\qm2ts.exe
+creating an OS/2 EMX executable
+
+
+                        +------------+
+                        |   Groups   |
+                        +------------+
+
+Group                           Address              Size
+=====                           =======              ====
+
+CGROUP                          0001:00000000        000053e0
+DGROUP                          0002:00000000        000000d0
+
+
+
+                        +--------------+
+                        |   Segments   |
+                        +--------------+
+
+Segment                Class          Group          Address         Size
+=======                =====          =====          =======         ====
+
+TEXT32                 CODE           CGROUP         0001:00000000   000053e0
+________TEXT           CODE           CGROUP         0001:000053e0   00000000
+DATA32                 DATA           DGROUP         0002:00000000   00000050
+SET1__os2dll           DATA           DGROUP         0002:00000050   00000004
+SET2__os2dll           DATA           DGROUP         0002:00000054   00000000
+SET3__os2dll           DATA           DGROUP         0002:00000054   00000004
+SET1___CTOR_LIST__     DATA           DGROUP         0002:00000058   00000004
+SET2___CTOR_LIST__     DATA           DGROUP         0002:0000005c   00000000
+SET3___CTOR_LIST__     DATA           DGROUP         0002:0000005c   00000004
+SET1___DTOR_LIST__     DATA           DGROUP         0002:00000060   00000004
+SET2___DTOR_LIST__     DATA           DGROUP         0002:00000064   00000000
+SET3___DTOR_LIST__     DATA           DGROUP         0002:00000064   00000004
+SET1___crtinit1__      DATA           DGROUP         0002:00000068   00000004
+SET2___crtinit1__      DATA           DGROUP         0002:0000006c   00000000
+SET3___crtinit1__      DATA           DGROUP         0002:0000006c   00000004
+SET1___crtexit1__      DATA           DGROUP         0002:00000070   00000004
+SET2___crtexit1__      DATA           DGROUP         0002:00000074   00000000
+SET3___crtexit1__      DATA           DGROUP         0002:00000074   00000004
+SET1___eh_frame__      DATA           DGROUP         0002:00000078   00000004
+SET2___eh_frame__      DATA           DGROUP         0002:0000007c   00000000
+SET3___eh_frame__      DATA           DGROUP         0002:0000007c   00000004
+SET1___eh_init__       DATA           DGROUP         0002:00000080   00000004
+SET2___eh_init__       DATA           DGROUP         0002:00000084   00000000
+SET3___eh_init__       DATA           DGROUP         0002:00000084   00000004
+SET1___eh_term__       DATA           DGROUP         0002:00000088   00000004
+SET2___eh_term__       DATA           DGROUP         0002:0000008c   00000000
+SET3___eh_term__       DATA           DGROUP         0002:0000008c   00000004
+SET1___fork_parent1__  DATA           DGROUP         0002:00000090   00000004
+SET2___fork_parent1__  DATA           DGROUP         0002:00000094   00000000
+SET3___fork_parent1__  DATA           DGROUP         0002:00000094   00000004
+SET1___fork_child1__   DATA           DGROUP         0002:00000098   00000004
+SET2___fork_child1__   DATA           DGROUP         0002:0000009c   00000004
+SET3___fork_child1__   DATA           DGROUP         0002:000000a0   00000004
+________DATA           DATA           DGROUP         0002:000000b0   00000000
+BSS32                  BSS            DGROUP         0002:000000b0   00000020
+c_common               BSS            DGROUP         0002:000000d0   00000000
+________BSS            BSS            DGROUP         0002:000000d0   00000000
+STACK                  STACK          AUTO           0003:00000000   00800000
+
+
+                        +----------------+
+                        |   Memory Map   |
+                        +----------------+
+
+* = unreferenced symbol
++ = symbol only referenced locally
+
+Address        Symbol
+=======        ======
+
+Module: C:\usr\lib\crt0.obj({standard input})
+0001:00000000* __text
+0002:00000000* __data
+0002:00000000* ___data_start
+0002:000000b0* ___bss_start
+0002:00000050+ __os2dll
+0002:00000058  ___CTOR_LIST__
+0002:00000060  ___DTOR_LIST__
+0002:00000068* ___crtinit1__
+0002:00000070* ___crtexit1__
+0002:00000078* ___eh_frame__
+0002:00000080  ___eh_init__
+0002:00000088  ___eh_term__
+0002:00000090+ ___fork_parent1__
+0002:00000098+ ___fork_child1__
+Module: C:\200\trunk\tools\linguist\qm2ts\tmp\obj\release_mt_shared\main.obj(main.obj)
+0001:00000258  _main
+0001:00000994* __ZN11QMapPrivateI21MetaTranslatorMessageiE5clearEv$w$1zHAAj7G8U67Cqo51
+0001:000009d0* __ZN17QValueListPrivateI18QTranslatorMessageED1Ev$w$1zHAAj7G8U67Cqo51
+0001:00000ae0* __ZN17QValueListPrivateI21MetaTranslatorMessageED1Ev$w$1zHAAj7G8U67Cqo51
+0001:00000ab0* __ZN10QValueListI18QTranslatorMessageE14detachInternalEv$w$1zHAAj7G8U67Cqo51
+0001:00000bc0* __ZN11QMapPrivateI21MetaTranslatorMessageiE5clearEP8QMapNodeIS0_iE$w$1zHAAj7G8U67Cqo51
+0001:00000c4c* __ZN17QValueListPrivateI18QTranslatorMessageEC1ERKS1_$w$1zHAAj7G8U67Cqo51
+0001:00000cd8* __ZN17QValueListPrivateI18QTranslatorMessageE6insertE18QValueListIteratorIS0_ERKS0_$w$1zHAAj7G8U67Cqo51
+0001:00000d50* __ZTV6QGList$w$1zHAAj7G8U67Cqo51
+0001:00000d7c* __ZNK6QGList5countEv$w$1zHAAj7G8U67Cqo51
+Module: C:\200\trunk\tools\linguist\qm2ts\tmp\obj\release_mt_shared\metatranslator.obj(metatranslator.obj)
+0001:00000fe8* __ZN9TsHandler12startElementERK7QStringS2_S2_RK14QXmlAttributes
+0001:000015d8* __ZN9TsHandler10endElementERK7QStringS2_S2_
+0001:00003e14* __ZN14MetaTranslator8setCodecEPKc
+0001:00002408  __ZN21MetaTranslatorMessageC1EPKcS1_S1_RK7QStringbNS_4TypeE
+0001:00003a00  __ZN14MetaTranslator6insertERK21MetaTranslatorMessage
+0001:00001bf0* __ZN9TsHandler10charactersERK7QString
+0001:00001cf8* __ZN9TsHandler10fatalErrorERK18QXmlParseException
+0001:00002338* __ZN21MetaTranslatorMessageC2Ev
+0001:0000235c* __ZN21MetaTranslatorMessageC1Ev
+0001:00002380* __ZN21MetaTranslatorMessageC2EPKcS1_S1_RK7QStringbNS_4TypeE
+0001:00002490* __ZN21MetaTranslatorMessageC2ERKS_
+0001:000024bc* __ZN21MetaTranslatorMessageC1ERKS_
+0001:000024e8* __ZN21MetaTranslatorMessageaSERKS_
+0001:00002514* __ZNK21MetaTranslatorMessageeqERKS_
+0001:000025c8* __ZNK21MetaTranslatorMessageltERKS_
+0001:00002684* __ZN14MetaTranslatorC2Ev
+0001:000027c0* __ZN14MetaTranslator5clearEv
+0001:000026c8  __ZN14MetaTranslatorC1Ev
+0001:0000270c* __ZN14MetaTranslatorC2ERKS_
+0001:00002744* __ZN14MetaTranslatorC1ERKS_
+0001:0000277c* __ZN14MetaTranslatoraSERKS_
+0001:000028b0* __ZN14MetaTranslator4loadERK7QString
+0001:00002bd4  __ZNK14MetaTranslator4saveERK7QString
+0001:000035a4* __ZNK14MetaTranslator7releaseERK7QStringbN11QTranslator8SaveModeE
+0001:00003964* __ZNK14MetaTranslator8containsEPKcS1_S1_
+0001:00003a98* __ZN14MetaTranslator21stripObsoleteMessagesEv
+0001:00003bd8* __ZN14MetaTranslator18stripEmptyContextsEv
+0001:00003e80* __ZNK14MetaTranslator9toUnicodeEPKcb
+0001:00003ecc  __ZNK14MetaTranslator8messagesEv
+0001:00003ff8* __ZNK14MetaTranslator18translatedMessagesEv
+0001:00001e48* __ZThn4_N9TsHandler10fatalErrorERK18QXmlParseException$w$NbzyJq7G8U6jmQvs2
+0001:000040c4* __ZN11QMapPrivateI21MetaTranslatorMessageiEC1Ev$w$NbzyJq7G8U6jmQvs2
+0001:0000414c* __ZN4QMapI21MetaTranslatorMessageiEaSERKS1_$w$NbzyJq7G8U6jmQvs2
+0001:00004208* __ZN4QMapI21MetaTranslatorMessageiE5clearEv$w$NbzyJq7G8U6jmQvs2
+0001:00005218* __ZN9TsHandlerC1EP14MetaTranslator$w$NbzyJq7G8U6jmQvs2
+0001:000042b8* __ZN11QMapPrivateIi21MetaTranslatorMessageEC1Ev$w$NbzyJq7G8U6jmQvs2
+0001:00004340* __ZN17QMapConstIteratorI21MetaTranslatorMessageiE3incEv$w$NbzyJq7G8U6jmQvs2
+0001:000043bc* __ZN12QMapIteratorIi21MetaTranslatorMessageE3incEv$w$NbzyJq7G8U6jmQvs2
+0001:00004304* __ZN11QMapPrivateIi21MetaTranslatorMessageE5clearEv$w$NbzyJq7G8U6jmQvs2
+0001:0000438c* __ZN4QMapIi21MetaTranslatorMessageE14detachInternalEv$w$NbzyJq7G8U6jmQvs2
+0001:0000424c* __ZN4QMapIi21MetaTranslatorMessageE6insertERKiRKS0_b$w$NbzyJq7G8U6jmQvs2
+0001:00004408* __ZNK11QMapPrivateI21MetaTranslatorMessageiE4findERKS0_$w$NbzyJq7G8U6jmQvs2
+0001:000044bc* __ZN4QMapI21MetaTranslatorMessageiE6removeERKS0_$w$NbzyJq7G8U6jmQvs2
+0001:000045b8* __ZN4QMapI21MetaTranslatorMessageiE6insertERKS0_RKib$w$NbzyJq7G8U6jmQvs2
+0001:0000448c* __ZN4QMapI21MetaTranslatorMessageiE14detachInternalEv$w$NbzyJq7G8U6jmQvs2
+0001:0000461c* __ZN12QMapIteratorI21MetaTranslatorMessageiE3incEv$w$NbzyJq7G8U6jmQvs2
+0001:00004110* __ZN11QMapPrivateI21MetaTranslatorMessageiE5clearEv$w$NbzyJq7G8U6jmQvs2
+0001:00004668* __ZN17QValueListPrivateI21MetaTranslatorMessageEC1Ev$w$NbzyJq7G8U6jmQvs2
+0001:000046a8* __ZN17QValueListPrivateI21MetaTranslatorMessageE6insertE18QValueListIteratorIS0_ERKS0_$w$NbzyJq7G8U6jmQvs2
+0001:00004704* __ZN10QValueListI21MetaTranslatorMessageE14detachInternalEv$w$NbzyJq7G8U6jmQvs2
+0001:00004734* __ZN11QMapPrivateI21MetaTranslatorMessageiE5clearEP8QMapNodeIS0_iE$w$NbzyJq7G8U6jmQvs2
+0001:000047c0* __ZN11QMapPrivateIi21MetaTranslatorMessageE12insertSingleERKi$w$NbzyJq7G8U6jmQvs2
+0001:0000485c* __ZN11QMapPrivateIi21MetaTranslatorMessageE5clearEP8QMapNodeIiS0_E$w$NbzyJq7G8U6jmQvs2
+0001:000048e8* __ZN11QMapPrivateIi21MetaTranslatorMessageEC1EPKS1_$w$NbzyJq7G8U6jmQvs2
+0001:0000498c* __ZN11QMapPrivateI21MetaTranslatorMessageiEC1EPKS1_$w$NbzyJq7G8U6jmQvs2
+0001:00004a30* __ZN11QMapPrivateI21MetaTranslatorMessageiE12insertSingleERKS0_$w$NbzyJq7G8U6jmQvs2
+0001:00004ae4* __ZN17QValueListPrivateI21MetaTranslatorMessageEC1ERKS1_$w$NbzyJq7G8U6jmQvs2
+0001:00004b70* __ZN11QMapPrivateIi21MetaTranslatorMessageE6insertEP12QMapNodeBaseS3_RKi$w$NbzyJq7G8U6jmQvs2
+0001:00004c10* __ZN12QMapIteratorIi21MetaTranslatorMessageE3decEv$w$NbzyJq7G8U6jmQvs2
+0001:00004c68* __ZN11QMapPrivateIi21MetaTranslatorMessageE4copyEP8QMapNodeIiS0_E$w$NbzyJq7G8U6jmQvs2
+0001:00004d08* __ZN11QMapPrivateI21MetaTranslatorMessageiE4copyEP8QMapNodeIS0_iE$w$NbzyJq7G8U6jmQvs2
+0001:00004da8* __ZN11QMapPrivateI21MetaTranslatorMessageiE6insertEP12QMapNodeBaseS3_RKS0_$w$NbzyJq7G8U6jmQvs2
+0001:00004e74* __ZN12QMapIteratorI21MetaTranslatorMessageiE3decEv$w$NbzyJq7G8U6jmQvs2
+0001:00004ed0* __ZTV9TsHandler$w$NbzyJq7G8U6jmQvs2
+0001:00005008* __ZN9TsHandlerD1Ev$w$NbzyJq7G8U6jmQvs2
+0001:0000510c* __ZN9TsHandlerD0Ev$w$NbzyJq7G8U6jmQvs2
+0001:00004fd0* __ZTV6QGList$w$NbzyJq7G8U6jmQvs2
+0001:00004ffc* __ZNK6QGList5countEv$w$NbzyJq7G8U6jmQvs2
+Module: C:\usr\lib\libend.lib(src/libend/386/endlink386.asm)
+0002:000000d0  _end
+0002:000000b0  _edata
+Module: C:\usr\lib\libend.lib(src/libend/386/end.asm)
+0001:000053e0* _etext
+0001:000053e0* __etext
+0000:00000000* WEAK$ZERO
+0002:000000d0  __end
+0002:000000b0  __edata
+Module: C:\usr\lib\gcc-lib\i386-pc-os2-emx\3.3.5\libgcc_so_d.lib(__main.obj)
+0001:000052f0* ___do_global_dtors
+0001:000052f6* ___do_global_ctors
+0001:00005306* ___POST$__do_global_ctors
+0001:00005308  ___main
+0001:00005312* ___POST$__main
+Module: C:\usr\lib\gcc-lib\i386-pc-os2-emx\3.3.5\libgcc_so_d.lib(emx-ctordtor.obj)
+0001:00005320  ___ctordtorInit
+0001:0000532a* ___POST$__ctordtorInit
+0001:0000534e  ___ctordtorTerm
+0001:00005358* ___POST$__ctordtorTerm
+
+
+                        +----------------------+
+                        |   Imported Symbols   |
+                        +----------------------+
+
+Symbol                              Module
+======                              ======
+
+___libc_ForkRegisterModule          libc064
+___init_app                         libc064
+__CRT_init                          libc064
+__atfork_callback                   libc064
+___stderrp                          libc064
+__alloca                            libc064
+__ZN11QTranslatorC1EP7QObjectPKc    myqt
+__ZN7QStringC1EPKc                  myqt
+__ZN7QString4nullE                  myqt
+__ZN11QTranslator4loadERK7QStringS2_S2_S2_ myqt
+__ZN7QString11shared_nullE          myqt
+__ZN11QStringData10deleteSelfEv     myqt
+__ZN7QRegExpC1ERK7QStringbb         myqt
+__ZN7QString7replaceERK7QRegExpRKS_ myqt
+__ZN7QRegExpD1Ev                    myqt
+__ZN7QStringpLERKS_                 myqt
+__ZNK11QTranslator8messagesEv       myqt
+__ZN8QCStringC1EPKc                 myqt
+__ZN7QGArray9duplicateEPKcj         myqt
+__ZN7QStringC1ERKS_                 myqt
+__ZN8QCStringD1Ev                   myqt
+__ZdlPv                             libc064
+__ZN11QTranslatorD1Ev               myqt
+__ZNK7QString6latin1Ev              myqt
+__Znwj                              libc064
+__ZN18QTranslatorMessageC1Ev        myqt
+__ZN18QTranslatorMessageC1ERKS_     myqt
+__ZN6QGList5clearEv                 myqt
+__ZN6QGListD1Ev                     myqt
+__ZN6QGListD0Ev                     myqt
+__ZN14QPtrCollection7newItemEPv     myqt
+___cxa_pure_virtual                 libc064
+__ZN6QGList12compareItemsEPvS0_     myqt
+__ZN6QGList4readER11QDataStreamRPv  myqt
+__ZNK6QGList5writeER11QDataStreamPv myqt
+__ZNK14QXmlAttributes6lengthEv      myqt
+__ZNK14QXmlAttributes5qNameEi       myqt
+__ZeqRK7QStringS1_                  myqt
+__ZNK14QXmlAttributes5valueEi       myqt
+__ZNK7QString10startsWithERKS_      myqt
+__ZNK7QString6toUIntEPbi            myqt
+__ZN7QStringpLE5QChar               myqt
+__ZNK7QString3midEjj                myqt
+__ZN7QStringaSERKS_                 myqt
+__ZN7QString8truncateEj             myqt
+__ZNK7QString5asciiEv               myqt
+__ZNK7QString4utf8Ev                myqt
+__ZN7QString7replaceERKS_S1_        myqt
+__ZNK18QXmlParseException7messageEv myqt
+__ZNK18QXmlParseException12columnNumberEv myqt
+__ZNK18QXmlParseException10lineNumberEv myqt
+__ZN7QString7sprintfEPKcz           myqt
+_qApp                               myqt
+__ZN7QObject2trEPKcS1_              myqt
+__ZN12QApplication11main_widgetE    myqt
+__ZN11QMessageBox11informationEP7QWidgetRK7QStringS4_S4_S4_S4_ii myqt
+__ZN7QString14makeSharedNullEv      myqt
+__ZNK7QString3argExii               myqt
+__ZN7QGArray9msg_indexEj            myqt
+__ZN7QStringpLEc                    myqt
+__ZN18QTranslatorMessageC2Ev        myqt
+__ZN18QTranslatorMessageC2EPKcS1_S1_RK7QString myqt
+__ZN18QTranslatorMessageC2ERKS_     myqt
+__ZN18QTranslatorMessageaSERKS_     myqt
+__ZN7QGArrayC2Ev                    myqt
+__ZTV8QCString                      myqt
+__ZN7QGArrayC2ERKS_                 myqt
+__ZN7QGArray6assignERKS_            myqt
+__ZN5QFileC1ERK7QString             myqt
+__ZN5QFile4openEi                   myqt
+__ZN5QFileD1Ev                      myqt
+__ZN11QTextStreamC1EP9QIODevice     myqt
+__ZN15QXmlInputSourceC1ER11QTextStream myqt
+__ZN16QXmlSimpleReaderC1Ev          myqt
+__ZN16QXmlSimpleReader10setFeatureERK7QStringb myqt
+__ZN16QXmlSimpleReader17setContentHandlerEP18QXmlContentHandler myqt
+__ZN16QXmlSimpleReader15setErrorHandlerEP16QXmlErrorHandler myqt
+__ZN16QXmlSimpleReader5parseERK15QXmlInputSource myqt
+__ZN5QFile5closeEv                  myqt
+__ZN16QXmlSimpleReaderD1Ev          myqt
+__ZN15QXmlInputSourceD1Ev           myqt
+__ZN11QTextStreamD1Ev               myqt
+__ZN10QTextCodec12codecForNameEPKci myqt
+__ZN11QTextStream8setCodecEP10QTextCodec myqt
+__ZN11QTextStreamlsEPKc             myqt
+__ZN11QTextStreamlsERK7QString      myqt
+__ZN11QTextStreamlsERK8QCString     myqt
+__ZN11QTranslator4saveERK7QStringNS_8SaveModeE myqt
+__ZN11QTranslator6insertERK18QTranslatorMessage myqt
+__ZNK11QTranslator11findMessageEPKcS1_S1_ myqt
+__ZN18QTranslatorMessageC1EPKcS1_S1_RK7QString myqt
+__ZNK10QTextCodec9toUnicodeEPKc     myqt
+__ZN7QString8fromUtf8EPKci          myqt
+__Znaj                              libc064
+__ZdaPv                             libc064
+__ZN15QMapPrivateBase18removeAndRebalanceEP12QMapNodeBaseRS1_S2_S2_ myqt
+__ZN15QMapPrivateBase9rebalanceEP12QMapNodeBaseRS1_ myqt
+__ZN18QXmlDefaultHandler18setDocumentLocatorEP11QXmlLocator myqt
+__ZN18QXmlDefaultHandler13startDocumentEv myqt
+__ZN18QXmlDefaultHandler11endDocumentEv myqt
+__ZN18QXmlDefaultHandler18startPrefixMappingERK7QStringS2_ myqt
+__ZN18QXmlDefaultHandler16endPrefixMappingERK7QString myqt
+__ZN18QXmlDefaultHandler19ignorableWhitespaceERK7QString myqt
+__ZN18QXmlDefaultHandler21processingInstructionERK7QStringS2_ myqt
+__ZN18QXmlDefaultHandler13skippedEntityERK7QString myqt
+__ZN18QXmlDefaultHandler11errorStringEv myqt
+__ZN18QXmlDefaultHandler7warningERK18QXmlParseException myqt
+__ZN18QXmlDefaultHandler5errorERK18QXmlParseException myqt
+__ZN18QXmlDefaultHandler12notationDeclERK7QStringS2_S2_ myqt
+__ZN18QXmlDefaultHandler18unparsedEntityDeclERK7QStringS2_S2_S2_ myqt
+__ZN18QXmlDefaultHandler13resolveEntityERK7QStringS2_RP15QXmlInputSource myqt
+__ZN18QXmlDefaultHandler8startDTDERK7QStringS2_S2_ myqt
+__ZN18QXmlDefaultHandler6endDTDEv   myqt
+__ZN18QXmlDefaultHandler11startEntityERK7QString myqt
+__ZN18QXmlDefaultHandler9endEntityERK7QString myqt
+__ZN18QXmlDefaultHandler10startCDATAEv myqt
+__ZN18QXmlDefaultHandler8endCDATAEv myqt
+__ZN18QXmlDefaultHandler7commentERK7QString myqt
+__ZN18QXmlDefaultHandler13attributeDeclERK7QStringS2_S2_S2_S2_ myqt
+__ZN18QXmlDefaultHandler18internalEntityDeclERK7QStringS2_ myqt
+__ZN18QXmlDefaultHandler18externalEntityDeclERK7QStringS2_S2_ myqt
+__ZThn4_N18QXmlDefaultHandler7warningERK18QXmlParseException myqt
+__ZThn4_N18QXmlDefaultHandler5errorERK18QXmlParseException myqt
+__ZThn4_N18QXmlDefaultHandler11errorStringEv myqt
+__ZThn8_N18QXmlDefaultHandler12notationDeclERK7QStringS2_S2_ myqt
+__ZThn8_N18QXmlDefaultHandler18unparsedEntityDeclERK7QStringS2_S2_S2_ myqt
+__ZThn8_N18QXmlDefaultHandler11errorStringEv myqt
+__ZThn12_N18QXmlDefaultHandler13resolveEntityERK7QStringS2_RP15QXmlInputSource myqt
+__ZThn12_N18QXmlDefaultHandler11errorStringEv myqt
+__ZThn16_N18QXmlDefaultHandler8startDTDERK7QStringS2_S2_ myqt
+__ZThn16_N18QXmlDefaultHandler6endDTDEv myqt
+__ZThn16_N18QXmlDefaultHandler11startEntityERK7QString myqt
+__ZThn16_N18QXmlDefaultHandler9endEntityERK7QString myqt
+__ZThn16_N18QXmlDefaultHandler10startCDATAEv myqt
+__ZThn16_N18QXmlDefaultHandler8endCDATAEv myqt
+__ZThn16_N18QXmlDefaultHandler7commentERK7QString myqt
+__ZThn16_N18QXmlDefaultHandler11errorStringEv myqt
+__ZThn20_N18QXmlDefaultHandler13attributeDeclERK7QStringS2_S2_S2_S2_ myqt
+__ZThn20_N18QXmlDefaultHandler18internalEntityDeclERK7QStringS2_ myqt
+__ZThn20_N18QXmlDefaultHandler18externalEntityDeclERK7QStringS2_S2_ myqt
+__ZThn20_N18QXmlDefaultHandler11errorStringEv myqt
+__ZTV18QXmlDefaultHandler           myqt
+__std_exit                          libc064
+__std_fprintf                       libc064
+__std_strcmp                        libc064
+___ctordtorInit1                    libc064
+___ctordtorTerm1                    libc064
+__std_atexit                        libc064
+
+
+                        +--------------------+
+                        |   Libraries Used   |
+                        +--------------------+
+
+C:\200\trunk\lib\myqt.lib
+C:\usr\lib\libc_dll.lib
+C:\usr\lib\libc_alias.lib
+C:\usr\lib\gcc-lib\i386-pc-os2-emx\3.3.5\libgcc_so_d.lib
+C:\usr\lib\libend.lib
+
+
+                        +-----------------------+
+                        |   Linker Statistics   |
+                        +-----------------------+
+
+Stack size:  00800000 (8388608.)
+Memory size:  008054b0 (8410288.)
+Entry point address: 0001:00000000
+Link time: 00:00.08

@@ -1,0 +1,29 @@
+/*
+$Id: mdi.doc 2 2005-11-16 15:49:26Z dmik $
+*/
+/*! \page mdi-example.html
+ 
+  \ingroup examples
+  \title An MDI Application
+ 
+  This example program is just like the application example, except
+  that it provides a Multiple Document Interface (MDI).
+ 
+  <hr>
+ 
+  Header file:
+ 
+  \include mdi/application.h
+ 
+  <hr>
+ 
+  Implementation:
+ 
+  \include mdi/application.cpp
+ 
+  <hr>
+ 
+  Main:
+
+  \include mdi/main.cpp 
+*/                

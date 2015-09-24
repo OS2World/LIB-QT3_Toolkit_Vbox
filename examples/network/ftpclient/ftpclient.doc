@@ -1,0 +1,25 @@
+/*
+$Id: ftpclient.doc 2 2005-11-16 15:49:26Z dmik $
+*/
+     
+/*! \page ftpclient-example.html
+
+  \ingroup network-examples
+
+  \title An FTP client
+ 
+  This example implements a FTP client. It uses QFtp to perform its FTP
+  commands. The GUI parts are done in the Designer.
+ 
+  <hr>
+ 
+  The implementation of the FTP commands (ftpmainwindow.ui.h):
+ 
+  \include network/ftpclient/ftpmainwindow.ui.h
+ 
+  <hr>
+ 
+  Main (main.cpp):
+ 
+  \include network/ftpclient/main.cpp
+*/

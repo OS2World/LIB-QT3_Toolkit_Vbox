@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css"
+href="file:qtos2-xxe.css"
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <link href="qtos2-www.css" rel="stylesheet" type="text/css" />
+
+    <title>Qt Toolkit Version 3 for OS/2</title>
+  </head>
+
+  <body id="doc">
+    <h1><a name="top">Documentation</a></h1>
+
+    <h2><a name="QtReference">Qt Reference Documentation</a></h2>
+
+    <p>Currently, the Qt Reference Documentation is not shipped with the OS/2
+    version of the Qt Toolkit (it will be done later).</p>
+
+    <p>You can view it online using this link: <a
+    href="http://doc.trolltech.com/3.3/index.html">http://doc.trolltech.com/3.3/index.html</a>.</p>
+
+    <h2><a name="Bugs">Known Bugs and Limitations</a></h2>
+
+    <p>The OS/2 version of the Qt Library is not yet complete. Some features
+    are still under development and there are some known bugs. They are
+    briefly described below.</p>
+
+    <h4>Missing features</h4>
+
+    <table border="1">
+      <col width="0*" />
+
+      <col width="100%" />
+
+      <tr>
+        <td>1</td>
+
+        <td>Drag &amp; Drop (<code>QT_NO_DRAGANDDROP</code> is constantly
+        defined for now)</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+
+        <td>OS/2 widget style (a native look and feel of buttons, combo boxes
+        and other common widgets)</td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+
+        <td>Printing support (<code>QPrinter</code> class is absent,
+        <code>QT_NO_PRINTER</code> is constantly defined for now)</td>
+      </tr>
+
+      <tr>
+        <td>4</td>
+
+        <td>Process management (<code>QProcess </code>class is absent)</td>
+      </tr>
+
+      <tr>
+        <td>5</td>
+
+        <td>Audio support (<code>QSound</code> class)</td>
+      </tr>
+
+      <tr>
+        <td>6</td>
+
+        <td><kbd>sql</kbd> module (<code>QSql</code> class and friends)</td>
+      </tr>
+
+      <tr>
+        <td>7</td>
+
+        <td><kbd>table</kbd> module (<code>QTable</code> class, depends only
+        on Drag &amp; Drop)</td>
+      </tr>
+
+      <tr>
+        <td>8</td>
+
+        <td><kbd>iconview</kbd> module (<code>QIconView</code> class, depends
+        only on Drag &amp; Drop)</td>
+      </tr>
+
+      <tr>
+        <td>9</td>
+
+        <td><kbd>canvas</kbd> module (<code>QCanvas</code> and friends)</td>
+      </tr>
+
+      <tr>
+        <td>10</td>
+
+        <td><kbd>OpenGL</kbd> module (<code>QGL</code> class and friends)</td>
+      </tr>
+
+      <tr>
+        <td>11</td>
+
+        <td>Plugin support</td>
+      </tr>
+
+      <tr>
+        <td>12</td>
+
+        <td>Qt Designer tool (depends only on Drag &amp; Drop)</td>
+      </tr>
+
+      <tr>
+        <td>13</td>
+
+        <td>Qt Linguist tool (depends only on Drag &amp; Drop)</td>
+      </tr>
+
+      <tr>
+        <td>14</td>
+
+        <td>Qt Assistant tool (depends only on Drag &amp; Drop)</td>
+      </tr>
+    </table>
+
+    <h4>Know Bugs and Limitations</h4>
+
+    <table border="1">
+      <col width="0*" />
+
+      <col width="100%" />
+
+      <tr>
+        <td>1</td>
+
+        <td>Unicode is not fully supported in GUI, to the effect that only the
+        symbols from the current (system) 8-bit charset can appear in widgets
+        and when drawing text.</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+
+        <td>Alpha blending for pixmaps is not yet implemented
+        [<code>themes</code> example].</td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+
+        <td>Complex text transformations (rotation etc.) don't work correctly
+        with the FreeType2 rendering engine. Most likely a bug or a limitation
+        of FreeType2 [<code>xform</code> example].</td>
+      </tr>
+
+      <tr>
+        <td>4</td>
+
+        <td>Text rotation to values greater than 90 degrees clockwise doesn't
+        work with truetype fonts and the standard TTF rendering engine. This
+        seems like an OS/2 bug [<code>xform</code> example].</td>
+      </tr>
+
+      <tr>
+        <td>5</td>
+
+        <td>Stay-on-top is not supported system-wide.</td>
+      </tr>
+    </table>
+
+    <h2><a name="GNUMAKE">GNUMAKE backend for qmake</a></h2>
+
+    <p>The GNUMAKE backend generates makefiles for the GNU Make utility from
+    <kbd>qmake</kbd>'s project files. A separate generator became necessary
+    because the previously used MINGW generator has some problems and
+    limitations that make it impossible to generate correct makefiles in
+    several situations. This new generator is primarily intended to be used
+    with GNU Make under OS/2, but theoretically can be used on any platform
+    after some modifications. However, its usage under other platforms is not
+    tested and not supported.</p>
+
+    <p>The GNUMAKE backend was initially based on the existing MINGW backend,
+    so here is the list of its differences and improvements comparing to the
+    MINGW backend:</p>
+
+    <p>1. <code>QMAKE_LINK_OBJECT_MAX</code>,
+    <code>QMAKE_LINK_OBJECT_SCRIPT</code>,
+    <code>QMAKE_LINK_OBJMOC_SCRIPT</code> are no longer supported, since the
+    OS/2 version of GNU <kbd>LD</kbd> (linker) seems not to support object
+    link scripts. The OS/2 CMD.EXE command line length limitation (1024 chars)
+    is worked around in a different way (see the
+    <kbd>\mkspecs\os2-g++\qmake.conf</kbd> if interested).</p>
+
+    <p>2. Added new qmake varibales <code>QMAKE_RUN_LINK</code> and
+    <code>QMAKE_RUN_LIB</code> (intended to be used in qmake.conf) to
+    explicitly specify the command to execute the linker and the librarian,
+    respectively. These variables are optional and have the following
+    defaults:</p>
+
+    <pre>$(LINK) $(LFLAGS) -o $(TARGET) $(DEF_FILE) $(OBJECTS) $(OBJMOC) $(LIBS)
+$(LIB) $(TARGET) $(OBJECTS) $(OBJMOC)</pre>
+
+    <p>3. <code>QMAKE_EXTRA_WIN_COMPILERS</code> and
+    <code>QMAKE_EXTRA_WIN_TARGETS</code> are renamed to
+    <code>QMAKE_EXTRA_COMPILERS</code> and <code>QMAKE_EXTRA_TARGETS</code>
+    respectively, for clarity.</p>
+
+    <p>4. Leaving <code>QMAKE_LIBS_QT_ENTRY</code> empty does not produce a
+    qmake warning any more.</p>
+
+    <p>5. Added the new qmake variable <code>QMAKE_RUN_IMPLIB</code> used to
+    produce the import library when the target is the dynamic link library. It
+    is expected that this variable specifies the output import library name
+    with the <code>$(TARGET_IMPLIB)</code> macro, which is defined by qmake as
+    the project's target dll full basename with the <kbd>.lib</kbd>
+    extension.</p>
+
+    <p>6. Added new qmake variables <code>QMAKE_RUN_GENDEF</code> and
+    <code>QMAKE_GENDEF_DEPS</code>. They are intended to generate a
+    <kbd>.def</kbd> file containing a list of DLL exports when the target is
+    the dynamic link library (i.e. when <code>TEMPLATE&nbsp;= lib</code> and
+    <code>CONFIG</code> contains <code>dll</code>) and the
+    <code>DEF_FILE</code> variable is empty or not specified in the project
+    file. In this case, the <code>DEF_FILE</code> macro is defined by qmake as
+    the project's target full basename with the .def extension.
+    <code>QMAKE_RUN_GENDEF</code> is the command to generate this
+    <code>DEF_FILE</code> (its output must go to <code>$(DEF_FILE)</code>).
+    <code>QMAKE_GENDEF_DEPS</code> is the list of dependencies for the
+    <code>DEF_FILE</code>.</p>
+
+    <p>7. Empty <code>OBJECTS_DIR</code> and <code>MOC_DIR</code> qmake
+    variables do not cause GNU Make to print warnings any more.</p>
+
+    <p>8. Fixed the <kbd>dist</kbd> makefile target: the generated zip didn't
+    have the name (only extension).</p>
+
+    <p>9. Commands for custom (user defined) targets and for extra compilers
+    (i.e. values of <code>&lt;my_target&gt;.commands</code> variables) are now
+    splitted at '<kbd>&nbsp;;;&nbsp;</kbd>' sequences (a double semicolon
+    surrounded by single spaces) and placed to separate lines in the makefile.
+    For example, the definition
+    '<code>&lt;my_target&gt;.command&nbsp;=&nbsp;c1&nbsp;;;&nbsp;c2</code>'
+    will apperar as follows:</p>
+
+    <pre>&lt;my_target&gt;: &lt;my_target_deps&gt;
+    c1
+    c2</pre>
+
+    <p>10. Added new qmake variables <code>QMAKE_QUIET_CLEAN</code> and
+    <code>QMAKE_IF_FILE_EXISTS</code>. <code>QMAKE_QUIET_CLEAN</code> is
+    similar <code>QMAKE_CLEAN</code>, but adds
+    <code>$(QMAKE_IF_FILE_EXISTS)</code> to the beginning of each
+    <code>$(DEL_FILE)</code> statement to delete a file only if it exists (to
+    avoid system warnings).</p>
+
+    <p>11. Object files are no more forced to have the <kbd>.o</kbd>
+    extension. The standard qmake <code>QMAKE_EXT_OBJ</code> variable is used
+    instead (by default, on OS/2 it equals to <kbd>.obj</kbd>).
+    <code>QMAKE_EXT_CPP</code> variable is regarded as well.</p>
+
+    <p>12. Library files now have the <kbd>.lib</kbd> extension (instead of
+    <kbd>.a</kbd>), and the <kbd>lib...</kbd> prefix is no more prepended.</p>
+
+    <p>13. Added new <code>QMAKE_CFLAGS_INCDIR</code>,
+    <code>QMAKE_LFLAGS_LIBDIR</code>, <code>QMAKE_LFLAGS_LIB</code> qmake
+    variables to make it possible to customize the coorresponding flags (i.e.,
+    <kbd>-I</kbd>, <kbd>-L</kbd> and <kbd>-l</kbd>, as for GCC) in the
+    <kbd>.conf</kbd> file.</p>
+
+    <p>14. Added new <code>QMAKE_LIBS_QT_DLL</code> and
+    <code>QMAKE_LIBS_QT_THREAD_DLL</code> qmake variables to specify the list
+    of libraries required when the application is linked against the DLL
+    version of Qt, separately from the list of libraries required for linking
+    against the static Qt library.</p>
+
+    <p>15. The <code>QMAKESPECDIR</code> variable is defined in the generated
+    makefile and points to the directory where a <kbd>qmake.conf</kbd> file
+    being used was read from.</p>
+
+    <p>16. Added new qmake variables <code>DEF_FILE_TEMPLATE</code> and
+    <code>DEF_FILE_MAP</code>. When the target is the dynamic link library and
+    <code>DEF_FILE</code> is <b>not</b> defined in the project file, these
+    variables (when defined) go to the generated makefile w/o any changes.
+    They are also appended (as GNU make variables) to the contents of the
+    <code>QMAKE_GENDEF_DEPS</code> variable (see 6).
+    <code>DEF_FILE_TEMPLATE</code> is intended to point to an existing
+    template for a <kbd>.def</kbd> file. <code>DEF_FILE_MAP</code> should
+    point to an existing file used to store ordinals assigned to exported
+    symbols (to make assignments persistent from build to build). The backend
+    itself doesn't use these variables, they are used only to pass the
+    information from the project file to the generated makefile. It is the
+    responsibility of the <kbd>.conf</kbd> file to implement the described
+    functionality.</p>
+
+    <p>17. Objects defining custom targets got the <code>.extradeps</code>
+    attribute. This attrubute allows to specify additional target dependencies
+    that are not followed by commands. That is, if you have the following
+    extra target definition:</p>
+
+    <pre>my_target.target = somefile
+my_target.depends = anotherfile
+my_target.extradeps = export SOMETHING = something
+my_target.commands = coolcmd &gt; $$my_target.target</pre>
+
+    <p>you'll get in the generated makefile:</p>
+
+    <pre>somefile : export SOMETHING = something
+somefile : anotherfile
+    coolcmd &gt; somefile</pre>
+
+    <p>Note that if you two or more additional dependencies each placed on a
+    separate line, you can separate them using '<kbd>&nbsp;;;&nbsp;</kbd>' (a
+    double semicolon surrounded by single spaces) in the definition of the
+    <code>.extradeps</code> attribute.</p>
+
+    <p>18. Besides the standard <code>INCPATH</code> make variable that
+    defines a list of include directories for the C/C++ compiler (separated by
+    spaces and usually prepended with a compiler switch), all generated
+    makefiles contain the <code>INCLUDEPATH</code> make variable that defines
+    the same list of directories but separated by semicolons (and therefore
+    suitable for assigning to <kbd>PATH</kbd>-like environment variables).</p>
+
+    <p>19. Added internal qmake variables <code>QMAKE_RUN_RC_RES</code> and
+    <code>QMAKE_RUN_RC_EXE</code> necessary to implement the support for
+    <code>RC_FILE</code> and <code>RES_FILE</code> project variables.
+    <code>QMAKE_RUN_RC_RES</code> defines a command line to generate a project
+    <kbd>.res</kbd> file from an <kbd>.rc</kbd> file specified in
+    <code>RC_FILE</code>. It should use <code>$(RC_FILE)</code> as a source
+    and <code>$(RES_FILE)</code> as a target of the operation. This command is
+    used only when the <code>RC_FILE</code> project variable is not empty.
+    <code>QMAKE_RUN_RC_EXE</code> defines a command line to bind a
+    <kbd>.res</kbd> file to the project executable. It should use
+    <code>$(RES_FILE)</code> to specify the <kbd>.res</kbd> file to bind and
+    <code>$(TARGET)</code> to specify the executable file name.</p>
+
+    <p>20. Added the internal qmake variable
+    <code>QMAKE_LIBDIR_QT_DEBUG</code>. It defines where to place the Qt
+    library when the debug version is being built, and also where to search
+    for it when the project file of an application contains <kbd>qt</kbd> and
+    <kbd>debug</kbd> keywords in the <code>CONFIG</code> statement.</p>
+
+    <p>21. The <code>VERSION</code> project variable is copied by
+    <kbd>qmake</kbd> (as is) to the generated makefile. Note that its value
+    does not affect the name of the generated DLL target anymore (for projects
+    with the <kbd>lib</kbd> template and with the <kbd>dll</kbd> keyword in
+    <code>CONFIG</code>), as opposed to other qmake backends. Appending a
+    version number to the DLL name could implicitly lead to running out of the
+    8x3 naming limit that is still present in OS/2 for DLLs loaded by module
+    name (the most common case). Instead, the <code>VERSION</code> macro can
+    be used by qmake compiler specifications to embed the version to the
+    generated DLL file itself (as the GCC specification does).</p>
+
+    <p>22. Added the internal qmake variable <code>QMAKE_DEFINES_QT</code>. It
+    is intended to list a set of C/C++ defines to be used during compilation
+    of C/C++ sources when either <kbd>qt</kbd>, <kbd>qtinc</kbd> or
+    <kbd>build_qt</kbd> is present in the <code>CONFIG</code> statement. Using
+    this variable instead of <code>DEFINES</code> keeps non-Qt projects free
+    from Qt-only related defines (otherwise added to every Makefile generated
+    by <kbd>qmake</kbd> from any project file).</p>
+  </body>
+</html>

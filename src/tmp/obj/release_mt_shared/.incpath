@@ -1,0 +1,9 @@
+-Itmp
+-I3rdparty\libmng
+-I3rdparty\libjpeg
+-I3rdparty\libpng
+-I3rdparty\zlib
+-IC:\200\trunk\include
+-IC:\200\trunk\src
+-Itmp\moc\release_mt_shared
+-IC:\200\trunk\mkspecs\os2-g++

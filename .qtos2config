@@ -1,0 +1,4 @@
+QMAKE_QT_DLL_TARGET = myqt
+CONFIG += shared thread release no_mocdepend
+QMAKE_DEFINES_QT += QT_NO_PRINTER QT_NO_IPV6
+QMAKE_INTERNAL_INCLUDED_FILES += $(QTDIR)\.qtos2config

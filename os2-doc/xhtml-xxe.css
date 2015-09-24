@@ -1,0 +1,823 @@
+/*
+ * Copyright (c) 2003 Pixware. 
+ *
+ * This file is part of the XMLmind XML Editor project.
+ * For conditions of distribution and use, see the accompanying legal.txt file.
+ */
+
+html {
+    display: block;
+}
+
+/* ---------------------------------------------------------------------------
+   Head
+--------------------------------------------------------------------------- */
+
+head {
+    display: block;
+}
+
+title { 
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    color: maroon;
+    margin-top: .67ex;
+    margin-bottom: .67ex;
+}
+
+base,
+meta,
+link,
+style,
+script,
+noscript {
+    display: tree;
+}
+
+/* ---------------------------------------------------------------------------
+   Body
+--------------------------------------------------------------------------- */
+
+body {
+    display: block;
+}
+
+/*
+ * Transitional
+ */
+body[bgcolor] {
+    background-color: concatenate(attr(bgcolor));
+}
+body[text] {
+    color: concatenate(attr(text));
+}
+
+/* ---------------------------------------------------------------------------
+   Blocks
+--------------------------------------------------------------------------- */
+
+div {
+    display: block;
+}
+
+/*
+ * Transitional
+ */
+center {
+    display: block;
+}
+div[align=center],
+center { 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+}
+div[align=right] { 
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right; 
+}
+
+hr {
+    display: block;
+    content: icon(invisible) icon(invisible);
+    border: 2 inset gray;
+}
+
+/*
+ * Transitional
+ */
+hr[noshade] {
+    background-color: gray;
+    border-style: solid;
+}
+
+/* -------------------------------------
+   Headings
+------------------------------------- */
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5,
+h6 {
+    display: block;
+    font-weight: bold;
+    color: maroon;
+}
+
+h1 { 
+    font-size: 1.5em;
+    margin-top: .83ex;
+    margin-bottom: .83ex;
+}
+
+h2 { 
+    font-size: 1.3em;
+    margin-top: 1ex;
+    margin-bottom: 1ex;
+}
+
+h3, 
+h4, 
+h5, 
+h6 { 
+    margin-top: 1.33ex;
+    margin-bottom: 1.33ex;
+}
+
+/*
+ * Transitional
+ */
+h1[align], 
+h2[align], 
+h3[align], 
+h4[align], 
+h5[align],
+h6[align] {
+    text-align: concatenate(attr(align)); 
+}
+
+/* -------------------------------------
+   Paragraphs
+------------------------------------- */
+
+address {
+    display: block;
+    font-style: italic; 
+    margin-top: 1.33ex 0;
+}
+
+p { 
+    display: block;
+    margin: 1.33ex 0;
+}
+
+/*
+ * Transitional
+ */
+p[align] {
+    text-align: concatenate(attr(align)); 
+}
+
+pre { 
+    display: block;
+    white-space: pre;
+    font-family: monospace;
+    background-color: #EEEEEE;
+    border: thin solid gray;
+    padding: 2px;
+    margin: 1.33ex 0;
+}
+
+blockquote {
+    display: block;
+    margin: 1.33ex 10ex;
+}
+
+/* -------------------------------------
+   Lists
+------------------------------------- */
+
+ul { 
+    display: block;
+    margin-left: 2ex;
+    margin-top: 1.33ex;
+    margin-bottom: 1.33ex;
+}
+
+li {
+    display: block;
+}
+
+ul > li {
+    margin-left: 2.5ex;
+}
+ul > li:before {
+    display: marker;
+    content: disc;
+    padding-top: .6ex; 
+}
+ul > li ul > li:before {
+    content: square;
+}
+ul > li ul > li ul > li:before {
+    content: icon(diamond);
+}
+ul > li ul > li ul > li ul > li:before {
+    content: circle;
+}
+
+/*
+ * Transitional
+ */
+dir,
+menu { 
+    display: block;
+    margin-left: 2ex;
+    margin-top: 1.33ex;
+    margin-bottom: 1.33ex;
+}
+dir > li,
+menu > li {
+    margin-left: 2.5ex;
+}
+dir > li:before {
+    display: marker;
+    content: icon(right-half-disc);
+    color: maroon;
+    padding-top: .6ex; 
+}
+menu > li:before {
+    display: marker;
+    content: icon(right);
+    color: maroon;
+    padding-top: .6ex; 
+}
+
+ol { 
+    display: block;
+    margin-left: 2ex;
+    margin-top: 1.33ex;
+    margin-bottom: 1.33ex;
+}
+
+ol > li {
+    margin-left: 6ex;
+}
+ol > li:before {
+    display: marker;
+    content: counter(n, decimal) ".";
+    font-weight: bold;
+}
+
+/* Example of value for style attribute: "list-style-type: lower-roman;" */
+ol[style~=lower-alpha] > li:before {
+    content: counter(n, lower-alpha) ".";
+}
+ol[style~=upper-alpha] > li:before {
+    content: counter(n, upper-alpha) ".";
+}
+ol[style~=lower-roman] > li:before {
+    content: counter(n, lower-roman) ".";
+}
+ol[style~=upper-roman] > li:before {
+    content: counter(n, upper-roman) ".";
+}
+
+/*
+ * Transitional
+ */
+ol[type=a] > li:before {
+    content: counter(n, lower-alpha) ".";
+}
+ol[type=A] > li:before {
+    content: counter(n, upper-alpha) ".";
+}
+ol[type=i] > li:before {
+    content: counter(n, lower-roman) ".";
+}
+ol[type=I] > li:before {
+    content: counter(n, upper-roman) ".";
+}
+
+ol ul, ul ol, ul ul, ol ol { 
+    margin-top: 0; 
+    margin-bottom: 0; 
+}
+
+dl {
+    display: block;
+    margin-left: 2ex;
+    margin-top: 1.33ex;
+    margin-bottom: 1.33ex;
+}
+
+dt {
+    display: block;
+    font-weight: bold; 
+}
+
+dd { 
+    display: block;
+    margin-left: 4ex;
+}
+
+/* -------------------------------------
+   Table
+------------------------------------- */
+
+/*
+ * "black" is the color used to draw a border around the table and its cells
+ * based on values of attributes such as border, frame, rules.
+ *
+ * "rgb(238,238,224)" (a very light gray) is the color used to draw 
+ * a border around each cell whether the cell actually has borders or not.
+ * Remove this parameter if this ``cell footprint'' disturbs you.
+ *
+ * For more information about table support for XHTML, see Power User's Guide.
+ */
+@extension "com.xmlmind.xmleditapp.xhtml.TableSupport black rgb(238,238,224)";
+
+table { 
+    display: table;
+    border-style: solid;
+    border-width: 1;
+    margin-top: 1.33ex;
+    margin-bottom: 1.33ex;
+}
+
+caption { 
+    display: table-caption;
+    font-style: italic;
+    color: maroon;
+    text-align: center;
+    margin-left: 2ex;
+    margin-right: 2ex;
+    margin-top: 2;
+    margin-bottom: 2;
+}
+
+colgroup { 
+    display: table-column-group;
+    collapsed: yes;
+}
+
+col { 
+    display: table-column;
+    collapsed: yes;
+}
+
+thead, 
+tbody, 
+tfoot { 
+    display: table-row-group;
+}
+
+tr { 
+    display: table-row;
+}
+
+td, 
+th { 
+    display: table-cell;
+    border-style: solid;
+    border-width: 1;
+    padding: 2;
+}
+th {
+    font-weight: bold;
+}
+
+table {
+    collapsible: yes;
+    not-collapsible-head: 1;
+    collapsed-content:  url(../../common/icons2/table.gif);
+}
+
+caption:first-child:before {
+    content: collapser() " ";
+}
+
+/*
+ * Transitional
+ */
+tr[bgcolor] > th,
+tr[bgcolor] > td {
+    background-color: inherit;
+}
+/* "tr > th" is used to make this rule more specific than the above one. */
+table[bgcolor],
+tr[bgcolor],
+tr > th[bgcolor], 
+tr > td[bgcolor] {
+    background-color: concatenate(attr(bgcolor));
+}
+
+/* ---------------------------------------------------------------------------
+   Inlines
+
+   span
+   em strong cite dfn code samp kbd var abbr acronym
+   q
+   sub sup
+   br
+   tt i b 
+   big small
+   basefont font
+   strike s u
+   a
+--------------------------------------------------------------------------- */
+
+b, 
+strong { 
+    font-weight: bold; 
+}
+
+i, 
+em, 
+cite,
+q,
+var { 
+    font-style: italic; 
+}
+
+tt, 
+kbd, 
+code, 
+samp,
+var { 
+    font-family: monospace;
+}
+
+abbr, 
+acronym { 
+    font-weight: bold;
+}
+
+dfn {
+    background-color: #FFFFE0;
+}
+
+sub, 
+sup {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: small;
+}
+sub { 
+    vertical-align: sub;
+}
+sup { 
+    vertical-align: super;
+}
+
+/*
+ * Transitional
+ */
+strike,
+s {
+    text-decoration: line-through;
+}
+u { 
+    text-decoration: underline;
+}
+
+br:before { 
+    content: "\A"; 
+    color: gray;
+}
+
+big { 
+    font-size: large;
+}
+small { 
+    font-size: small;
+}
+
+/*
+ * Transitional
+ */
+basefont { 
+    content: "basefont=" attr(size);
+    font-size: small;
+    color: gray;
+}
+font[color] {
+    color: concatenate(attr(color));
+}
+font[face] {
+    font-family: concatenate(attr(face));
+}
+font[size="1"] {
+    font-size: x-small;
+}
+font[size="2"] {
+    font-size: small;
+}
+font[size="3"] {
+    font-size: medium;
+}
+font[size="4"] {
+    font-size: large;
+}
+font[size="5"] {
+    font-size: x-large;
+}
+font[size="6"],
+font[size="7"] {
+    font-size: xx-large;
+}
+font[size="-3"] {
+    font-size: smaller;
+}
+font[size="-2"] {
+    font-size: smaller;
+}
+font[size="-1"] {
+    font-size: smaller;
+}
+font[size="+1"] {
+    font-size: larger;
+}
+font[size="+2"] {
+    font-size: larger;
+}
+font[size="+3"] {
+    font-size: larger;
+}
+
+a[href] { 
+    color: navy;
+    text-decoration: underline;
+}
+a[name]:after { 
+    content: icon(right-target); 
+    color: gray;
+    vertical-align: text-top;
+}
+
+/* ---------------------------------------------------------------------------
+   Ins/del
+  
+   When this is really needed, put the ins/del into a span 
+   to force inline display.
+--------------------------------------------------------------------------- */
+
+ins {
+    display: block;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent blue transparent transparent;
+    padding-right: 5px;
+}
+
+p ins,
+h1 ins, h2 ins, h3 ins, h4 ins, h5 ins, h6 ins,
+dt ins, 
+address ins,
+a ins,
+span ins,
+bdo ins,
+em ins, strong ins,
+dfn ins,
+code ins,
+samp ins,
+kbd ins,
+var ins,
+cite ins,
+abbr ins, acronym ins,
+q ins,
+sub ins, sup ins,
+tt ins, i ins, b ins,
+big ins, small ins {
+    display: inline;
+    text-decoration: underline;
+}
+
+del {
+    display: block;
+    color: gray;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent gray transparent transparent;
+    padding-right: 5px;
+}
+
+p del,
+h1 del, h2 del, h3 del, h4 del, h5 del, h6 del,
+dt del, 
+address del,
+a del,
+span del,
+bdo del,
+em del, strong del,
+dfn del,
+code del,
+samp del,
+kbd del,
+var del,
+cite del,
+abbr del, acronym del,
+q del,
+sub del, sup del,
+tt del, i del, b del,
+big del, small del {
+    display: inline;
+    text-decoration: line-through;
+}
+
+/* ---------------------------------------------------------------------------
+   Objects
+--------------------------------------------------------------------------- */
+
+/* 
+ *  Showing a 400x200 thumbnail is sufficient. 
+ *  If you don't like that, replace the content property by a more traditional:
+ *  content: image(attr(src), attr(width), attr(height));
+ */
+img {
+    display: inline;
+    content: image(attr(src), -400, -200);
+}
+
+/*
+ * Transitional
+ */
+img[align=bottom],
+img[align=middle],
+img[align=top] {
+    vertical-align: concatenate(attr(align));
+}
+
+object,
+applet,
+param {
+    display: tree;
+}
+
+map,
+area {
+    display: tree;
+}
+
+/* ---------------------------------------------------------------------------
+   Forms
+--------------------------------------------------------------------------- */
+
+form {
+    display: block;
+    margin-top: 1.33ex;
+    margin-bottom: 1.33ex;
+}
+
+label {
+    display: inline;
+    font-weight: bold;
+}
+
+fieldset {
+    display: block;
+    border: thin solid gray;
+    margin: 5px;
+}
+
+legend {
+    display: block;
+    background-color: silver;
+    font-weight: bold;
+    padding: 2px;
+}
+
+button {
+    display: inline-block;
+    text-align: center;
+    border: 2px outset silver;
+    background-color: silver;
+    padding: 2px;
+}
+
+input,
+select,
+textarea {
+    display: inline-block;
+    padding: 1px; /* Needed to display the red border of the selection */
+    background-color: transparent;
+}
+
+input {
+    content: component("com.xmlmind.xmleditapp.xhtml.Input");    
+}
+
+input[type=hidden] {
+    content: "hidden";
+    font-size: x-small;
+    color: gray;
+}
+
+select {
+    content: component("com.xmlmind.xmleditapp.xhtml.Select");    
+}
+
+select[multiple] {
+    vertical-align: text-top;    
+}
+
+/* Not needed unless the document is invalid. */
+optgroup, 
+option {
+    display: tree;
+}
+
+textarea {
+    content: component("com.xmlmind.xmleditapp.xhtml.TextArea");
+    vertical-align: text-top;
+}
+
+/* ---------------------------------------------------------------------------
+   Other
+--------------------------------------------------------------------------- */
+
+*::comment,
+*::processing-instruction {
+    display: block;
+    margin: 2px;
+    white-space: pre;
+    text-align: left;
+    font-family: monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: small;
+}
+
+*::comment {
+    background-color: #FFFFCC;
+    color: #808000;
+}
+
+*::processing-instruction {
+    background-color: #CCFFCC;
+    color: #008000;
+}
+
+xi\:include {
+    display: tree;
+}
+
+*:read-only {
+    background-color: #F0F0F0;
+}
+
+/* ==================================
+   Useful to debug modular documents
+   ==================================
+
+*:property("LOCATION_INFO"):before,
+*:property("INCLUSION_INFO"):before {
+    display: block;
+    color: red;
+    font-size: small;
+    text-align: center;
+}
+
+*:property("LOCATION_INFO"):before {
+    content: "LOCATION_INFO=" property("LOCATION_INFO") "\A" icon(down);
+}
+
+*:property("INCLUSION_INFO"):before {
+    content: "INCLUSION_INFO=" property("INCLUSION_INFO") "\A" icon(down);
+}
+
+*:property("LOCATION_INFO"):property("INCLUSION_INFO"):before {
+    content: "LOCATION_INFO=" property("LOCATION_INFO")
+             "\A INCLUSION_INFO=" property("INCLUSION_INFO")
+             "\A" icon(down);
+}
+*/
+
+/* ---------------------------------------------------------------------------
+   When printing
+--------------------------------------------------------------------------- */
+
+@media print {
+    * {
+	background-color: transparent;
+        line-height: 1.2;
+    }
+
+    *:read-only {
+        background-color: transparent;
+    }
+
+    base,
+    meta,
+    link,
+    style,
+    script,
+    noscript {
+	display: none;
+    }
+
+    meta[name=author][content],
+    meta[name=date][content] { 
+        display: block;
+	text-align: center;
+	/* 
+	 * Without paragraph(), a static text label is used 
+         * and words are not wrapped.
+	 */	
+        content: paragraph(attr(content));
+    }
+
+    colgroup, 
+    col { 
+        display: none;
+    }
+
+    img {
+        content: image(attr(src), -500, -700, smooth);
+    }
+}

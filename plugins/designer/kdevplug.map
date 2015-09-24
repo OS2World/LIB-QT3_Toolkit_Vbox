@@ -1,0 +1,244 @@
+** EXPERIMENTAL (HLL) ** Open Watcom Linker Version 1.6beta1 Limited Availability
+Portions Copyright (c) 1985-2002 Sybase, Inc. All Rights Reserved.
+Created on:       14/11/02 20:39:06
+Executable Image: ..\..\..\..\plugins\designer\kdevplug.dll
+creating an OS/2 EMX dynamic link library
+
+
+                        +------------+
+                        |   Groups   |
+                        +------------+
+
+Group                           Address              Size
+=====                           =======              ====
+
+CGROUP                          0001:00000000        00008830
+DGROUP                          0002:00000000        00000080
+
+
+
+                        +--------------+
+                        |   Segments   |
+                        +--------------+
+
+Segment                Class          Group          Address         Size
+=======                =====          =====          =======         ====
+
+TEXT32                 CODE           CGROUP         0001:00000000   00008830
+________TEXT           CODE           CGROUP         0001:00008830   00000000
+DATA32                 DATA           DGROUP         0002:00000000   00000020
+SET1__os2dll           DATA           DGROUP         0002:00000020   00000004
+SET2__os2dll           DATA           DGROUP         0002:00000024   00000000
+SET3__os2dll           DATA           DGROUP         0002:00000024   00000004
+SET1___CTOR_LIST__     DATA           DGROUP         0002:00000028   00000004
+SET2___CTOR_LIST__     DATA           DGROUP         0002:0000002c   00000000
+SET3___CTOR_LIST__     DATA           DGROUP         0002:0000002c   00000004
+SET1___DTOR_LIST__     DATA           DGROUP         0002:00000030   00000004
+SET2___DTOR_LIST__     DATA           DGROUP         0002:00000034   00000000
+SET3___DTOR_LIST__     DATA           DGROUP         0002:00000034   00000004
+SET1___crtinit1__      DATA           DGROUP         0002:00000038   00000004
+SET2___crtinit1__      DATA           DGROUP         0002:0000003c   00000000
+SET3___crtinit1__      DATA           DGROUP         0002:0000003c   00000004
+SET1___crtexit1__      DATA           DGROUP         0002:00000040   00000004
+SET2___crtexit1__      DATA           DGROUP         0002:00000044   00000000
+SET3___crtexit1__      DATA           DGROUP         0002:00000044   00000004
+SET1___eh_frame__      DATA           DGROUP         0002:00000048   00000004
+SET2___eh_frame__      DATA           DGROUP         0002:0000004c   00000000
+SET3___eh_frame__      DATA           DGROUP         0002:0000004c   00000004
+SET1___eh_init__       DATA           DGROUP         0002:00000050   00000004
+SET2___eh_init__       DATA           DGROUP         0002:00000054   00000000
+SET3___eh_init__       DATA           DGROUP         0002:00000054   00000004
+SET1___eh_term__       DATA           DGROUP         0002:00000058   00000004
+SET2___eh_term__       DATA           DGROUP         0002:0000005c   00000000
+SET3___eh_term__       DATA           DGROUP         0002:0000005c   00000004
+________DATA           DATA           DGROUP         0002:00000060   00000000
+SET1___fork_child1__   DATA           DGROUP         0002:00000060   00000000
+SET2___fork_child1__   DATA           DGROUP         0002:00000060   00000004
+SET3___fork_child1__   DATA           DGROUP         0002:00000064   00000000
+BSS32                  BSS            DGROUP         0002:00000070   00000010
+c_common               BSS            DGROUP         0002:00000080   00000000
+________BSS            BSS            DGROUP         0002:00000080   00000000
+
+
+                        +----------------+
+                        |   Memory Map   |
+                        +----------------+
+
+* = unreferenced symbol
++ = symbol only referenced locally
+
+Address        Symbol
+=======        ======
+
+Module: C:\usr\lib\dll0nofork.obj({standard input})
+0001:00000000* __text
+0002:00000000* __data
+0002:00000000* ___data_start
+0002:00000070* ___bss_start
+0002:00000020+ __os2dll
+0002:00000028  ___CTOR_LIST__
+0002:00000030  ___DTOR_LIST__
+0002:00000038* ___crtinit1__
+0002:00000040* ___crtexit1__
+0002:00000048* ___eh_frame__
+0002:00000050  ___eh_init__
+0002:00000058  ___eh_term__
+Module: C:\200\trunk\tools\designer\plugins\kdevdlg\tmp\obj\release_mt_shared\main.obj(main.obj)
+0001:00000070  __ZN13KDevDlgFilterC2Ev
+0001:0000008c  __ZN13KDevDlgFilterC1Ev
+0001:000000a8  __ZN13KDevDlgFilter14queryInterfaceERK5QUuidPP17QUnknownInterface
+0001:000002bc  __ZNK13KDevDlgFilter11featureListEv
+0001:00000384  __ZN13KDevDlgFilter6importERK7QStringS2_
+0001:0000056c  __ZN13KDevDlgFilter4initEv
+0001:00000580  __ZN13KDevDlgFilter7cleanupEv
+0001:00000590  __ZNK13KDevDlgFilter9canUnloadEv
+0001:000005f4  qt_ucm_query_verification_data
+0001:00000600  ucm_instantiate
+0001:00000870  __ZTV13KDevDlgFilter$w$HElbxa0G8U67Cqo51
+0001:0000028c  __ZThn4_N13KDevDlgFilter14queryInterfaceERK5QUuidPP17QUnknownInterface$w$HElbxa0G8U67Cqo51
+0001:0000066c  __ZN17QValueListPrivateI7QStringEC1Ev$w$HElbxa0G8U67Cqo51
+0001:00000748  __ZN17QValueListPrivateI7QStringE6insertE18QValueListIteratorIS0_ERKS0_$w$HElbxa0G8U67Cqo51
+0001:000007a4  __ZN10QValueListI7QStringE14detachInternalEv$w$HElbxa0G8U67Cqo51
+0001:000006b8  __ZN17QValueListPrivateI7QStringED1Ev$w$HElbxa0G8U67Cqo51
+0001:00000578  __ZThn4_N13KDevDlgFilter4initEv$w$HElbxa0G8U67Cqo51
+0001:00000588  __ZThn4_N13KDevDlgFilter7cleanupEv$w$HElbxa0G8U67Cqo51
+0001:0000059c  __ZThn4_NK13KDevDlgFilter9canUnloadEv$w$HElbxa0G8U67Cqo51
+0001:000007d4  __ZN17QValueListPrivateI7QStringEC1ERKS1_$w$HElbxa0G8U67Cqo51
+0001:00000908  __ZN13KDevDlgFilter6addRefEv$w$HElbxa0G8U67Cqo51
+0001:00000924  __ZN13KDevDlgFilter7releaseEv$w$HElbxa0G8U67Cqo51
+0001:0000091c  __ZThn4_N13KDevDlgFilter6addRefEv$w$HElbxa0G8U67Cqo51
+0001:0000094c  __ZThn4_N13KDevDlgFilter7releaseEv$w$HElbxa0G8U67Cqo51
+0001:000008d0  __ZTV6QGList$w$HElbxa0G8U67Cqo51
+0001:000008fc  __ZNK6QGList5countEv$w$HElbxa0G8U67Cqo51
+Module: C:\200\trunk\tools\designer\plugins\kdevdlg\tmp\obj\release_mt_shared\kdevdlg2ui.obj(kdevdlg2ui.obj)
+0001:00000978  __ZN10KDEVDLG2UI2wiEv
+0001:000009ac  __ZN10KDEVDLG2UI6indentEv
+0001:000009b8  __ZN10KDEVDLG2UI6undentEv
+0001:000009d4  __ZN10KDEVDLG2UI10writeClassERK7QString
+0001:00000a34  __ZN10KDEVDLG2UI16writeWidgetStartERK7QString
+0001:00000a8c  __ZN10KDEVDLG2UI14writeWidgetEndEv
+0001:00000af8  __ZN10KDEVDLG2UI12writeCStringERK7QStringS2_
+0001:00000be0  __ZN10KDEVDLG2UI11writeStringERK7QStringS2_
+0001:00000cfc  __ZN10KDEVDLG2UI9writeRectERK7QStringiiii
+0001:00000f1c  __ZN10KDEVDLG2UI9writeFontERK7QStringi
+0001:00001078  __ZN10KDEVDLG2UI9writeBoolERK7QStringb
+0001:00001174  __ZN10KDEVDLG2UI11writeNumberERK7QStringi
+0001:00001258  __ZN10KDEVDLG2UI9writeEnumERK7QStringS2_
+0001:0000133c  __ZN10KDEVDLG2UI8writeSetERK7QStringS2_
+0001:00001420  __ZN10KDEVDLG2UI9writeItemERK7QStringS2_
+0001:000014a0  __ZN10KDEVDLG2UI11writeColumnERK7QStringS2_
+0001:0000154c  __ZN10KDEVDLG2UI10writeColorERK7QStringS2_
+0001:000017e0  __ZN10KDEVDLG2UI11writeStylesE11QStringListb
+0001:00001db0  __ZN10KDEVDLG2UIC2EP11QTextStreamRK7QString
+0001:00001e48  __ZN10KDEVDLG2UIC1EP11QTextStreamRK7QString
+0001:00001ee0  __ZN10KDEVDLG2UID2Ev
+0001:00001f7c  __ZN10KDEVDLG2UID1Ev
+0001:00002048  __ZN10KDEVDLG2UI5parseEv
+0001:00002994  __ZN10KDEVDLG2UI11writeDialogERK7QString
+0001:0000228c  __ZN10KDEVDLG2UI5parseER11QStringList
+0001:00002310  __ZN10KDEVDLG2UI11cleanStringEP7QString
+0001:00008484  __ZNK17QValueListPrivateI7QStringE8containsERKS0_$w$Xsfhxh0G8U6pP7eo2
+0001:000084d8* __ZN17QValueListPrivateI7QStringEC1Ev$w$Xsfhxh0G8U6pP7eo2
+0001:00008524* __ZN17QValueListPrivateI7QStringED1Ev$w$Xsfhxh0G8U6pP7eo2
+0001:000085b4* __ZN17QValueListPrivateI7QStringE6insertE18QValueListIteratorIS0_ERKS0_$w$Xsfhxh0G8U6pP7eo2
+0001:00008610* __ZN10QValueListI7QStringE14detachInternalEv$w$Xsfhxh0G8U6pP7eo2
+0001:00008640* __ZN17QValueListPrivateI7QStringEC1ERKS1_$w$Xsfhxh0G8U6pP7eo2
+0001:000086f0* __ZTV6QGList$w$Xsfhxh0G8U6pP7eo2
+0001:0000871c* __ZNK6QGList5countEv$w$Xsfhxh0G8U6pP7eo2
+Module: C:\usr\lib\libc_dll.lib(dllinit.obj)
+0001:00008730  _DLL_InitTerm
+Module: C:\usr\lib\libend.lib(src/libend/386/end.asm)
+0001:00008830* _etext
+0001:00008830* __etext
+0000:00000000* WEAK$ZERO
+0002:00000080  __end
+0002:00000060  __edata
+Module: C:\usr\lib\gcc-lib\i386-pc-os2-emx\3.3.5\libgcc_so_d.lib(emx-ctordtor.obj)
+0001:00008770  ___ctordtorInit
+0001:0000877a* ___POST$__ctordtorInit
+0001:0000879e  ___ctordtorTerm
+0001:000087a8* ___POST$__ctordtorTerm
+
+
+                        +----------------------+
+                        |   Imported Symbols   |
+                        +----------------------+
+
+Symbol                              Module
+======                              ======
+
+___init_dll                         libc064
+___libc_Back_termDll                libc064
+__Znwj                              libc064
+__ZN7QStringC1EPKc                  myqt
+__ZN7QString11shared_nullE          myqt
+__ZN11QStringData10deleteSelfEv     myqt
+__ZN5QFileC1ERK7QString             myqt
+__ZN5QFile4openEi                   myqt
+__ZN11QTextStreamC1Ev               myqt
+__ZN11QTextStream9setDeviceEP9QIODevice myqt
+__ZN4QDir9separatorEv               myqt
+__ZNK7QString7findRevE5QCharib      myqt
+__ZNK7QString5rightEj               myqt
+__ZNK7QString7sectionERKS_iii       myqt
+__ZN11QTextStreamD1Ev               myqt
+__ZN5QFileD1Ev                      myqt
+__ZdlPv                             libc064
+__ZNK7QString6latin1Ev              myqt
+__Z8qWarningPKcz                    myqt
+__ZN7QString14makeSharedNullEv      myqt
+__ZN7QStringC1ERKS_                 myqt
+__ZN6QGList5clearEv                 myqt
+__ZN6QGListD1Ev                     myqt
+__ZN6QGListD0Ev                     myqt
+__ZN14QPtrCollection7newItemEPv     myqt
+___cxa_pure_virtual                 libc064
+__ZN6QGList12compareItemsEPvS0_     myqt
+__ZN6QGList4readER11QDataStreamRPv  myqt
+__ZNK6QGList5writeER11QDataStreamPv myqt
+__ZN11QTextStreamlsEPKc             myqt
+__ZN11QTextStreamlsERK7QString      myqt
+__Z4endlR11QTextStream              myqt
+__ZN11QTextStreamlsEi               myqt
+__ZNK7QString5toIntEPbi             myqt
+__ZN7QStringaSEPKc                  myqt
+__ZN7QStringaSERKS_                 myqt
+__ZN5QFileC1Ev                      myqt
+__ZN7QString9fromAsciiEPKci         myqt
+__ZN7QStringpLERKS_                 myqt
+__ZN5QFile7setNameERK7QString       myqt
+__ZN11QTextStreamC1EP9QIODevice     myqt
+__Z6qFatalPKcz                      myqt
+__ZN11QTextStreamC1EP7QStringi      myqt
+__ZN7QString7replaceERKS_S1_        myqt
+__ZN11QTextStream8readLineEv        myqt
+__ZNK7QString18simplifyWhiteSpaceEv myqt
+__ZNK7QString4leftEj                myqt
+__ZeqRK7QStringPKc                  myqt
+__ZneRK7QStringPKc                  myqt
+__ZNK7QString15stripWhiteSpaceEv    myqt
+__ZN11QStringList5splitERK5QCharRK7QStringb myqt
+__ZeqRK7QStringS1_                  myqt
+__CRT_term                          libc064
+__CRT_init                          libc064
+___ctordtorInit1                    libc064
+___ctordtorTerm1                    libc064
+
+
+                        +--------------------+
+                        |   Libraries Used   |
+                        +--------------------+
+
+C:\200\trunk\lib\myqt.lib
+C:\usr\lib\libc_dll.lib
+C:\usr\lib\gcc-lib\i386-pc-os2-emx\3.3.5\libgcc_so_d.lib
+C:\usr\lib\libend.lib
+
+
+                        +-----------------------+
+                        |   Linker Statistics   |
+                        +-----------------------+
+
+Stack size:  0000 (0.)
+Memory size:  88b0 (34992.)
+Link time: 00:00.06

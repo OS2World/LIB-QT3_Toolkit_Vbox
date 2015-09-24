@@ -1,0 +1,540 @@
+** EXPERIMENTAL (HLL) ** Open Watcom Linker Version 1.6beta1 Limited Availability
+Portions Copyright (c) 1985-2002 Sybase, Inc. All Rights Reserved.
+Created on:       14/11/02 20:38:22
+Executable Image: ..\..\..\..\plugins\designer\wizards.dll
+creating an OS/2 EMX dynamic link library
+
+
+                        +------------+
+                        |   Groups   |
+                        +------------+
+
+Group                           Address              Size
+=====                           =======              ====
+
+CGROUP                          0001:00000000        00029550
+DGROUP                          0002:00000000        000003c0
+
+
+
+                        +--------------+
+                        |   Segments   |
+                        +--------------+
+
+Segment                Class          Group          Address         Size
+=======                =====          =====          =======         ====
+
+TEXT32                 CODE           CGROUP         0001:00000000   00029550
+________TEXT           CODE           CGROUP         0001:00029550   00000000
+DATA32                 DATA           DGROUP         0002:00000000   000002e0
+SET1__os2dll           DATA           DGROUP         0002:000002e0   00000004
+SET2__os2dll           DATA           DGROUP         0002:000002e4   00000000
+SET3__os2dll           DATA           DGROUP         0002:000002e4   00000004
+SET1___CTOR_LIST__     DATA           DGROUP         0002:000002e8   00000004
+SET2___CTOR_LIST__     DATA           DGROUP         0002:000002ec   0000000c
+SET3___CTOR_LIST__     DATA           DGROUP         0002:000002f8   00000004
+SET1___DTOR_LIST__     DATA           DGROUP         0002:000002fc   00000004
+SET2___DTOR_LIST__     DATA           DGROUP         0002:00000300   0000000c
+SET3___DTOR_LIST__     DATA           DGROUP         0002:0000030c   00000004
+SET1___crtinit1__      DATA           DGROUP         0002:00000310   00000004
+SET2___crtinit1__      DATA           DGROUP         0002:00000314   00000000
+SET3___crtinit1__      DATA           DGROUP         0002:00000314   00000004
+SET1___crtexit1__      DATA           DGROUP         0002:00000318   00000004
+SET2___crtexit1__      DATA           DGROUP         0002:0000031c   00000000
+SET3___crtexit1__      DATA           DGROUP         0002:0000031c   00000004
+SET1___eh_frame__      DATA           DGROUP         0002:00000320   00000004
+SET2___eh_frame__      DATA           DGROUP         0002:00000324   00000000
+SET3___eh_frame__      DATA           DGROUP         0002:00000324   00000004
+SET1___eh_init__       DATA           DGROUP         0002:00000328   00000004
+SET2___eh_init__       DATA           DGROUP         0002:0000032c   00000000
+SET3___eh_init__       DATA           DGROUP         0002:0000032c   00000004
+SET1___eh_term__       DATA           DGROUP         0002:00000330   00000004
+SET2___eh_term__       DATA           DGROUP         0002:00000334   00000000
+SET3___eh_term__       DATA           DGROUP         0002:00000334   00000004
+________DATA           DATA           DGROUP         0002:00000340   00000000
+SET1___fork_child1__   DATA           DGROUP         0002:00000340   00000000
+SET2___fork_child1__   DATA           DGROUP         0002:00000340   00000004
+SET3___fork_child1__   DATA           DGROUP         0002:00000344   00000000
+BSS32                  BSS            DGROUP         0002:00000350   00000070
+c_common               BSS            DGROUP         0002:000003c0   00000000
+________BSS            BSS            DGROUP         0002:000003c0   00000000
+
+
+                        +----------------+
+                        |   Memory Map   |
+                        +----------------+
+
+* = unreferenced symbol
++ = symbol only referenced locally
+
+Address        Symbol
+=======        ======
+
+Module: C:\usr\lib\dll0nofork.obj({standard input})
+0001:00000000* __text
+0002:00000000* __data
+0002:00000000* ___data_start
+0002:00000350* ___bss_start
+0002:000002e0+ __os2dll
+0002:000002e8  ___CTOR_LIST__
+0002:000002fc  ___DTOR_LIST__
+0002:00000310* ___crtinit1__
+0002:00000318* ___crtexit1__
+0002:00000320* ___eh_frame__
+0002:00000328  ___eh_init__
+0002:00000330  ___eh_term__
+Module: C:\200\trunk\tools\designer\plugins\wizards\tmp\obj\release_mt_shared\main.obj(main.obj)
+0001:00000070  __ZN31StandardTemplateWizardInterfaceC2Ev
+0001:00000090  __ZN31StandardTemplateWizardInterfaceC1Ev
+0001:000000b0  __ZN31StandardTemplateWizardInterfaceD2Ev
+0001:000000c8  __ZN31StandardTemplateWizardInterfaceD1Ev
+0001:000000e0  __ZN31StandardTemplateWizardInterfaceD0Ev
+0001:000000fc  __ZN31StandardTemplateWizardInterface4initEv
+0001:00000110  __ZN31StandardTemplateWizardInterface7cleanupEv
+0001:00000120  __ZNK31StandardTemplateWizardInterface9canUnloadEv
+0001:00000148  __ZNK31StandardTemplateWizardInterface11featureListEv
+0001:000001ec  __ZN31StandardTemplateWizardInterface5setupERK7QStringP7QWidgetP18DesignerFormWindowP17QUnknownInterface
+0001:00000264  __ZN31StandardTemplateWizardInterface14queryInterfaceERK5QUuidPP17QUnknownInterface
+0001:000004a4  qt_ucm_query_verification_data
+0001:000004b0  ucm_instantiate
+0001:00000690  __ZTV31StandardTemplateWizardInterface$w$3kX6PxWF8U67Cqo51
+0001:00000108  __ZThn4_N31StandardTemplateWizardInterface4initEv$w$3kX6PxWF8U67Cqo51
+0001:00000118  __ZThn4_N31StandardTemplateWizardInterface7cleanupEv$w$3kX6PxWF8U67Cqo51
+0001:00000134  __ZThn4_NK31StandardTemplateWizardInterface9canUnloadEv$w$3kX6PxWF8U67Cqo51
+0001:0000051c  __ZN17QValueListPrivateI7QStringEC1Ev$w$3kX6PxWF8U67Cqo51
+0001:00000568  __ZN17QValueListPrivateI7QStringE6insertE18QValueListIteratorIS0_ERKS0_$w$3kX6PxWF8U67Cqo51
+0001:000005c4  __ZN10QValueListI7QStringE14detachInternalEv$w$3kX6PxWF8U67Cqo51
+0001:00000448  __ZThn4_N31StandardTemplateWizardInterface14queryInterfaceERK5QUuidPP17QUnknownInterface$w$3kX6PxWF8U67Cqo51
+0001:000005f4  __ZN17QValueListPrivateI7QStringEC1ERKS1_$w$3kX6PxWF8U67Cqo51
+0001:00000728  __ZN31StandardTemplateWizardInterface6addRefEv$w$3kX6PxWF8U67Cqo51
+0001:00000744  __ZN31StandardTemplateWizardInterface7releaseEv$w$3kX6PxWF8U67Cqo51
+0001:0000073c  __ZThn4_N31StandardTemplateWizardInterface6addRefEv$w$3kX6PxWF8U67Cqo51
+0001:0000076c  __ZThn4_N31StandardTemplateWizardInterface7releaseEv$w$3kX6PxWF8U67Cqo51
+0001:000006f0  __ZTV6QGList$w$3kX6PxWF8U67Cqo51
+0001:0000071c  __ZNK6QGList5countEv$w$3kX6PxWF8U67Cqo51
+Module: C:\200\trunk\tools\designer\plugins\wizards\tmp\obj\release_mt_shared\sqlformwizard.obj(sqlformwizard.obj)
+0001:00000f18  __ZN17SqlFormWizardBaseC2EP7QWidgetPKcbj
+0001:00007f1c  __ZN17SqlFormWizardBase14languageChangeEv
+0001:00009fa8  __ZN17SqlFormWizardBase4initEv
+0001:00003ed0  __ZN17SqlFormWizardBaseC1EP7QWidgetPKcbj
+0001:00006e88  __ZN17SqlFormWizardBaseD2Ev
+0001:00009fb0  __ZN17SqlFormWizardBase7destroyEv
+0001:00006eb8  __ZN17SqlFormWizardBaseD1Ev
+0001:00006ef0  __ZN17SqlFormWizardBaseD0Ev
+0001:00009fec  __ZN17SqlFormWizardBase8addFieldEv
+0001:0000a034  __ZN17SqlFormWizardBase12addSortFieldEv
+0001:0000a078  __ZN17SqlFormWizardBase9fieldDownEv
+0001:0000a0bc  __ZN17SqlFormWizardBase7fieldUpEv
+0001:0000a108  __ZN17SqlFormWizardBase15reSortSortFieldEv
+0001:0000a150  __ZN17SqlFormWizardBase11removeFieldEv
+0001:0000a19c  __ZN17SqlFormWizardBase15removeSortFieldEv
+0001:0000a1f0  __ZN17SqlFormWizardBase24setupDatabaseConnectionsEv
+0001:0000a238  __ZN17SqlFormWizardBase13sortFieldDownEv
+0001:0000a280  __ZN17SqlFormWizardBase11sortFieldUpEv
+0001:0000a2dc  __ZN17SqlFormWizardBase18connectionSelectedERK7QString
+0001:0000a334  __ZN17SqlFormWizardBase13tableSelectedERK7QString
+0001:00006ee8  __ZThn40_N17SqlFormWizardBaseD1Ev$w$7GpuEIWF8U6Nt51I3
+0001:00006f24  __ZThn40_N17SqlFormWizardBaseD0Ev$w$7GpuEIWF8U6Nt51I3
+0001:0000a350* __ZTV6QGList$w$7GpuEIWF8U6Nt51I3
+0001:0000a37c* __ZNK6QGList5countEv$w$7GpuEIWF8U6Nt51I3
+Module: C:\200\trunk\tools\designer\plugins\wizards\tmp\obj\release_mt_shared\mainwindowwizard.obj(mainwindowwizard.obj)
+0001:0000a390  __ZN20MainWindowWizardBase4initEv
+0001:0000a40c  __ZN20MainWindowWizardBase7destroyEv
+0001:0000a434  __ZN20MainWindowWizardBase21currentSettingChangedEv
+0001:0000a494  __ZN20MainWindowWizardBase16setupToolbarPageEv
+0001:0000a5c0  __ZN20MainWindowWizardBase17toolbarActionDownEv
+0001:0000a6dc  __ZN20MainWindowWizardBase15toolbarActionUpEv
+0001:0000a7f8  __ZN20MainWindowWizardBase16toolbarAddActionEv
+0001:0000a900  __ZN20MainWindowWizardBase19toolbarRemoveActionEv
+0001:0000abb4  __ZN20MainWindowWizardBase6acceptEv
+0001:0000d560  __ZN20MainWindowWizardBase21currentToolbarChangedERK7QString
+0001:0000dadc  __ZN20MainWindowWizardBase9getPixmapERK7QStringR7QPixmap
+0001:0000dc04  __ZN20MainWindowWizardBase12pageSelectedERK7QString
+0001:0000dca0  __ZN20MainWindowWizardBase15setAppInterfaceEP17QUnknownInterfaceP18DesignerFormWindowP7QWidget
+0001:0000e10c  __ZN20MainWindowWizardBaseC2EP7QWidgetPKcbj
+0001:00010f84  __ZN20MainWindowWizardBase14languageChangeEv
+0001:0000f740  __ZN20MainWindowWizardBaseC1EP7QWidgetPKcbj
+0001:00010d74  __ZN20MainWindowWizardBaseD2Ev
+0001:00010da4  __ZN20MainWindowWizardBaseD1Ev
+0001:00010ddc  __ZN20MainWindowWizardBaseD0Ev
+0001:00011710  __ZTV5QDictI7QActionE$w$1VkxBSWF8U6sUwsF0
+0001:000116d0  __ZTV8QPtrListI7QActionE$w$1VkxBSWF8U6sUwsF0
+0001:00010dd4  __ZThn40_N20MainWindowWizardBaseD1Ev$w$1VkxBSWF8U6sUwsF0
+0001:00010e10  __ZThn40_N20MainWindowWizardBaseD0Ev$w$1VkxBSWF8U6sUwsF0
+0001:00011850  __ZNK8QPtrListI7QActionE5countEv$w$1VkxBSWF8U6sUwsF0
+0001:00011814  __ZN8QPtrListI7QActionE5clearEv$w$1VkxBSWF8U6sUwsF0
+0001:000117b0  __ZN8QPtrListI7QActionED1Ev$w$1VkxBSWF8U6sUwsF0
+0001:00011820  __ZN8QPtrListI7QActionED0Ev$w$1VkxBSWF8U6sUwsF0
+0001:0001185c  __ZN8QPtrListI7QActionE10deleteItemEPv$w$1VkxBSWF8U6sUwsF0
+0001:00011884  __ZNK5QDictI7QActionE5countEv$w$1VkxBSWF8U6sUwsF0
+0001:000117d8  __ZN5QDictI7QActionE5clearEv$w$1VkxBSWF8U6sUwsF0
+0001:00011788  __ZN5QDictI7QActionED1Ev$w$1VkxBSWF8U6sUwsF0
+0001:000117e4  __ZN5QDictI7QActionED0Ev$w$1VkxBSWF8U6sUwsF0
+0001:00011890  __ZN5QDictI7QActionE10deleteItemEPv$w$1VkxBSWF8U6sUwsF0
+0001:00011750* __ZTV6QGList$w$1VkxBSWF8U6sUwsF0
+0001:0001177c* __ZNK6QGList5countEv$w$1VkxBSWF8U6sUwsF0
+Module: C:\200\trunk\tools\designer\plugins\wizards\tmp\obj\release_mt_shared\qmake_image_collection.obj(qmake_image_collection.obj)
+0001:00011b5c  __Z19qInitImages_wizardsv
+0001:00011bac  __Z22qCleanupImages_wizardsv
+0001:00011c80  __ZTV9QMemArrayIcE$w$hrlFUYWF8U6ycWDp0
+0001:00011c10  __ZTV25MimeSourceFactory_wizards$w$hrlFUYWF8U6ycWDp0
+0001:00011d20  __ZN25MimeSourceFactory_wizardsD1Ev$w$hrlFUYWF8U6ycWDp0
+0001:00011d3c  __ZN25MimeSourceFactory_wizardsD0Ev$w$hrlFUYWF8U6ycWDp0
+0001:00011d64  __ZNK25MimeSourceFactory_wizards4dataERK7QString$w$hrlFUYWF8U6ycWDp0
+0001:00011c50* __ZTV6QGList$w$hrlFUYWF8U6ycWDp0
+0001:00011cec* __ZNK6QGList5countEv$w$hrlFUYWF8U6ycWDp0
+0001:00011cd0  __ZN9QMemArrayIcED1Ev$w$hrlFUYWF8U6ycWDp0
+0001:00011cf8  __ZN9QMemArrayIcED0Ev$w$hrlFUYWF8U6ycWDp0
+0001:00027f08  __ZN9QMemArrayIcE6detachEv$w$hrlFUYWF8U6ycWDp0
+Module: C:\200\trunk\tools\designer\plugins\wizards\tmp\obj\release_mt_shared\moc_sqlformwizard.obj(moc_sqlformwizard.obj)
+0001:00027f64  __ZNK17SqlFormWizardBase9classNameEv
+0001:00027f70  __ZN17SqlFormWizardBase2trEPKcS1_
+0001:00027fb0  __ZN17SqlFormWizardBase6trUtf8EPKcS1_
+0001:00028364  __ZN17SqlFormWizardBase16staticMetaObjectEv
+0001:000283c0  __ZN17SqlFormWizardBase7qt_castEPKc
+0001:00028418  __ZN17SqlFormWizardBase9qt_invokeEiP8QUObject
+0001:0002858c  __ZN17SqlFormWizardBase7qt_emitEiP8QUObject
+0001:000285a8  __ZN17SqlFormWizardBase11qt_propertyEiiP8QVariant
+0001:000285c4  __ZN17SqlFormWizardBase18qt_static_propertyEP7QObjectiiP8QVariant
+0002:00000370  __ZN17SqlFormWizardBase7metaObjE
+0001:000285d0  __ZTV17SqlFormWizardBase$w$n2njn3XF8U6DVNpd2
+0001:00028904  __ZNK17SqlFormWizardBase10metaObjectEv$w$n2njn3XF8U6DVNpd2
+0001:000288d4  __ZN7QWidget9setWStateEj$w$n2njn3XF8U6DVNpd2
+0001:000288e8  __ZN7QWidget9setWFlagsEj$w$n2njn3XF8U6DVNpd2
+0001:000288fc  __ZN7QWizard9setFinishEP7QWidgetb$w$n2njn3XF8U6DVNpd2
+0001:00028850* __ZTV6QGList$w$n2njn3XF8U6DVNpd2
+0001:000288c8* __ZNK6QGList5countEv$w$n2njn3XF8U6DVNpd2
+Module: C:\200\trunk\tools\designer\plugins\wizards\tmp\obj\release_mt_shared\moc_mainwindowwizard.obj(moc_mainwindowwizard.obj)
+0001:00028968  __ZNK20MainWindowWizardBase9classNameEv
+0001:00028974  __ZN20MainWindowWizardBase2trEPKcS1_
+0001:000289b4  __ZN20MainWindowWizardBase6trUtf8EPKcS1_
+0001:00028e58  __ZN20MainWindowWizardBase16staticMetaObjectEv
+0001:00028eb4  __ZN20MainWindowWizardBase7qt_castEPKc
+0001:00028f0c  __ZN20MainWindowWizardBase9qt_invokeEiP8QUObject
+0001:00029078  __ZN20MainWindowWizardBase7qt_emitEiP8QUObject
+0001:00029094  __ZN20MainWindowWizardBase11qt_propertyEiiP8QVariant
+0001:000290b0  __ZN20MainWindowWizardBase18qt_static_propertyEP7QObjectiiP8QVariant
+0002:00000390  __ZN20MainWindowWizardBase7metaObjE
+0001:000290d0  __ZTV20MainWindowWizardBase$w$3EZyr7XF8U6OSjtR0
+0001:00029404  __ZNK20MainWindowWizardBase10metaObjectEv$w$3EZyr7XF8U6OSjtR0
+0001:000293d4* __ZN7QWidget9setWStateEj$w$3EZyr7XF8U6OSjtR0
+0001:000293e8* __ZN7QWidget9setWFlagsEj$w$3EZyr7XF8U6OSjtR0
+0001:000293fc* __ZN7QWizard9setFinishEP7QWidgetb$w$3EZyr7XF8U6OSjtR0
+0001:00029350* __ZTV6QGList$w$3EZyr7XF8U6OSjtR0
+0001:000293c8* __ZNK6QGList5countEv$w$3EZyr7XF8U6OSjtR0
+Module: C:\usr\lib\libc_dll.lib(dllinit.obj)
+0001:00029450  _DLL_InitTerm
+Module: C:\usr\lib\libend.lib(src/libend/386/end.asm)
+0001:00029550* _etext
+0001:00029550* __etext
+0000:00000000* WEAK$ZERO
+0002:000003c0  __end
+0002:00000340  __edata
+Module: C:\usr\lib\gcc-lib\i386-pc-os2-emx\3.3.5\libgcc_so_d.lib(emx-ctordtor.obj)
+0001:00029490  ___ctordtorInit
+0001:0002949a* ___POST$__ctordtorInit
+0001:000294be  ___ctordtorTerm
+0001:000294c8* ___POST$__ctordtorTerm
+
+
+                        +----------------------+
+                        |   Imported Symbols   |
+                        +----------------------+
+
+Symbol                              Module
+======                              ======
+
+___init_dll                         libc064
+___libc_Back_termDll                libc064
+__ZdlPv                             libc064
+__Znwj                              libc064
+__ZN7QStringC1EPKc                  myqt
+__ZN7QString11shared_nullE          myqt
+__ZN11QStringData10deleteSelfEv     myqt
+__ZeqRK7QStringPKc                  myqt
+__ZN12QApplication11main_widgetE    myqt
+__ZN7QDialog4execEv                 myqt
+__ZN7QString14makeSharedNullEv      myqt
+__ZN7QStringC1ERKS_                 myqt
+__ZN6QGList5clearEv                 myqt
+__ZN6QGListD1Ev                     myqt
+__ZN6QGListD0Ev                     myqt
+__ZN14QPtrCollection7newItemEPv     myqt
+___cxa_pure_virtual                 libc064
+__ZN6QGList12compareItemsEPvS0_     myqt
+__ZN6QGList4readER11QDataStreamRPv  myqt
+__ZNK6QGList5writeER11QDataStreamPv myqt
+__ZN7QWizardC2EP7QWidgetPKcbj       myqt
+__ZN7QPixmap14fromMimeSourceERK7QString myqt
+__ZN7QWidget7setIconERK7QPixmap     myqt
+__ZN7QPixmapD1Ev                    myqt
+__ZN7QWidgetC1EPS_PKcj              myqt
+__ZN11QHBoxLayoutC1EP7QWidgetiiPKc  myqt
+__ZN6QLabelC1EP7QWidgetPKcj         myqt
+__ZN10QBoxLayout9addWidgetEP7QWidgetii myqt
+__ZN11QGridLayoutC1EP7QWidgetiiiiPKc myqt
+__ZN11QGridLayout9addWidgetEP7QWidgetiii myqt
+__ZN11QPushButtonC1EP7QWidgetPKc    myqt
+__ZTV11QSpacerItem                  myqt
+__ZN11QGridLayout18addMultiCellLayoutEP7QLayoutiiiii myqt
+__ZN8QListBoxC1EP7QWidgetPKcj       myqt
+__ZN10QBoxLayout9addLayoutEP7QLayouti myqt
+__ZN7QWizard7addPageEP7QWidgetRK7QString myqt
+__ZN11QGridLayout18addMultiCellWidgetEP7QWidgetiiiii myqt
+__ZN11QGridLayout7addItemEP11QLayoutItemii myqt
+__ZN11QGridLayout9addLayoutEP7QLayoutii myqt
+__ZN11QVBoxLayoutC1EP7QWidgetiiPKc  myqt
+__ZN9QCheckBoxC1EP7QWidgetPKc       myqt
+__ZN9QGroupBoxC1EP7QWidgetPKc       myqt
+__ZN11QGridLayoutC1EP7QLayoutiiiPKc myqt
+__ZN11QVBoxLayoutC1EP7QLayoutiPKc   myqt
+__ZN14QMultiLineEditC1EP7QWidgetPKc myqt
+__ZN12QButtonGroupC1EP7QWidgetPKc   myqt
+__ZN12QRadioButtonC1EP7QWidgetPKc   myqt
+__ZN8QSpinBoxC1EP7QWidgetPKc        myqt
+__ZN8QSpinBox11setMaxValueEi        myqt
+__ZN11QGridLayout12addMultiCellEP11QLayoutItemiiiii myqt
+__ZNK7QDialog15minimumSizeHintEv    myqt
+__ZN7QDialog6resizeERK5QSize        myqt
+__ZN7QObject7connectEPKS_PKcS1_S3_  myqt
+__ZN7QWidget11setTabOrderEPS_S0_    myqt
+__ZN7QWidget7setNameEPKc            myqt
+__ZN7QWizardD2Ev                    myqt
+__ZN7QString4nullE                  myqt
+__ZN8QToolTip3addEP7QWidgetRK7QString myqt
+__ZN10QWhatsThis3addEP7QWidgetRK7QString myqt
+__ZN7QWizard8setTitleEP7QWidgetRK7QString myqt
+__Z8qWarningPKcz                    myqt
+__ZN9QComboBox10insertItemERK7QStringi myqt
+__ZNK8QListBox11currentItemEv       myqt
+__ZNK8QListBox5countEv              myqt
+__ZNK8QListBox4textEi               myqt
+__ZN8QListBox10changeItemERK7QStringi myqt
+__ZN8QListBox10insertItemERK7QStringi myqt
+__ZN8QListBox10removeItemEi         myqt
+__ZN7QDialog6acceptEv               myqt
+__ZN7QPixmapC1Ev                    myqt
+__ZN6QGDictC2EjNS_7KeyTypeEbb       myqt
+__ZN6QGListC2Ev                     myqt
+__Z18qInstallMsgHandlerPFv9QtMsgTypePKcE myqt
+__ZN8QIconSetC1ERK7QPixmapNS_4SizeE myqt
+__ZN8QIconSetD1Ev                   myqt
+__ZN6QGDict11look_stringERK7QStringPvi myqt
+__ZN8QIconSetC1Ev                   myqt
+__ZN6QGList5firstEv                 myqt
+__ZNK7QObject4nameEv                myqt
+__ZN7QString9fromAsciiEPKci         myqt
+__ZNK7QString4findERKS_ib           myqt
+__ZN6QGList4nextEv                  myqt
+__ZN6QGListD2Ev                     myqt
+__ZN6QGDict5clearEv                 myqt
+__ZN6QGDictD2Ev                     myqt
+__ZN7QString6removeEjj              myqt
+__ZN7QStringpLEPKc                  myqt
+__ZNK7QString6latin1Ev              myqt
+__ZN8QCStringC1EPKc                 myqt
+__ZN8QCStringD1Ev                   myqt
+__ZNK7QString5asciiEv               myqt
+__ZeqRK7QStringS1_                  myqt
+__ZN6QGList7findRefEPvb             myqt
+__ZN6QGList6appendEPv               myqt
+__ZN8QListBox5clearEv               myqt
+__ZN7QStringpLERKS_                 myqt
+__ZN7QPixmapaSERKS_                 myqt
+__ZNK7QWizard11currentPageEv        myqt
+__ZN9QComboBox5clearEv              myqt
+__ZNK9QComboBox11currentItemEv      myqt
+__ZNK9QComboBox4textEi              myqt
+__ZN9QComboBoxC1EbP7QWidgetPKc      myqt
+__ZN6QGDict4readER11QDataStreamRPv  myqt
+__ZNK6QGDict5writeER11QDataStreamPv myqt
+__ZN7QString8fromUtf8EPKci          myqt
+__ZN6QImageC1Ev                     myqt
+__ZN7QGArrayC2Ev                    myqt
+__Z11qUncompressPKhi                myqt
+__ZN7QGArray6assignERKS_            myqt
+__ZN7QGArrayD2Ev                    myqt
+__ZN6QImageC1EPhiiiPjiNS_6EndianE   myqt
+__ZNK6QImage4copyEv                 myqt
+__ZN6QImageaSERKS_                  myqt
+__ZN6QImageD1Ev                     myqt
+__ZN6QImageC1ERKS_                  myqt
+__ZN6QImage14setAlphaBufferEb       myqt
+__ZN18QMimeSourceFactoryC2Ev        myqt
+__ZN18QMimeSourceFactory14defaultFactoryEv myqt
+__ZN18QMimeSourceFactory10addFactoryEPS_ myqt
+__ZN18QMimeSourceFactory13removeFactoryEPS_ myqt
+__ZNK18QMimeSourceFactory12makeAbsoluteERK7QStringS2_ myqt
+__ZN18QMimeSourceFactory7setTextERK7QStringS2_ myqt
+__ZN18QMimeSourceFactory8setImageERK7QStringRK6QImage myqt
+__ZN18QMimeSourceFactory9setPixmapERK7QStringRK7QPixmap myqt
+__ZN18QMimeSourceFactory7setDataERK7QStringP11QMimeSource myqt
+__ZN18QMimeSourceFactory11setFilePathERK11QStringList myqt
+__ZNK18QMimeSourceFactory8filePathEv myqt
+__ZN18QMimeSourceFactory16setExtensionTypeERK7QStringPKc myqt
+__ZN7QGArray7newDataEv              myqt
+__ZN7QGArray10deleteDataEPNS_10array_dataE myqt
+__ZN18QMimeSourceFactoryD2Ev        myqt
+__ZNK18QMimeSourceFactory4dataERK7QString myqt
+__ZN7QGArray9duplicateERKS_         myqt
+_qApp                               myqt
+__ZNK12QApplication9translateEPKcS1_S1_NS_8EncodingE myqt
+__ZN7QString10fromLatin1EPKci       myqt
+_static_QUType_QString              myqt
+__ZN7QWizard16staticMetaObjectEv    myqt
+__ZN11QMetaObject14new_metaobjectEPKcPS_PK9QMetaDataiS5_iPK13QMetaPropertyiPK9QMetaEnumiPK10QClassInfoi myqt
+__ZN18QMetaObjectCleanUp13setMetaObjectERP11QMetaObject myqt
+__ZN7QWizard7qt_castEPKc            myqt
+__ZN7QWizard9qt_invokeEiP8QUObject  myqt
+__ZN7QWizard7qt_emitEiP8QUObject    myqt
+__ZN7QWizard11qt_propertyEiiP8QVariant myqt
+__ZN7QWidget5eventEP6QEvent         myqt
+__ZN7QWizard11eventFilterEP7QObjectP6QEvent myqt
+__ZN7QObject11insertChildEPS_       myqt
+__ZN7QObject11removeChildEPS_       myqt
+__ZN7QObject11setPropertyEPKcRK8QVariant myqt
+__ZNK7QObject8propertyEPKc          myqt
+__ZN7QObject10timerEventEP11QTimerEvent myqt
+__ZN7QObject10childEventEP11QChildEvent myqt
+__ZN7QObject11customEventEP12QCustomEvent myqt
+__ZN7QObject13connectNotifyEPKc     myqt
+__ZN7QObject16disconnectNotifyEPKc  myqt
+__ZN7QObject16checkConnectArgsEPKcPKS_S1_ myqt
+__ZN7QWidget10setEnabledEb          myqt
+__ZN7QWidget14setMinimumSizeEii     myqt
+__ZN7QWidget14setMaximumSizeEii     myqt
+__ZN7QWidget16setSizeIncrementEii   myqt
+__ZN7QWidget17setBackgroundModeEN2Qt14BackgroundModeE myqt
+__ZN7QWidget13setEraseColorERK6QColor myqt
+__ZN7QWidget14setErasePixmapERK7QPixmap myqt
+__ZN7QWidget10setPaletteERK8QPalette myqt
+__ZN7QWidget25setPaletteBackgroundColorERK6QColor myqt
+__ZN7QWidget26setPaletteBackgroundPixmapERK7QPixmap myqt
+__ZN7QWizard7setFontERK5QFont       myqt
+__ZN7QWidget9setCursorERK7QCursor   myqt
+__ZN7QWidget11unsetCursorEv         myqt
+__ZN7QWidget7setMaskERK7QBitmap     myqt
+__ZN7QWidget7setMaskERK7QRegion     myqt
+__ZN7QWidget18setBackgroundColorERK6QColor myqt
+__ZN7QWidget19setBackgroundPixmapERK7QPixmap myqt
+__ZN7QWidget10setCaptionERK7QString myqt
+__ZN7QWidget11setIconTextERK7QString myqt
+__ZN7QWidget16setMouseTrackingEb    myqt
+__ZN7QWidget8setFocusEv             myqt
+__ZN7QWidget15setActiveWindowEv     myqt
+__ZN7QWidget14setFocusPolicyENS_11FocusPolicyE myqt
+__ZN7QWidget13setFocusProxyEPS_     myqt
+__ZN7QWidget17setUpdatesEnabledEb   myqt
+__ZN7QWizard4showEv                 myqt
+__ZN7QDialog4hideEv                 myqt
+__ZN7QWidget13showMinimizedEv       myqt
+__ZN7QWidget13showMaximizedEv       myqt
+__ZN7QWidget10showNormalEv          myqt
+__ZN7QWidget6polishEv               myqt
+__ZN7QDialog4moveEii                myqt
+__ZN7QDialog6resizeEii              myqt
+__ZN7QDialog11setGeometryEiiii      myqt
+__ZN7QDialog11setGeometryERK5QRect  myqt
+__ZN7QWidget5closeEb                myqt
+__ZNK7QDialog8sizeHintEv            myqt
+__ZNK7QWidget10sizePolicyEv         myqt
+__ZN7QWidget13setSizePolicyE11QSizePolicy myqt
+__ZNK7QWidget14heightForWidthEi     myqt
+__ZN7QWidget10adjustSizeEv          myqt
+__ZN7QWidget8reparentEPS_jRK6QPointb myqt
+__ZN7QWidget14setAcceptDropsEb      myqt
+__ZN7QWidget11setAutoMaskEb         myqt
+__ZN7QWidget19setBackgroundOriginENS_16BackgroundOriginE myqt
+__ZNK7QWidget15customWhatsThisEv    myqt
+__ZN7QWidget15mousePressEventEP11QMouseEvent myqt
+__ZN7QWidget17mouseReleaseEventEP11QMouseEvent myqt
+__ZN7QWidget21mouseDoubleClickEventEP11QMouseEvent myqt
+__ZN7QWidget14mouseMoveEventEP11QMouseEvent myqt
+__ZN7QWidget10wheelEventEP11QWheelEvent myqt
+__ZN7QDialog13keyPressEventEP9QKeyEvent myqt
+__ZN7QWidget15keyReleaseEventEP9QKeyEvent myqt
+__ZN7QWidget12focusInEventEP11QFocusEvent myqt
+__ZN7QWidget13focusOutEventEP11QFocusEvent myqt
+__ZN7QWidget10enterEventEP6QEvent   myqt
+__ZN7QWidget10leaveEventEP6QEvent   myqt
+__ZN7QWidget10paintEventEP11QPaintEvent myqt
+__ZN7QWidget9moveEventEP10QMoveEvent myqt
+__ZN7QDialog11resizeEventEP12QResizeEvent myqt
+__ZN7QDialog10closeEventEP11QCloseEvent myqt
+__ZN7QDialog16contextMenuEventEP17QContextMenuEvent myqt
+__ZN7QWidget12imStartEventEP8QIMEvent myqt
+__ZN7QWidget14imComposeEventEP8QIMEvent myqt
+__ZN7QWidget10imEndEventEP8QIMEvent myqt
+__ZN7QWidget11tabletEventEP12QTabletEvent myqt
+__ZN7QWidget14dragEnterEventEP15QDragEnterEvent myqt
+__ZN7QWidget13dragMoveEventEP14QDragMoveEvent myqt
+__ZN7QWidget14dragLeaveEventEP15QDragLeaveEvent myqt
+__ZN7QWidget9dropEventEP10QDropEvent myqt
+__ZN7QWidget9showEventEP10QShowEvent myqt
+__ZN7QWidget9hideEventEP10QHideEvent myqt
+__ZN7QWidget7pmEventEP5_QMSG        myqt
+__ZN7QWidget10updateMaskEv          myqt
+__ZN7QWidget11styleChangeER6QStyle  myqt
+__ZN7QWidget13enabledChangeEb       myqt
+__ZN7QWidget13paletteChangeERK8QPalette myqt
+__ZN7QWidget10fontChangeERK5QFont   myqt
+__ZN7QWidget22windowActivationChangeEb myqt
+__ZNK7QWidget6metricEi              myqt
+__ZN7QWidget6createEmbb             myqt
+__ZN7QWidget7destroyEbb             myqt
+__ZN7QWidget18focusNextPrevChildEb  myqt
+__ZN7QWidget17setKeyCompressionEb   myqt
+__ZN7QWidget17setMicroFocusHintEiiiibP5QFont myqt
+__ZN7QDialog4doneEi                 myqt
+__ZN7QDialog6rejectEv               myqt
+__ZN7QWizard10insertPageEP7QWidgetRK7QStringi myqt
+__ZN7QWizard10removePageEP7QWidget  myqt
+__ZN7QWizard8showPageEP7QWidget     myqt
+__ZNK7QWizard11appropriateEP7QWidget myqt
+__ZN7QWizard14setAppropriateEP7QWidgetb myqt
+__ZN7QWizard14setBackEnabledEP7QWidgetb myqt
+__ZN7QWizard14setNextEnabledEP7QWidgetb myqt
+__ZN7QWizard16setFinishEnabledEP7QWidgetb myqt
+__ZN7QWizard14setHelpEnabledEP7QWidgetb myqt
+__ZN7QWizard4backEv                 myqt
+__ZN7QWizard4nextEv                 myqt
+__ZN7QWizard4helpEv                 myqt
+__ZN7QWizard15layOutButtonRowEP11QHBoxLayout myqt
+__ZN7QWizard14layOutTitleRowEP11QHBoxLayoutRK7QString myqt
+__ZN12QPaintDevice13setResolutionEi myqt
+__ZNK12QPaintDevice10resolutionEv   myqt
+__ZNK12QPaintDevice6handleEv        myqt
+__ZN12QPaintDevice3cmdEiP8QPainterP13QPDevCmdParam myqt
+__ZThn40_NK7QWidget6metricEi        myqt
+__ZNK12QPaintDevice7fontMetEP5QFontiPKci myqt
+__ZNK12QPaintDevice7fontInfEP5QFonti myqt
+__ZN18QMetaObjectCleanUpD1Ev        myqt
+__ZN18QMetaObjectCleanUpC1EPKcPFP11QMetaObjectvE myqt
+_static_QUType_varptr               myqt
+_static_QUType_iface                myqt
+_static_QUType_ptr                  myqt
+__CRT_term                          libc064
+__CRT_init                          libc064
+__std_strcmp                        libc064
+___ctordtorInit1                    libc064
+___ctordtorTerm1                    libc064
+
+
+                        +--------------------+
+                        |   Libraries Used   |
+                        +--------------------+
+
+C:\200\trunk\lib\myqt.lib
+C:\usr\lib\libc_dll.lib
+C:\usr\lib\libc_alias.lib
+C:\usr\lib\gcc-lib\i386-pc-os2-emx\3.3.5\libgcc_so_d.lib
+C:\usr\lib\libend.lib
+
+
+                        +-----------------------+
+                        |   Linker Statistics   |
+                        +-----------------------+
+
+Stack size:  0000 (0.)
+Memory size:  00029910 (170256.)
+Link time: 00:00.33

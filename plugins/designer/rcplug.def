@@ -1,0 +1,66 @@
+LIBRARY rcplug INITINSTANCE TERMINSTANCE 
+DATA MULTIPLE NONSHARED 
+EXPORTS
+  ; segment TEXT32
+  "__ZN8RCFilterC2Ev"                                                   ; magicseg='TEXT32' len=17
+  "__ZN8RCFilterC1Ev"                                                   ; magicseg='TEXT32' len=17
+  "__ZN8RCFilter14queryInterfaceERK5QUuidPP17QUnknownInterface"         ; magicseg='TEXT32' len=59
+  "__ZNK8RCFilter11featureListEv"                                       ; magicseg='TEXT32' len=29
+  "__ZN8RCFilter6importERK7QStringS2_"                                  ; magicseg='TEXT32' len=34
+  "__ZN8RCFilter4initEv"                                                ; magicseg='TEXT32' len=20
+  "__ZN8RCFilter7cleanupEv"                                             ; magicseg='TEXT32' len=23
+  "__ZNK8RCFilter9canUnloadEv"                                          ; magicseg='TEXT32' len=26
+  "qt_ucm_query_verification_data"                                      ; magicseg='TEXT32' len=30
+  "ucm_instantiate"                                                     ; magicseg='TEXT32' len=15
+  "__ZTV8RCFilter"                                                      ; magicseg='TEXT32' len=14  weak
+  "__ZThn4_N8RCFilter14queryInterfaceERK5QUuidPP17QUnknownInterface"    ; magicseg='TEXT32' len=64  weak
+  "__ZN17QValueListPrivateI7QStringEC1Ev"                               ; magicseg='TEXT32' len=37  weak
+  "__ZN17QValueListPrivateI7QStringE6insertE18QValueListIteratorIS0_ERKS0_"                 ; magicseg='TEXT32' len=71  weak
+  "__ZN10QValueListI7QStringE14detachInternalEv"                        ; magicseg='TEXT32' len=44  weak
+  "__ZN17QValueListPrivateI7QStringED1Ev"                               ; magicseg='TEXT32' len=37  weak
+  "__ZThn4_N8RCFilter4initEv"                                           ; magicseg='TEXT32' len=25  weak
+  "__ZThn4_N8RCFilter7cleanupEv"                                        ; magicseg='TEXT32' len=28  weak
+  "__ZThn4_NK8RCFilter9canUnloadEv"                                     ; magicseg='TEXT32' len=31  weak
+  "__ZN17QValueListPrivateI7QStringEC1ERKS1_"                           ; magicseg='TEXT32' len=41  weak
+  "__ZN8RCFilter6addRefEv"                                              ; magicseg='TEXT32' len=22  weak
+  "__ZN8RCFilter7releaseEv"                                             ; magicseg='TEXT32' len=23  weak
+  "__ZThn4_N8RCFilter6addRefEv"                                         ; magicseg='TEXT32' len=27  weak
+  "__ZThn4_N8RCFilter7releaseEv"                                        ; magicseg='TEXT32' len=28  weak
+  "__ZTV6QGList"                                                        ; magicseg='TEXT32' len=12  weak
+  "__ZNK6QGList5countEv"                                                ; magicseg='TEXT32' len=20  weak
+  "__ZN5RC2UI2wiEv"                                                     ; magicseg='TEXT32' len=15
+  "__ZN5RC2UI6indentEv"                                                 ; magicseg='TEXT32' len=19
+  "__ZN5RC2UI6undentEv"                                                 ; magicseg='TEXT32' len=19
+  "__ZN5RC2UI7stripQMERK7QString"                                       ; magicseg='TEXT32' len=29
+  "__ZN5RC2UI11splitStylesERK7QStringc"                                 ; magicseg='TEXT32' len=35
+  "__ZN5RC2UI9parseNextER7QStringc"                                     ; magicseg='TEXT32' len=31
+  "__ZN5RC2UI10writeClassERK7QString"                                   ; magicseg='TEXT32' len=33
+  "__ZN5RC2UI12writeCStringERK7QStringS2_"                              ; magicseg='TEXT32' len=38
+  "__ZN5RC2UI11writeStringERK7QStringS2_"                               ; magicseg='TEXT32' len=37
+  "__ZN5RC2UI9writeRectERK7QStringiiii"                                 ; magicseg='TEXT32' len=35
+  "__ZN5RC2UI9writeFontERK7QStringi"                                    ; magicseg='TEXT32' len=32
+  "__ZN5RC2UI9writeBoolERK7QStringb"                                    ; magicseg='TEXT32' len=32
+  "__ZN5RC2UI11writeNumberERK7QStringi"                                 ; magicseg='TEXT32' len=35
+  "__ZN5RC2UI9writeEnumERK7QStringS2_"                                  ; magicseg='TEXT32' len=34
+  "__ZN5RC2UI8writeSetERK7QStringS2_"                                   ; magicseg='TEXT32' len=33
+  "__ZN5RC2UI11writeStylesE11QStringListb"                              ; magicseg='TEXT32' len=38
+  "__ZN5RC2UIC2EP11QTextStream"                                         ; magicseg='TEXT32' len=27
+  "__ZN5RC2UIC1EP11QTextStream"                                         ; magicseg='TEXT32' len=27
+  "__ZN5RC2UID2Ev"                                                      ; magicseg='TEXT32' len=14
+  "__ZN5RC2UID1Ev"                                                      ; magicseg='TEXT32' len=14
+  "__ZN5RC2UI5parseEv"                                                  ; magicseg='TEXT32' len=18
+  "__ZN5RC2UI10makeDialogEv"                                            ; magicseg='TEXT32' len=24
+  "__ZN5RC2UI5parseER11QStringList"                                     ; magicseg='TEXT32' len=31
+  "__ZN5RC2UI7useNameERK7QString"                                       ; magicseg='TEXT32' len=29
+  "__ZN5RC2UI10makeBitmapEv"                                            ; magicseg='TEXT32' len=24
+  "__ZN5RC2UI15makeAcceleratorEv"                                       ; magicseg='TEXT32' len=29
+  "__ZN5RC2UI10makeCursorEv"                                            ; magicseg='TEXT32' len=24
+  "__ZN5RC2UI8makeHTMLEv"                                               ; magicseg='TEXT32' len=21
+  "__ZN5RC2UI8makeIconEv"                                               ; magicseg='TEXT32' len=21
+  "__ZN5RC2UI15makeStringTableEv"                                       ; magicseg='TEXT32' len=29
+  "__ZN5RC2UI11makeVersionEv"                                           ; magicseg='TEXT32' len=25
+  "__ZNK17QValueListPrivateI7QStringE8containsERKS0_"                   ; magicseg='TEXT32' len=49  weak
+  "__ZNK17QValueListPrivateI7QStringE2atEj"                             ; magicseg='TEXT32' len=39  weak
+  "__ZN10QValueListI7QStringE5clearEv"                                  ; magicseg='TEXT32' len=34  weak
+  "__ZN17QValueListPrivateI7QStringE5clearEv"                           ; magicseg='TEXT32' len=41  weak
+

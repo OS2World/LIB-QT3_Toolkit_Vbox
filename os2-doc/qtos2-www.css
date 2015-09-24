@@ -1,0 +1,11 @@
+/*
+ * Stylesheet for the Qt for OS2 project documentation (browser version)
+ *
+ */
+
+@import "qtos2.css";
+
+a[href] {
+    text-decoration: underline;
+}
+

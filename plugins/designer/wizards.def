@@ -1,0 +1,127 @@
+LIBRARY wizards INITINSTANCE TERMINSTANCE 
+DATA MULTIPLE NONSHARED 
+EXPORTS
+  ; segment BSS32
+  "__ZN17SqlFormWizardBase7metaObjE"                                    ; magicseg='BSS32' len=32
+  "__ZN20MainWindowWizardBase7metaObjE"                                 ; magicseg='BSS32' len=35
+
+  ; segment TEXT32
+  "__ZN31StandardTemplateWizardInterfaceC2Ev"                           ; magicseg='TEXT32' len=41
+  "__ZN31StandardTemplateWizardInterfaceC1Ev"                           ; magicseg='TEXT32' len=41
+  "__ZN31StandardTemplateWizardInterfaceD2Ev"                           ; magicseg='TEXT32' len=41
+  "__ZN31StandardTemplateWizardInterfaceD1Ev"                           ; magicseg='TEXT32' len=41
+  "__ZN31StandardTemplateWizardInterfaceD0Ev"                           ; magicseg='TEXT32' len=41
+  "__ZN31StandardTemplateWizardInterface4initEv"                        ; magicseg='TEXT32' len=44
+  "__ZN31StandardTemplateWizardInterface7cleanupEv"                     ; magicseg='TEXT32' len=47
+  "__ZNK31StandardTemplateWizardInterface9canUnloadEv"                  ; magicseg='TEXT32' len=50
+  "__ZNK31StandardTemplateWizardInterface11featureListEv"               ; magicseg='TEXT32' len=53
+  "__ZN31StandardTemplateWizardInterface5setupERK7QStringP7QWidgetP18DesignerFormWindowP17QUnknownInterface"              ; magicseg='TEXT32' len=104
+  "__ZN31StandardTemplateWizardInterface14queryInterfaceERK5QUuidPP17QUnknownInterface"     ; magicseg='TEXT32' len=83
+  "qt_ucm_query_verification_data"                                      ; magicseg='TEXT32' len=30
+  "ucm_instantiate"                                                     ; magicseg='TEXT32' len=15
+  "__ZTV31StandardTemplateWizardInterface"                              ; magicseg='TEXT32' len=38  weak
+  "__ZThn4_N31StandardTemplateWizardInterface4initEv"                   ; magicseg='TEXT32' len=49  weak
+  "__ZThn4_N31StandardTemplateWizardInterface7cleanupEv"                ; magicseg='TEXT32' len=52  weak
+  "__ZThn4_NK31StandardTemplateWizardInterface9canUnloadEv"             ; magicseg='TEXT32' len=55  weak
+  "__ZN17QValueListPrivateI7QStringEC1Ev"                               ; magicseg='TEXT32' len=37  weak
+  "__ZN17QValueListPrivateI7QStringE6insertE18QValueListIteratorIS0_ERKS0_"                 ; magicseg='TEXT32' len=71  weak
+  "__ZN10QValueListI7QStringE14detachInternalEv"                        ; magicseg='TEXT32' len=44  weak
+  "__ZThn4_N31StandardTemplateWizardInterface14queryInterfaceERK5QUuidPP17QUnknownInterface"                              ; magicseg='TEXT32' len=88  weak
+  "__ZN17QValueListPrivateI7QStringEC1ERKS1_"                           ; magicseg='TEXT32' len=41  weak
+  "__ZN31StandardTemplateWizardInterface6addRefEv"                      ; magicseg='TEXT32' len=46  weak
+  "__ZN31StandardTemplateWizardInterface7releaseEv"                     ; magicseg='TEXT32' len=47  weak
+  "__ZThn4_N31StandardTemplateWizardInterface6addRefEv"                 ; magicseg='TEXT32' len=51  weak
+  "__ZThn4_N31StandardTemplateWizardInterface7releaseEv"                ; magicseg='TEXT32' len=52  weak
+  "__ZTV6QGList"                                                        ; magicseg='TEXT32' len=12  weak
+  "__ZNK6QGList5countEv"                                                ; magicseg='TEXT32' len=20  weak
+  "__ZN17SqlFormWizardBaseC2EP7QWidgetPKcbj"                            ; magicseg='TEXT32' len=40
+  "__ZN17SqlFormWizardBase14languageChangeEv"                           ; magicseg='TEXT32' len=41
+  "__ZN17SqlFormWizardBase4initEv"                                      ; magicseg='TEXT32' len=30
+  "__ZN17SqlFormWizardBaseC1EP7QWidgetPKcbj"                            ; magicseg='TEXT32' len=40
+  "__ZN17SqlFormWizardBaseD2Ev"                                         ; magicseg='TEXT32' len=27
+  "__ZN17SqlFormWizardBase7destroyEv"                                   ; magicseg='TEXT32' len=33
+  "__ZN17SqlFormWizardBaseD1Ev"                                         ; magicseg='TEXT32' len=27
+  "__ZN17SqlFormWizardBaseD0Ev"                                         ; magicseg='TEXT32' len=27
+  "__ZN17SqlFormWizardBase8addFieldEv"                                  ; magicseg='TEXT32' len=34
+  "__ZN17SqlFormWizardBase12addSortFieldEv"                             ; magicseg='TEXT32' len=39
+  "__ZN17SqlFormWizardBase9fieldDownEv"                                 ; magicseg='TEXT32' len=35
+  "__ZN17SqlFormWizardBase7fieldUpEv"                                   ; magicseg='TEXT32' len=33
+  "__ZN17SqlFormWizardBase15reSortSortFieldEv"                          ; magicseg='TEXT32' len=42
+  "__ZN17SqlFormWizardBase11removeFieldEv"                              ; magicseg='TEXT32' len=38
+  "__ZN17SqlFormWizardBase15removeSortFieldEv"                          ; magicseg='TEXT32' len=42
+  "__ZN17SqlFormWizardBase24setupDatabaseConnectionsEv"                 ; magicseg='TEXT32' len=51
+  "__ZN17SqlFormWizardBase13sortFieldDownEv"                            ; magicseg='TEXT32' len=40
+  "__ZN17SqlFormWizardBase11sortFieldUpEv"                              ; magicseg='TEXT32' len=38
+  "__ZN17SqlFormWizardBase18connectionSelectedERK7QString"              ; magicseg='TEXT32' len=54
+  "__ZN17SqlFormWizardBase13tableSelectedERK7QString"                   ; magicseg='TEXT32' len=49
+  "__ZThn40_N17SqlFormWizardBaseD1Ev"                                   ; magicseg='TEXT32' len=33  weak
+  "__ZThn40_N17SqlFormWizardBaseD0Ev"                                   ; magicseg='TEXT32' len=33  weak
+  "__ZN20MainWindowWizardBase4initEv"                                   ; magicseg='TEXT32' len=33
+  "__ZN20MainWindowWizardBase7destroyEv"                                ; magicseg='TEXT32' len=36
+  "__ZN20MainWindowWizardBase21currentSettingChangedEv"                 ; magicseg='TEXT32' len=51
+  "__ZN20MainWindowWizardBase16setupToolbarPageEv"                      ; magicseg='TEXT32' len=46
+  "__ZN20MainWindowWizardBase17toolbarActionDownEv"                     ; magicseg='TEXT32' len=47
+  "__ZN20MainWindowWizardBase15toolbarActionUpEv"                       ; magicseg='TEXT32' len=45
+  "__ZN20MainWindowWizardBase16toolbarAddActionEv"                      ; magicseg='TEXT32' len=46
+  "__ZN20MainWindowWizardBase19toolbarRemoveActionEv"                   ; magicseg='TEXT32' len=49
+  "__ZN20MainWindowWizardBase6acceptEv"                                 ; magicseg='TEXT32' len=35
+  "__ZN20MainWindowWizardBase21currentToolbarChangedERK7QString"        ; magicseg='TEXT32' len=60
+  "__ZN20MainWindowWizardBase9getPixmapERK7QStringR7QPixmap"            ; magicseg='TEXT32' len=56
+  "__ZN20MainWindowWizardBase12pageSelectedERK7QString"                 ; magicseg='TEXT32' len=51
+  "__ZN20MainWindowWizardBase15setAppInterfaceEP17QUnknownInterfaceP18DesignerFormWindowP7QWidget"                        ; magicseg='TEXT32' len=94
+  "__ZN20MainWindowWizardBaseC2EP7QWidgetPKcbj"                         ; magicseg='TEXT32' len=43
+  "__ZN20MainWindowWizardBase14languageChangeEv"                        ; magicseg='TEXT32' len=44
+  "__ZN20MainWindowWizardBaseC1EP7QWidgetPKcbj"                         ; magicseg='TEXT32' len=43
+  "__ZN20MainWindowWizardBaseD2Ev"                                      ; magicseg='TEXT32' len=30
+  "__ZN20MainWindowWizardBaseD1Ev"                                      ; magicseg='TEXT32' len=30
+  "__ZN20MainWindowWizardBaseD0Ev"                                      ; magicseg='TEXT32' len=30
+  "__ZTV5QDictI7QActionE"                                               ; magicseg='TEXT32' len=21  weak
+  "__ZTV8QPtrListI7QActionE"                                            ; magicseg='TEXT32' len=24  weak
+  "__ZThn40_N20MainWindowWizardBaseD1Ev"                                ; magicseg='TEXT32' len=36  weak
+  "__ZThn40_N20MainWindowWizardBaseD0Ev"                                ; magicseg='TEXT32' len=36  weak
+  "__ZNK8QPtrListI7QActionE5countEv"                                    ; magicseg='TEXT32' len=32  weak
+  "__ZN8QPtrListI7QActionE5clearEv"                                     ; magicseg='TEXT32' len=31  weak
+  "__ZN8QPtrListI7QActionED1Ev"                                         ; magicseg='TEXT32' len=27  weak
+  "__ZN8QPtrListI7QActionED0Ev"                                         ; magicseg='TEXT32' len=27  weak
+  "__ZN8QPtrListI7QActionE10deleteItemEPv"                              ; magicseg='TEXT32' len=38  weak
+  "__ZNK5QDictI7QActionE5countEv"                                       ; magicseg='TEXT32' len=29  weak
+  "__ZN5QDictI7QActionE5clearEv"                                        ; magicseg='TEXT32' len=28  weak
+  "__ZN5QDictI7QActionED1Ev"                                            ; magicseg='TEXT32' len=24  weak
+  "__ZN5QDictI7QActionED0Ev"                                            ; magicseg='TEXT32' len=24  weak
+  "__ZN5QDictI7QActionE10deleteItemEPv"                                 ; magicseg='TEXT32' len=35  weak
+  "__Z19qInitImages_wizardsv"                                           ; magicseg='TEXT32' len=25
+  "__Z22qCleanupImages_wizardsv"                                        ; magicseg='TEXT32' len=28
+  "__ZTV9QMemArrayIcE"                                                  ; magicseg='TEXT32' len=18  weak
+  "__ZTV25MimeSourceFactory_wizards"                                    ; magicseg='TEXT32' len=32  weak
+  "__ZN25MimeSourceFactory_wizardsD1Ev"                                 ; magicseg='TEXT32' len=35  weak
+  "__ZN25MimeSourceFactory_wizardsD0Ev"                                 ; magicseg='TEXT32' len=35  weak
+  "__ZNK25MimeSourceFactory_wizards4dataERK7QString"                    ; magicseg='TEXT32' len=48  weak
+  "__ZN9QMemArrayIcED1Ev"                                               ; magicseg='TEXT32' len=21  weak
+  "__ZN9QMemArrayIcED0Ev"                                               ; magicseg='TEXT32' len=21  weak
+  "__ZN9QMemArrayIcE6detachEv"                                          ; magicseg='TEXT32' len=26  weak
+  "__ZNK17SqlFormWizardBase9classNameEv"                                ; magicseg='TEXT32' len=36
+  "__ZN17SqlFormWizardBase2trEPKcS1_"                                   ; magicseg='TEXT32' len=33
+  "__ZN17SqlFormWizardBase6trUtf8EPKcS1_"                               ; magicseg='TEXT32' len=37
+  "__ZN17SqlFormWizardBase16staticMetaObjectEv"                         ; magicseg='TEXT32' len=43
+  "__ZN17SqlFormWizardBase7qt_castEPKc"                                 ; magicseg='TEXT32' len=35
+  "__ZN17SqlFormWizardBase9qt_invokeEiP8QUObject"                       ; magicseg='TEXT32' len=45
+  "__ZN17SqlFormWizardBase7qt_emitEiP8QUObject"                         ; magicseg='TEXT32' len=43
+  "__ZN17SqlFormWizardBase11qt_propertyEiiP8QVariant"                   ; magicseg='TEXT32' len=49
+  "__ZN17SqlFormWizardBase18qt_static_propertyEP7QObjectiiP8QVariant"                       ; magicseg='TEXT32' len=65
+  "__ZTV17SqlFormWizardBase"                                            ; magicseg='TEXT32' len=24  weak
+  "__ZNK17SqlFormWizardBase10metaObjectEv"                              ; magicseg='TEXT32' len=38  weak
+  "__ZN7QWidget9setWStateEj"                                            ; magicseg='TEXT32' len=24  weak
+  "__ZN7QWidget9setWFlagsEj"                                            ; magicseg='TEXT32' len=24  weak
+  "__ZN7QWizard9setFinishEP7QWidgetb"                                   ; magicseg='TEXT32' len=33  weak
+  "__ZNK20MainWindowWizardBase9classNameEv"                             ; magicseg='TEXT32' len=39
+  "__ZN20MainWindowWizardBase2trEPKcS1_"                                ; magicseg='TEXT32' len=36
+  "__ZN20MainWindowWizardBase6trUtf8EPKcS1_"                            ; magicseg='TEXT32' len=40
+  "__ZN20MainWindowWizardBase16staticMetaObjectEv"                      ; magicseg='TEXT32' len=46
+  "__ZN20MainWindowWizardBase7qt_castEPKc"                              ; magicseg='TEXT32' len=38
+  "__ZN20MainWindowWizardBase9qt_invokeEiP8QUObject"                    ; magicseg='TEXT32' len=48
+  "__ZN20MainWindowWizardBase7qt_emitEiP8QUObject"                      ; magicseg='TEXT32' len=46
+  "__ZN20MainWindowWizardBase11qt_propertyEiiP8QVariant"                ; magicseg='TEXT32' len=52
+  "__ZN20MainWindowWizardBase18qt_static_propertyEP7QObjectiiP8QVariant"                    ; magicseg='TEXT32' len=68
+  "__ZTV20MainWindowWizardBase"                                         ; magicseg='TEXT32' len=27  weak
+  "__ZNK20MainWindowWizardBase10metaObjectEv"                           ; magicseg='TEXT32' len=41  weak
+

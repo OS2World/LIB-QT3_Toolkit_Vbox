@@ -1,0 +1,24 @@
+OBJECTS_DIR=tmp\obj\release_mt_shared
+MOC_DIR=tmp\moc\release_mt_shared
+DEFINES+=
+INCLUDEPATH+=
+sql-drivers+=
+sql-plugins+=
+styles+=windows warp4 motif
+style-plugins+=
+imageformat-plugins+=
+QT_PRODUCT=qt-enterprise
+CONFIG+=nocrosscompiler kernel tools widgets dialogs styles network workspace iconview table canvas xml minimal-config small-config medium-config large-config full-config  release thread gif zlib jpeg png mng bigcodecs no-tablet incremental create_prl link_prl 
+QMAKESPEC=os2-g++
+QT_BUILD_TREE=C:\200\trunk
+QT_SOURCE_TREE=C:\200\trunk
+QT_INSTALL_PREFIX=C:\200\trunk
+QT_INSTALL_TRANSLATIONS=C:\200\trunk\translations
+docs.path=C:\200\trunk\doc
+headers.path=C:\200\trunk\include
+plugins.path=C:\200\trunk\plugins
+libs.path=C:\200\trunk\lib
+bins.path=C:\200\trunk\bin
+data.path=C:\200\trunk
+translations.path=C:\200\trunk\translations
+

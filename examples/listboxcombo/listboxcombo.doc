@@ -1,0 +1,30 @@
+/*
+$Id: listboxcombo.doc 2 2005-11-16 15:49:26Z dmik $
+*/
+/*!   \page listboxcombo-example.html
+
+  \ingroup examples
+  \title Listboxes and Comboboxes
+
+  This example program demonstrates how to use listboxes (with single selection
+  and multi selection) and comboboxes (editable and non-editable).
+
+  <hr>
+
+  Header file:
+
+  \include listboxcombo/listboxcombo.h
+
+  <hr>
+
+  Implementation:
+
+  \include listboxcombo/listboxcombo.cpp
+
+  <hr>
+
+  Main:
+
+  \include listboxcombo/main.cpp
+*/
+

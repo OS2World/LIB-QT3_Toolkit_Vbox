@@ -1,0 +1,18 @@
+/*
+$Id: splitter.doc 2 2005-11-16 15:49:26Z dmik $
+*/
+/*!   \page splitter-example.html
+
+  \ingroup examples
+  \title Splitter
+
+  This example shows how to use splitters. With their help users can
+  decide for themselves how much space each child item should get.
+
+  <hr>
+
+  Implementation:
+
+  \include splitter/splitter.cpp
+*/
+

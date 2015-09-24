@@ -1,0 +1,136 @@
+LIBRARY dlgplug INITINSTANCE TERMINSTANCE 
+DATA MULTIPLE NONSHARED 
+EXPORTS
+  ; segment TEXT32
+  "__ZN9DlgFilterC2Ev"                                                  ; magicseg='TEXT32' len=18
+  "__ZN9DlgFilterC1Ev"                                                  ; magicseg='TEXT32' len=18
+  "__ZN9DlgFilter14queryInterfaceERK5QUuidPP17QUnknownInterface"        ; magicseg='TEXT32' len=60
+  "__ZNK9DlgFilter11featureListEv"                                      ; magicseg='TEXT32' len=30
+  "__ZN9DlgFilter6importERK7QStringS2_"                                 ; magicseg='TEXT32' len=35
+  "__ZN9DlgFilter4initEv"                                               ; magicseg='TEXT32' len=21
+  "__ZN9DlgFilter7cleanupEv"                                            ; magicseg='TEXT32' len=24
+  "__ZNK9DlgFilter9canUnloadEv"                                         ; magicseg='TEXT32' len=27
+  "qt_ucm_query_verification_data"                                      ; magicseg='TEXT32' len=30
+  "ucm_instantiate"                                                     ; magicseg='TEXT32' len=15
+  "__ZTV9DlgFilter"                                                     ; magicseg='TEXT32' len=15  weak
+  "__ZThn4_N9DlgFilter14queryInterfaceERK5QUuidPP17QUnknownInterface"                       ; magicseg='TEXT32' len=65  weak
+  "__ZN17QValueListPrivateI7QStringEC1Ev"                               ; magicseg='TEXT32' len=37  weak
+  "__ZN17QValueListPrivateI7QStringE6insertE18QValueListIteratorIS0_ERKS0_"                 ; magicseg='TEXT32' len=71  weak
+  "__ZN10QValueListI7QStringE14detachInternalEv"                        ; magicseg='TEXT32' len=44  weak
+  "__ZN6Dlg2UiC1Ev"                                                     ; magicseg='TEXT32' len=15  weak
+  "__ZN7QStringD1Ev"                                                    ; magicseg='TEXT32' len=16  weak
+  "__ZN4QMapI7QStringS0_ED1Ev"                                          ; magicseg='TEXT32' len=26  weak
+  "__ZN11QMapPrivateI7QStringS0_E5clearEv"                              ; magicseg='TEXT32' len=38  weak
+  "__ZN11QMapPrivateI7QString11QDomElementE5clearEv"                    ; magicseg='TEXT32' len=48  weak
+  "__ZN11QMapPrivateI7QString4QMapIS0_iEE5clearEv"                      ; magicseg='TEXT32' len=46  weak
+  "__ZN11QMapPrivateI7QStringiE5clearEv"                                ; magicseg='TEXT32' len=36  weak
+  "__ZN4QMapI7QStringiED1Ev"                                            ; magicseg='TEXT32' len=24  weak
+  "__ZN17QValueListPrivateI13DlgConnectionED1Ev"                        ; magicseg='TEXT32' len=44  weak
+  "__ZN17QValueListPrivateI7QStringED1Ev"                               ; magicseg='TEXT32' len=37  weak
+  "__ZThn4_N9DlgFilter4initEv"                                          ; magicseg='TEXT32' len=26  weak
+  "__ZThn4_N9DlgFilter7cleanupEv"                                       ; magicseg='TEXT32' len=29  weak
+  "__ZThn4_NK9DlgFilter9canUnloadEv"                                    ; magicseg='TEXT32' len=32  weak
+  "__ZN17QValueListPrivateI7QStringEC1ERKS1_"                           ; magicseg='TEXT32' len=41  weak
+  "__ZN11QMapPrivateI7QStringiE5clearEP8QMapNodeIS0_iE"                 ; magicseg='TEXT32' len=51  weak
+  "__ZN11QMapPrivateI7QString4QMapIS0_iEE5clearEP8QMapNodeIS0_S2_E"     ; magicseg='TEXT32' len=63  weak
+  "__ZN11QMapPrivateI7QString11QDomElementE5clearEP8QMapNodeIS0_S1_E"                       ; magicseg='TEXT32' len=65  weak
+  "__ZN11QMapPrivateI7QStringS0_E5clearEP8QMapNodeIS0_S0_E"             ; magicseg='TEXT32' len=55  weak
+  "__ZN9DlgFilter6addRefEv"                                             ; magicseg='TEXT32' len=23  weak
+  "__ZN9DlgFilter7releaseEv"                                            ; magicseg='TEXT32' len=24  weak
+  "__ZThn4_N9DlgFilter6addRefEv"                                        ; magicseg='TEXT32' len=28  weak
+  "__ZThn4_N9DlgFilter7releaseEv"                                       ; magicseg='TEXT32' len=29  weak
+  "__ZTV6QGList"                                                        ; magicseg='TEXT32' len=12  weak
+  "__ZNK6QGList5countEv"                                                ; magicseg='TEXT32' len=20  weak
+  "__ZN11QMapPrivateI7QStringiEC1Ev"                                    ; magicseg='TEXT32' len=32  weak
+  "__ZN11QMapPrivateI7QString4QMapIS0_iEEC1Ev"                          ; magicseg='TEXT32' len=42  weak
+  "__ZN11QMapPrivateI7QString11QDomElementEC1Ev"                        ; magicseg='TEXT32' len=44  weak
+  "__ZN11QMapPrivateI7QStringS0_EC1Ev"                                  ; magicseg='TEXT32' len=34  weak
+  "__ZN17QValueListPrivateI13DlgConnectionEC1Ev"                        ; magicseg='TEXT32' len=44  weak
+  "__ZNK6Dlg2Ui5aliasERK7QString"                                       ; magicseg='TEXT32' len=29
+  "__ZN6Dlg2Ui7openingERK7QStringRK4QMapIS0_S0_E"                       ; magicseg='TEXT32' len=45
+  "__ZN6Dlg2Ui7closingERK7QString"                                      ; magicseg='TEXT32' len=30
+  "__ZN6Dlg2Ui5errorERK7QString"                                        ; magicseg='TEXT32' len=28
+  "__ZN6Dlg2Ui11syntaxErrorEv"                                          ; magicseg='TEXT32' len=26
+  "__ZN6Dlg2Ui12getTextValueERK8QDomNode"                               ; magicseg='TEXT32' len=37
+  "__ZN6Dlg2Ui8getValueERK12QDomNodeListRK7QStringS5_"                  ; magicseg='TEXT32' len=50
+  "__ZN6Dlg2Ui8getValueERK11QDomElementRK7QStringS5_"                   ; magicseg='TEXT32' len=49
+  "__ZN6Dlg2Ui10emitHeaderEv"                                           ; magicseg='TEXT32' len=25
+  "__ZN6Dlg2Ui10emitFooterEv"                                           ; magicseg='TEXT32' len=25
+  "__ZN6Dlg2Ui15emitSimpleValueERK7QStringS2_RK4QMapIS0_S0_E"           ; magicseg='TEXT32' len=57
+  "__ZN6Dlg2Ui11emitOpeningERK7QStringRK4QMapIS0_S0_E"                  ; magicseg='TEXT32' len=50
+  "__ZN6Dlg2Ui11emitClosingERK7QString"                                 ; magicseg='TEXT32' len=35
+  "__ZN6Dlg2Ui17emitOpeningWidgetERK7QString"                           ; magicseg='TEXT32' len=41
+  "__ZN6Dlg2Ui15widgetClassNameERK11QDomElement"                        ; magicseg='TEXT32' len=44
+  "__ZN6Dlg2Ui9emitColorERK6QColor"                                     ; magicseg='TEXT32' len=31
+  "__ZN6Dlg2Ui14emitColorGroupERK7QStringRK11QColorGroup"               ; magicseg='TEXT32' len=53
+  "__ZN6Dlg2Ui11emitVariantERK8QVariantRK7QString"                      ; magicseg='TEXT32' len=46
+  "__ZN6Dlg2Ui12emitPropertyERK7QStringRK8QVariantS2_"                  ; magicseg='TEXT32' len=50
+  "__ZN6Dlg2Ui13emitAttributeERK7QStringRK8QVariantS2_"                 ; magicseg='TEXT32' len=51
+  "__ZN6Dlg2Ui17emitOpeningLayoutEbRK7QStringS2_ii"                     ; magicseg='TEXT32' len=47
+  "__ZN6Dlg2Ui12flushWidgetsEv"                                         ; magicseg='TEXT32' len=27
+  "__ZN6Dlg2Ui14emitWidgetBodyERK11QDomElementb"                        ; magicseg='TEXT32' len=44
+  "__ZN6Dlg2Ui17emitClosingLayoutEbRK7QString"                          ; magicseg='TEXT32' len=42
+  "__ZN6Dlg2Ui12isWidgetTypeERK11QDomElement"                           ; magicseg='TEXT32' len=41
+  "__ZN6Dlg2Ui10emitSpacerEii"                                          ; magicseg='TEXT32' len=26
+  "__ZN6Dlg2Ui13filteredFlagsERK7QStringRK7QRegExp"                     ; magicseg='TEXT32' len=47
+  "__ZN6Dlg2Ui22emitFrameStylePropertyEi"                               ; magicseg='TEXT32' len=37
+  "__ZN6Dlg2Ui12checkTagNameERK11QDomElementRK7QString"                 ; magicseg='TEXT32' len=51
+  "__ZN6Dlg2Ui13normalizeTypeERK7QString"                               ; magicseg='TEXT32' len=37
+  "__ZN6Dlg2Ui17matchDialogCommonERK11QDomElement"                      ; magicseg='TEXT32' len=46
+  "__ZN6Dlg2Ui18needsQLayoutWidgetERK11QDomElement"                     ; magicseg='TEXT32' len=47
+  "__ZN6Dlg2Ui14matchBoxLayoutERK11QDomElement"                         ; magicseg='TEXT32' len=43
+  "__ZN6Dlg2Ui11matchLayoutERK11QDomElement"                            ; magicseg='TEXT32' len=40
+  "__ZN6Dlg2Ui15matchBoxSpacingERK11QDomElement"                        ; magicseg='TEXT32' len=44
+  "__ZN6Dlg2Ui15matchBoxStretchERK11QDomElement"                        ; magicseg='TEXT32' len=44
+  "__ZN6Dlg2Ui15matchGridLayoutERK11QDomElement"                        ; magicseg='TEXT32' len=44
+  "__ZN6Dlg2Ui12matchGridRowERK11QDomElement"                           ; magicseg='TEXT32' len=41
+  "__ZN6Dlg2Ui15matchGridSpacerERK11QDomElement"                        ; magicseg='TEXT32' len=44
+  "__ZN6Dlg2Ui17matchLayoutWidgetERK11QDomElement"                      ; magicseg='TEXT32' len=46
+  "__ZN6Dlg2Ui8matchBoxERK11QDomElement"                                ; magicseg='TEXT32' len=36
+  "__ZN6Dlg2Ui23matchWidgetLayoutCommonERK11QDomElement"                ; magicseg='TEXT32' len=52
+  "__ZN6Dlg2Ui11matchWidgetERK11QDomElement"                            ; magicseg='TEXT32' len=40
+  "__ZN6Dlg2Ui12matchWidgetsERK11QDomElement"                           ; magicseg='TEXT32' len=41
+  "__ZN6Dlg2Ui13matchTabOrderERK11QDomElement"                          ; magicseg='TEXT32' len=42
+  "__ZN6Dlg2Ui17matchWidgetLayoutERK11QDomElement"                      ; magicseg='TEXT32' len=46
+  "__ZN6Dlg2Ui11matchDialogERK11QDomElement"                            ; magicseg='TEXT32' len=40
+  "__ZN6Dlg2Ui25convertQtArchitectDlgFileERK7QString"                   ; magicseg='TEXT32' len=49
+  "__ZN4QMapI7QStringS0_E6insertERKS0_S3_b"                             ; magicseg='TEXT32' len=39  weak
+  "__ZNK11QMapPrivateI7QStringS0_E4findERKS0_"                          ; magicseg='TEXT32' len=42  weak
+  "__ZN17QMapConstIteratorI7QStringS0_E3incEv"                          ; magicseg='TEXT32' len=42  weak
+  "__ZN4QMapI7QString11QDomElementE14detachInternalEv"                  ; magicseg='TEXT32' len=50  weak
+  "__ZNK11QMapPrivateI7QStringiE4findERKS0_"                            ; magicseg='TEXT32' len=40  weak
+  "__ZN4QMapI7QStringS_IS0_iEEixERKS0_"                                 ; magicseg='TEXT32' len=35  weak
+  "__ZN4QMapI7QStringiEaSERKS1_"                                        ; magicseg='TEXT32' len=28  weak
+  "__ZN17QValueListPrivateI13DlgConnectionE6insertE18QValueListIteratorIS0_ERKS0_"          ; magicseg='TEXT32' len=78  weak
+  "__ZN10QValueListI13DlgConnectionE14detachInternalEv"                 ; magicseg='TEXT32' len=51  weak
+  "__ZN4QMapI7QStringiE14detachInternalEv"                              ; magicseg='TEXT32' len=38  weak
+  "__ZNK11QMapPrivateI7QString11QDomElementE4findERKS0_"                ; magicseg='TEXT32' len=52  weak
+  "__ZN4QMapI7QString11QDomElementE6insertERKS0_RKS1_b"                 ; magicseg='TEXT32' len=51  weak
+  "__ZN12QMapIteratorI7QStringS0_E3incEv"                               ; magicseg='TEXT32' len=37  weak
+  "__ZN4QMapI7QStringS0_E14detachInternalEv"                            ; magicseg='TEXT32' len=40  weak
+  "__ZN4QMapI7QStringiE6insertERKS0_RKib"                               ; magicseg='TEXT32' len=37  weak
+  "__ZN11QMapPrivateI7QStringS0_E12insertSingleERKS0_"                  ; magicseg='TEXT32' len=50  weak
+  "__ZN11QMapPrivateI7QString11QDomElementEC1EPKS2_"                    ; magicseg='TEXT32' len=48  weak
+  "__ZNK11QMapPrivateI7QString4QMapIS0_iEE4findERKS0_"                  ; magicseg='TEXT32' len=50  weak
+  "__ZN4QMapI7QStringS_IS0_iEE6insertERKS0_RKS1_b"                      ; magicseg='TEXT32' len=46  weak
+  "__ZN4QMapI7QStringS_IS0_iEE14detachInternalEv"                       ; magicseg='TEXT32' len=45  weak
+  "__ZN11QMapPrivateI7QStringiEC1EPKS1_"                                ; magicseg='TEXT32' len=36  weak
+  "__ZN17QValueListPrivateI13DlgConnectionEC1ERKS1_"                    ; magicseg='TEXT32' len=48  weak
+  "__ZN11QMapPrivateI7QString11QDomElementE12insertSingleERKS0_"        ; magicseg='TEXT32' len=60  weak
+  "__ZN11QMapPrivateI7QStringS0_EC1EPKS1_"                              ; magicseg='TEXT32' len=38  weak
+  "__ZN11QMapPrivateI7QStringiE12insertSingleERKS0_"                    ; magicseg='TEXT32' len=48  weak
+  "__ZN11QMapPrivateI7QStringS0_E6insertEP12QMapNodeBaseS3_RKS0_"       ; magicseg='TEXT32' len=61  weak
+  "__ZN12QMapIteratorI7QStringS0_E3decEv"                               ; magicseg='TEXT32' len=37  weak
+  "__ZN11QMapPrivateI7QString11QDomElementE4copyEP8QMapNodeIS0_S1_E"    ; magicseg='TEXT32' len=64  weak
+  "__ZN11QMapPrivateI7QString4QMapIS0_iEE12insertSingleERKS0_"          ; magicseg='TEXT32' len=58  weak
+  "__ZN11QMapPrivateI7QString4QMapIS0_iEEC1EPKS3_"                      ; magicseg='TEXT32' len=46  weak
+  "__ZN11QMapPrivateI7QStringiE4copyEP8QMapNodeIS0_iE"                  ; magicseg='TEXT32' len=50  weak
+  "__ZN11QMapPrivateI7QString11QDomElementE6insertEP12QMapNodeBaseS4_RKS0_"                 ; magicseg='TEXT32' len=71  weak
+  "__ZN12QMapIteratorI7QString11QDomElementE3decEv"                     ; magicseg='TEXT32' len=47  weak
+  "__ZN11QMapPrivateI7QStringS0_E4copyEP8QMapNodeIS0_S0_E"              ; magicseg='TEXT32' len=54  weak
+  "__ZN11QMapPrivateI7QStringiE6insertEP12QMapNodeBaseS3_RKS0_"         ; magicseg='TEXT32' len=59  weak
+  "__ZN12QMapIteratorI7QStringiE3decEv"                                 ; magicseg='TEXT32' len=35  weak
+  "__ZN11QMapPrivateI7QString4QMapIS0_iEE6insertEP12QMapNodeBaseS5_RKS0_"                   ; magicseg='TEXT32' len=69  weak
+  "__ZN12QMapIteratorI7QString4QMapIS0_iEE3decEv"                       ; magicseg='TEXT32' len=45  weak
+  "__ZN11QMapPrivateI7QString4QMapIS0_iEE4copyEP8QMapNodeIS0_S2_E"      ; magicseg='TEXT32' len=62  weak
+

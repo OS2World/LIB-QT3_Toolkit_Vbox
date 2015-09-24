@@ -1,0 +1,14 @@
+-Zomf
+-Wall
+-Zmt
+-s
+-O2
+-fno-exceptions
+-fno-rtti
+-DQT_NO_PRINTER
+-DQT_NO_IPV6
+-DQT_INTERNAL_NETWORK
+-DQT_DLL
+-DQT_THREAD_SUPPORT
+-DQT_NO_DEBUG
+-DQT_SHARED

@@ -1,0 +1,138 @@
+LIBRARY gldplug INITINSTANCE TERMINSTANCE 
+DATA MULTIPLE NONSHARED 
+EXPORTS
+  ; segment TEXT32
+  "__ZN11GladeFilterC2Ev"                                               ; magicseg='TEXT32' len=21
+  "__ZN11GladeFilterC1Ev"                                               ; magicseg='TEXT32' len=21
+  "__ZN11GladeFilter14queryInterfaceERK5QUuidPP17QUnknownInterface"     ; magicseg='TEXT32' len=63
+  "__ZNK11GladeFilter11featureListEv"                                   ; magicseg='TEXT32' len=33
+  "__ZN11GladeFilter6importERK7QStringS2_"                              ; magicseg='TEXT32' len=38
+  "__ZN11GladeFilter4initEv"                                            ; magicseg='TEXT32' len=24
+  "__ZN11GladeFilter7cleanupEv"                                         ; magicseg='TEXT32' len=27
+  "__ZNK11GladeFilter9canUnloadEv"                                      ; magicseg='TEXT32' len=30
+  "qt_ucm_query_verification_data"                                      ; magicseg='TEXT32' len=30
+  "ucm_instantiate"                                                     ; magicseg='TEXT32' len=15
+  "__ZTV11GladeFilter"                                                  ; magicseg='TEXT32' len=18  weak
+  "__ZThn4_N11GladeFilter14queryInterfaceERK5QUuidPP17QUnknownInterface"                    ; magicseg='TEXT32' len=68  weak
+  "__ZN17QValueListPrivateI7QStringEC1Ev"                               ; magicseg='TEXT32' len=37  weak
+  "__ZN17QValueListPrivateI7QStringE6insertE18QValueListIteratorIS0_ERKS0_"                 ; magicseg='TEXT32' len=71  weak
+  "__ZN10QValueListI7QStringE14detachInternalEv"                        ; magicseg='TEXT32' len=44  weak
+  "__ZN4QMapI7QStringS0_ED1Ev"                                          ; magicseg='TEXT32' len=26  weak
+  "__ZN7QStringD1Ev"                                                    ; magicseg='TEXT32' len=16  weak
+  "__ZN11QMapPrivateI7QString11GladeActionE5clearEv"                    ; magicseg='TEXT32' len=48  weak
+  "__ZN11QMapPrivateI7QStringiE5clearEv"                                ; magicseg='TEXT32' len=36  weak
+  "__ZN11QMapPrivateI7QStringS0_E5clearEv"                              ; magicseg='TEXT32' len=38  weak
+  "__ZN17QValueListPrivateI15GladeConnectionED1Ev"                      ; magicseg='TEXT32' len=46  weak
+  "__ZThn4_N11GladeFilter4initEv"                                       ; magicseg='TEXT32' len=29  weak
+  "__ZThn4_N11GladeFilter7cleanupEv"                                    ; magicseg='TEXT32' len=32  weak
+  "__ZThn4_NK11GladeFilter9canUnloadEv"                                 ; magicseg='TEXT32' len=35  weak
+  "__ZN17QValueListPrivateI7QStringEC1ERKS1_"                           ; magicseg='TEXT32' len=41  weak
+  "__ZN11QMapPrivateI7QStringS0_E5clearEP8QMapNodeIS0_S0_E"             ; magicseg='TEXT32' len=55  weak
+  "__ZN11QMapPrivateI7QStringiE5clearEP8QMapNodeIS0_iE"                 ; magicseg='TEXT32' len=51  weak
+  "__ZN11QMapPrivateI7QString11GladeActionE5clearEP8QMapNodeIS0_S1_E"                       ; magicseg='TEXT32' len=65  weak
+  "__ZN11GladeFilter6addRefEv"                                          ; magicseg='TEXT32' len=26  weak
+  "__ZN11GladeFilter7releaseEv"                                         ; magicseg='TEXT32' len=27  weak
+  "__ZThn4_N11GladeFilter6addRefEv"                                     ; magicseg='TEXT32' len=31  weak
+  "__ZThn4_N11GladeFilter7releaseEv"                                    ; magicseg='TEXT32' len=32  weak
+  "__ZTV6QGList"                                                        ; magicseg='TEXT32' len=12  weak
+  "__ZNK6QGList5countEv"                                                ; magicseg='TEXT32' len=20  weak
+  "__ZN8Glade2UiC2Ev"                                                   ; magicseg='TEXT32' len=17
+  "__ZN8Glade2UiC1Ev"                                                   ; magicseg='TEXT32' len=17
+  "__ZN8Glade2Ui9imageNameERK7QString"                                  ; magicseg='TEXT32' len=34
+  "__ZN8Glade2Ui7openingERK7QStringRK4QMapIS0_S0_E"                     ; magicseg='TEXT32' len=47
+  "__ZN8Glade2Ui7closingERK7QString"                                    ; magicseg='TEXT32' len=32
+  "__ZN8Glade2Ui4atomERK7QStringRK4QMapIS0_S0_E"                        ; magicseg='TEXT32' len=44
+  "__ZN8Glade2Ui5errorERK7QString"                                      ; magicseg='TEXT32' len=30
+  "__ZN8Glade2Ui11syntaxErrorEv"                                        ; magicseg='TEXT32' len=28
+  "__ZN8Glade2Ui12getTextValueERK8QDomNode"                             ; magicseg='TEXT32' len=39
+  "__ZN8Glade2Ui10emitHeaderEv"                                         ; magicseg='TEXT32' len=27
+  "__ZN8Glade2Ui10emitFooterEv"                                         ; magicseg='TEXT32' len=27
+  "__ZN8Glade2Ui15emitSimpleValueERK7QStringS2_RK4QMapIS0_S0_E"         ; magicseg='TEXT32' len=59
+  "__ZN8Glade2Ui11emitOpeningERK7QStringRK4QMapIS0_S0_E"                ; magicseg='TEXT32' len=52
+  "__ZN8Glade2Ui11emitClosingERK7QString"                               ; magicseg='TEXT32' len=37
+  "__ZN8Glade2Ui8emitAtomERK7QStringRK4QMapIS0_S0_E"                    ; magicseg='TEXT32' len=48
+  "__ZN8Glade2Ui11emitVariantERK8QVariantRK7QString"                    ; magicseg='TEXT32' len=48
+  "__ZN8Glade2Ui12emitPropertyERK7QStringRK8QVariantS2_"                ; magicseg='TEXT32' len=52
+  "__ZN8Glade2Ui16emitFontPropertyERK7QStringib"                        ; magicseg='TEXT32' len=44
+  "__ZN8Glade2Ui13emitAttributeERK7QStringRK8QVariantS2_"               ; magicseg='TEXT32' len=53
+  "__ZN8Glade2Ui11gtk2qtClassERK7QStringRK10QValueListI11QDomElementE"                      ; magicseg='TEXT32' len=66
+  "__ZN8Glade2Ui20matchAccelOnActivateERK11QDomElement"                 ; magicseg='TEXT32' len=51
+  "__ZN8Glade2Ui11emitGtkMenuERK11QDomElement"                          ; magicseg='TEXT32' len=42
+  "__ZN8Glade2Ui26emitGtkMenuBarChildWidgetsERK10QValueListI11QDomElementE"                 ; magicseg='TEXT32' len=71
+  "__ZN8Glade2Ui26emitGtkToolbarChildWidgetsERK10QValueListI11QDomElementE"                 ; magicseg='TEXT32' len=71
+  "__ZN8Glade2Ui14emitPushButtonERK7QStringS2_"                         ; magicseg='TEXT32' len=43
+  "__ZN8Glade2Ui6attachEP4QMapI7QStringS1_Eiiii"                        ; magicseg='TEXT32' len=44
+  "__ZN8Glade2Ui10emitSpacerERK7QStringiiii"                            ; magicseg='TEXT32' len=40
+  "__ZN8Glade2Ui10emitPixmapERK7QStringiiii"                            ; magicseg='TEXT32' len=40
+  "__ZN8Glade2Ui17emitOpeningWidgetERK7QStringiiii"                     ; magicseg='TEXT32' len=47
+  "__ZN8Glade2Ui14emitGnomeAboutE7QStringS0_S0_"                        ; magicseg='TEXT32' len=44
+  "__ZN8Glade2Ui29emitGnomeAppChildWidgetsPass1ERK10QValueListI11QDomElementE"              ; magicseg='TEXT32' len=74
+  "__ZN8Glade2Ui10emitWidgetERK11QDomElementbiiii"                      ; magicseg='TEXT32' len=46
+  "__ZN8Glade2Ui7doPass2ERK10QValueListI11QDomElementEPS2_PS0_IS2_E"    ; magicseg='TEXT32' len=64
+  "__ZN8Glade2Ui29emitGnomeAppChildWidgetsPass2ERK10QValueListI11QDomElementE"              ; magicseg='TEXT32' len=74
+  "__ZN8Glade2Ui25emitGtkButtonChildWidgetsE10QValueListI11QDomElementE"                    ; magicseg='TEXT32' len=68
+  "__ZN8Glade2Ui24emitGtkComboChildWidgetsERK10QValueListI11QDomElementERK11QStringList"    ; magicseg='TEXT32' len=84
+  "__ZN8Glade2Ui27emitGtkNotebookChildWidgetsERK10QValueListI11QDomElementE"                ; magicseg='TEXT32' len=72
+  "__ZN8Glade2Ui20emitQListViewColumnsERK11QDomElement"                 ; magicseg='TEXT32' len=51
+  "__ZN8Glade2Ui33emitGtkScrolledWindowChildWidgetsERK10QValueListI11QDomElementERK7QString"                              ; magicseg='TEXT32' len=88
+  "__ZN8Glade2Ui18emitGnomeDruidPageERK11QDomElement"                   ; magicseg='TEXT32' len=49
+  "__ZN8Glade2Ui16emitChildWidgetsERK10QValueListI11QDomElementEbiiii"                      ; magicseg='TEXT32' len=66
+  "__ZN8Glade2Ui25emitGtkWindowChildWidgetsERK10QValueListI11QDomElementERK7QString"        ; magicseg='TEXT32' len=80
+  "__ZN8Glade2Ui7packEndERK11QDomElement"                               ; magicseg='TEXT32' len=37
+  "__ZN8Glade2Ui12shouldPullupERK10QValueListI11QDomElementE"           ; magicseg='TEXT32' len=57
+  "__ZN8Glade2Ui16convertGladeFileERK7QString"                          ; magicseg='TEXT32' len=42
+  "__ZN11QMapPrivateI7QStringS0_EC1Ev"                                  ; magicseg='TEXT32' len=34  weak
+  "__ZN4QMapI7QStringS0_E6insertERKS0_S3_b"                             ; magicseg='TEXT32' len=39  weak
+  "__ZN11QMapPrivateI7QStringiEC1Ev"                                    ; magicseg='TEXT32' len=32  weak
+  "__ZN11QMapPrivateI7QString11GladeActionEC1Ev"                        ; magicseg='TEXT32' len=44  weak
+  "__ZN17QValueListPrivateI15GladeConnectionEC1Ev"                      ; magicseg='TEXT32' len=46  weak
+  "__ZN4QMapI7QStringiE6insertERKS0_RKib"                               ; magicseg='TEXT32' len=37  weak
+  "__ZN17QMapConstIteratorI7QStringS0_E3incEv"                          ; magicseg='TEXT32' len=42  weak
+  "__ZN4QMapI7QStringS0_EixERKS0_"                                      ; magicseg='TEXT32' len=30  weak
+  "__ZNK11QMapPrivateI7QStringiE4findERKS0_"                            ; magicseg='TEXT32' len=40  weak
+  "__ZN4QMapI7QStringiEixERKS0_"                                        ; magicseg='TEXT32' len=28  weak
+  "__ZN4QMapI7QString11GladeActionE6insertERKS0_RKS1_b"                 ; magicseg='TEXT32' len=51  weak
+  "__ZN17QValueListPrivateI15GladeConnectionE6insertE18QValueListIteratorIS0_ERKS0_"        ; magicseg='TEXT32' len=80  weak
+  "__ZN10QValueListI15GladeConnectionE14detachInternalEv"               ; magicseg='TEXT32' len=53  weak
+  "__ZN17QValueListPrivateI11QDomElementEC1Ev"                          ; magicseg='TEXT32' len=42  weak
+  "__ZN17QValueListPrivateI11QDomElementE6insertE18QValueListIteratorIS0_ERKS0_"            ; magicseg='TEXT32' len=76  weak
+  "__ZN10QValueListI11QDomElementE14detachInternalEv"                   ; magicseg='TEXT32' len=49  weak
+  "__ZN17QValueListPrivateI11QDomElementED1Ev"                          ; magicseg='TEXT32' len=42  weak
+  "__ZN4QMapI7QString11GladeActionEixERKS0_"                            ; magicseg='TEXT32' len=40  weak
+  "__ZN17QValueListPrivateI10QValueListI11QDomElementEE6insertE18QValueListIteratorIS2_ERKS2_"                            ; magicseg='TEXT32' len=90  weak
+  "__ZN10QValueListIS_I11QDomElementEE14detachInternalEv"               ; magicseg='TEXT32' len=53  weak
+  "__ZN17QValueListPrivateI10QValueListI11QDomElementEEC1Ev"            ; magicseg='TEXT32' len=56  weak
+  "__ZN17QValueListPrivateI10QValueListI11QDomElementEED1Ev"            ; magicseg='TEXT32' len=56  weak
+  "__ZN17QValueListPrivateI10QValueListI11QDomElementEE6removeE18QValueListIteratorIS2_E"                                 ; magicseg='TEXT32' len=85  weak
+  "__ZN17QValueListPrivateI7QStringED1Ev"                               ; magicseg='TEXT32' len=37  weak
+  "__ZN17QValueListPrivateI7QStringE6removeE18QValueListIteratorIS0_E"                      ; magicseg='TEXT32' len=66  weak
+  "__ZN4QMapI7QStringS0_E5clearEv"                                      ; magicseg='TEXT32' len=30  weak
+  "__ZN4QMapI7QString11GladeActionE5clearEv"                            ; magicseg='TEXT32' len=40  weak
+  "__ZN10QValueListI15GladeConnectionE5clearEv"                         ; magicseg='TEXT32' len=43  weak
+  "__ZN12QMapIteratorI7QStringS0_E3incEv"                               ; magicseg='TEXT32' len=37  weak
+  "__ZN4QMapI7QStringS0_E14detachInternalEv"                            ; magicseg='TEXT32' len=40  weak
+  "__ZN12QMapIteratorI7QString11GladeActionE3incEv"                     ; magicseg='TEXT32' len=47  weak
+  "__ZN4QMapI7QString11GladeActionE14detachInternalEv"                  ; magicseg='TEXT32' len=50  weak
+  "__ZN11QMapPrivateI7QStringS0_E12insertSingleERKS0_"                  ; magicseg='TEXT32' len=50  weak
+  "__ZN11QMapPrivateI7QStringiE12insertSingleERKS0_"                    ; magicseg='TEXT32' len=48  weak
+  "__ZN4QMapI7QStringiE14detachInternalEv"                              ; magicseg='TEXT32' len=38  weak
+  "__ZNK11QMapPrivateI7QStringS0_E4findERKS0_"                          ; magicseg='TEXT32' len=42  weak
+  "__ZN11QMapPrivateI7QString11GladeActionE12insertSingleERKS0_"        ; magicseg='TEXT32' len=60  weak
+  "__ZN17QValueListPrivateI15GladeConnectionEC1ERKS1_"                  ; magicseg='TEXT32' len=50  weak
+  "__ZN17QValueListPrivateI11QDomElementEC1ERKS1_"                      ; magicseg='TEXT32' len=46  weak
+  "__ZNK11QMapPrivateI7QString11GladeActionE4findERKS0_"                ; magicseg='TEXT32' len=52  weak
+  "__ZN17QValueListPrivateI10QValueListI11QDomElementEEC1ERKS3_"        ; magicseg='TEXT32' len=60  weak
+  "__ZN17QValueListPrivateI15GladeConnectionE5clearEv"                  ; magicseg='TEXT32' len=50  weak
+  "__ZN11QMapPrivateI7QStringS0_EC1EPKS1_"                              ; magicseg='TEXT32' len=38  weak
+  "__ZN11QMapPrivateI7QString11GladeActionEC1EPKS2_"                    ; magicseg='TEXT32' len=48  weak
+  "__ZN11QMapPrivateI7QStringS0_E6insertEP12QMapNodeBaseS3_RKS0_"       ; magicseg='TEXT32' len=61  weak
+  "__ZN12QMapIteratorI7QStringS0_E3decEv"                               ; magicseg='TEXT32' len=37  weak
+  "__ZN11QMapPrivateI7QStringiE6insertEP12QMapNodeBaseS3_RKS0_"         ; magicseg='TEXT32' len=59  weak
+  "__ZN12QMapIteratorI7QStringiE3decEv"                                 ; magicseg='TEXT32' len=35  weak
+  "__ZN11QMapPrivateI7QStringiEC1EPKS1_"                                ; magicseg='TEXT32' len=36  weak
+  "__ZN11QMapPrivateI7QString11GladeActionE6insertEP12QMapNodeBaseS4_RKS0_"                 ; magicseg='TEXT32' len=71  weak
+  "__ZN12QMapIteratorI7QString11GladeActionE3decEv"                     ; magicseg='TEXT32' len=47  weak
+  "__ZN11QMapPrivateI7QStringS0_E4copyEP8QMapNodeIS0_S0_E"              ; magicseg='TEXT32' len=54  weak
+  "__ZN11QMapPrivateI7QString11GladeActionE4copyEP8QMapNodeIS0_S1_E"    ; magicseg='TEXT32' len=64  weak
+  "__ZN11QMapPrivateI7QStringiE4copyEP8QMapNodeIS0_iE"                  ; magicseg='TEXT32' len=50  weak
+

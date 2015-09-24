@@ -1,0 +1,5 @@
+-IC:\200\trunk\include
+-I..\tools
+-I.
+-IC:\200\trunk\src\moc
+-IC:\200\trunk\mkspecs\os2-g++

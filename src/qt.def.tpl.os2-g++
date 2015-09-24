@@ -1,0 +1,5 @@
+LIBRARY ${name} INITINSTANCE TERMINSTANCE
+DESCRIPTION '@#netlabs.org:${version}.os2-g++#@ Qt Library for OS/2 (GCC)'
+DATA MULTIPLE NONSHARED
+EXPORTS
+${exports}
